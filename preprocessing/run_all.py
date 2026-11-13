@@ -6,6 +6,7 @@ SCRIPTS = [
     "parse_isatab.py",
     "normalize_csv.py",
     "extract_pdfs.py",
+    "chunk_reports.py",
     "build_knowledge_base.py",
 ]
 

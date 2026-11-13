@@ -1,2 +1,10 @@
 pandas>=2.0
 PyMuPDF>=1.23
+langchain-core>=0.3
+langchain-text-splitters>=0.3
+langchain-huggingface>=0.1
+langchain-chroma>=0.2
+chromadb>=0.5
+transformers>=4.40
+sentence-transformers>=3.0
+plotly>=5.18
