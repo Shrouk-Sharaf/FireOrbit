@@ -20,7 +20,7 @@ from utils import (
 
 
 def read_csv_safe(file_path):
-    last_err = None
+    last_err: Exception | None = None
     for enc in ["utf-8-sig", "utf-8", "latin1", "cp1252", "iso-8859-1"]:
         try:
             df = pd.read_csv(file_path, encoding=enc)
@@ -29,7 +29,9 @@ def read_csv_safe(file_path):
         except Exception as exc:
             last_err = exc
             continue
-    raise last_err
+    if last_err is not None:
+        raise last_err
+    raise RuntimeError(f"Failed to read CSV at {file_path}")
 
 
 def col_lookup(columns, *needles_groups):
