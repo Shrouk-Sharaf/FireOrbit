@@ -9,6 +9,7 @@ import { useChat } from '../hooks/useChat';
 import { useHealth } from '../hooks/useHealth';
 import { useSettings } from '../hooks/useSettings';
 import { clearMockConversations } from '../mocks/mockApi';
+import { clearLiveConversations } from '../services/realApi';
 import { config } from '../services/config';
 
 export function ChatPage() {
@@ -26,6 +27,7 @@ export function ChatPage() {
 
   const handleClearMock = () => {
     clearMockConversations();
+    clearLiveConversations();
     chat.newChat();
     void chat.refreshConversations();
   };

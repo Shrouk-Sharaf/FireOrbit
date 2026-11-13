@@ -7,7 +7,8 @@ Docs: http://127.0.0.1:8000/docs
 Optional env: GEMINI_API_KEY (LLM answers/summaries), GEMINI_MODEL, CORS_ORIGINS (comma-separated).
 """
 import os
-
+from dotenv import load_dotenv
+load_dotenv()
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 

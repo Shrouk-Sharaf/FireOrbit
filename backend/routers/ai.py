@@ -165,10 +165,10 @@ class ChatRequest(BaseModel):
 
 @router.post("/chat")
 def chat(req: ChatRequest):
-    mode, hits = retrieve(req.question, req.top_k, req.psi_id, req.psi_only)
+    mode, hits = retrieve(req.question, req.top_k, req.psi_id, req.include_general and not req.psi_only)
     sources = [{"label": source_label(h["metadata"]), "psi_id": h["metadata"].get("psi_id"),
                 "file": h["metadata"].get("filename"), "page": h["metadata"].get("page"),
-                "chunk_id": h["id"]} for h in hits]
+                "chunk_id": h["id"], "content": h["text"][:1200]} for h in hits]
     if not llm_available():
         return {"answer": None, "llm": False, "retrieval": mode, "sources": sources,
                 "passages": [h["text"][:600] for h in hits],
