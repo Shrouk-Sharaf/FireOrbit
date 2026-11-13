@@ -1,0 +1,136 @@
+ONTOLOGY SOURCE REFERENCE
+Term Source Name	PSI	EFO
+Term Source File	https://psi.nasa.gov/	http://data.bioontology.org/ontologies/EFO
+Term Source Version	1.0	132
+Term Source Description	User defined terms	Experimental Factor Ontology
+INVESTIGATION
+Investigation Identifier	
+Investigation Title	
+Investigation Description	
+Investigation Submission Date	
+Investigation Public Release Date	
+INVESTIGATION PUBLICATIONS
+Investigation PubMed ID
+Investigation Publication DOI
+Investigation Publication Author List
+Investigation Publication Title
+Investigation Publication Status
+Investigation Publication Status Term Accession Number
+Investigation Publication Status Term Source REF
+INVESTIGATION CONTACTS
+Investigation Person Last Name
+Investigation Person First Name
+Investigation Person Mid Initials
+Investigation Person Email
+Investigation Person Phone
+Investigation Person Fax
+Investigation Person Address
+Investigation Person Affiliation
+Investigation Person Roles
+Investigation Person Roles Term Accession Number
+Investigation Person Roles Term Source REF
+STUDY
+Study Identifier	PSI-69
+Study Title	Flame Extinguishment Experiment
+Study Description	
+Study Submission Date	31-Jul-2016
+Study Public Release Date	31-Jul-2016
+Study File Name	s_PSI-69.txt
+Comment[Acknowledgments]	
+Comment[Approach]	"The FLEX experiments involve igniting and observing the burning behavior of relatively large droplets. A primary objective of the experiments is to determine the Limiting Oxygen Index (LOI) as a function of ambient pressure and determine how the presence of a suppressant influences the LOI .
+The basic outline of the procedure to construct this diagram is as follows:
+  1. Select the test pressure (0.5 − 1.5 atm) for the LOI tests.
+  2. Select a smaller droplet size (≈ 3 mm)
+  3. Select an ambient oxygen mole fraction that, based on ground-based testing, will support droplets burning to completion (as opposed to extinguishing at a finite droplet size).
+  4. Perform a droplet combustion test.
+  5. Increase the droplet size or repeat the test (if finite extinction diameter at flame extinction observed).
+  6. Continue steps 4 and 5 until flame exists for only a short time after ignition (radiative extinction).
+  7. Continue steps 4 thru 6 at a decreased ambient oxygen mole fraction.
+  8. Continue step 7 to an ambient oxygen mole fraction where the droplet does not ignite.
+
+There were ambient conditions where the extinction droplet sizes at all ambient oxygen mole fractions were too small to either be observed or measured with the available diagnostics. In this case, the determination of the LOI is similar, but more iterative. Instead of observing flame extinction, however, the procedure  involved an iterative sequence of tests (burn to completion followed by a no ignition test) with progressively smaller increments in ambient oxygen mole fraction to determine the LOI . For the slow flow tests (in the flight experiment), the configuration of the flight hardware did not allow for adequate diagnostics over the entire test for a droplet in a uniform, steady convective flow.  In these tests, the procedure will be to duplicate tests above which yield finite-sized extinction droplet diameters. Near the end of the tests, prior to flame extinction, the droplet will be subjected to a small, sub-buoyant, convective flow (imparted by translating the droplet at a slow, uniform speed).
+
+The goal of the experiment is then to see how the presence of this flow influences the extinction process. Note, a large number of the tests involve free droplets (as opposed to fiber-supported droplets) and a number of these tests will have droplets with a slow drift velocity. Data gathered from these tests to examine the influences of a small, sub-buoyant flow on both the burning and extinction process."
+Comment[DOI]	10.60555/mbq8-0451
+Comment[Data Source Accession]	
+Comment[Data Source Link]	
+Comment[Experiment Hardware]	Combustion Integrated Rack (CIR)-Fluids and Combustion Facility (FCF), Multi-user Droplet Combustion Appartatus (MDCA)
+Comment[Experiment Hardware Link]	https://issnationallab.org/facilities/combustion-integrated-rack/, https://gipoc.grc.nasa.gov/wp/fcf-cir/mdca/
+Comment[Flight Platform]	International Space Station (ISS)
+Comment[Funding]	NNX09AM33A
+Comment[Hypothesis]	The primary hypothesis of the FLEX mission is that microgravity conditions fundamentally alter the combustion and extinction characteristics of liquid fuel droplets due to changes in species and energy transport dynamics, radiative heat loss, and chemical kinetics. Specifically, the hypothesis posits that the lack of buoyant convection in microgravity will lead to significant differences in the flammability limits and suppression efficacy of various fire suppressant agents compared to normal gravity conditions. This hypothesis underpins the design of the FLEX experiments, which aim to map flammability boundaries, quantify suppressant efficacy, and develop predictive models to improve fire safety in space environments.
+Comment[Identifiers]	
+Comment[Investigation Acronym]	FLEX
+Comment[Investigation End Date]	07-31-2016
+Comment[Investigation Start Date]	08-01-2007
+Comment[Managing NASA Center]	Glenn Research Center (GRC)
+Comment[Mission End]	
+Comment[Mission Link]	
+Comment[Mission Name]	
+Comment[Mission Start]	
+Comment[Objective]	The FLEX (Flame Extinguishment Experiment) investigation aims to map the flammability limits of liquid fuels in microgravity environments, measure the effectiveness of various gaseous fire suppressants such as CO2, He, and SF6, and develop reliable predictive models for combustion limits under reduced gravity conditions. The mission seeks to validate and improve simplified models by incorporating detailed chemical reactions, heat transfer, and material movement, using both space-based data and extensive ground-based tests. Key flight experiment goals include obtaining high-resolution measurements of droplet burning rates, flame extinction behavior, heat radiation, soot levels, and temperature profiles, while systematically analyzing the effects of different ambient conditions and suppressant concentrations. These investigations are essential for advancing the fundamental understanding of combustion processes in microgravity and enhancing fire safety protocols for future space missions.
+Comment[Project Identifier]	
+Comment[Project Link]	
+Comment[Project Title]	
+Comment[Project Type]	Microgravity Investigation
+Comment[Proposal Title]	Droplet Flame Extinguishment in Microgravity
+Comment[Research Area]	Combustion Science
+Comment[Research Impacts]	The research impacts and Earth benefits of the FLEX mission are significant and multifaceted. By enhancing our understanding of microgravity combustion, the mission directly contributes to improved fire safety protocols for future space missions, ensuring the safety of crew members in environments where traditional fire suppression methods may be ineffective. On Earth, the insights gained from these experiments have the potential to advance fire safety in confined and reduced-gravity environments, such as submarines or high-altitude aircraft. The mission's findings on the effectiveness of various fire suppressants, including CO2, He, and SF6, in microgravity can lead to the development of more efficient and less harmful fire suppression systems, reducing the risk of toxic byproducts during fire events. Additionally, the study of ''cool flames'' and low-temperature combustion processes observed in microgravity can inform the design of advanced combustion engines, leading to improved fuel efficiency and reduced emissions in automotive and industrial applications. Overall, the FLEX mission's contributions to combustion science have the potential to enhance both space exploration safety and terrestrial fire safety technologies.
+Comment[Space Program]	National Aeronautics and Space Administration (NASA)
+Comment[Study Grant Number]	
+Comment[SubResearch Area]	Spacecraft Fire Safety
+STUDY DESIGN DESCRIPTORS
+Study Design Type	FLEX	Fuel Sooting	Droplet	Spacecraft Fire Safety	Diffusion Flames	Flames
+Study Design Type Term Accession Number	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/
+Study Design Type Term Source REF	PSI	PSI	PSI	PSI	PSI	PSI
+STUDY PUBLICATIONS
+Study PubMed ID																																																			
+Study Publication DOI			10.2514/6.2012-1252	10.1016/j.combustflame.2011.06.014			10.1016/j.combustflame.2013.05.011	10.2514/6.2014-1019	10.1016/j.combustflame.2013.09.011	10.1016/j.combustflame.2010.08.015	10.1017/jfm.2011.349	10.2514/1.J054437	10.1080/13647830.2016.1248494	10.1016/j.proci.2014.06.043	10.1007/s12217-014-9372-2		10.1080/00102202.2015.1072176	10.1007/s12217-014-9377-x	10.1021/acs.energyfuels.5b00158	10.1080/00102202.2014.971950	10.1016/j.proci.2014.07.022	10.1016/j.combustflame.2015.01.012	10.1016/j.fuel.2014.08.063	10.1080/13647830.2014.934296	10.1155/2013/154202	10.1016/j.proci.2012.07.074	10.1016/j.combustflame.2012.11.006	10.1016/j.fuel.2013.02.025	10.1016/j.proci.2012.05.065	10.5566/ias.v31.p137-148	10.1016/j.combustflame.2012.04.005	10.1016/j.combustflame.2011.08.015	10.1021/ef3007849	10.1016/j.combustflame.2012.07.012	10.1080/00102202.2012.759946	10.1016/j.compfluid.2013.02.005	10.1016/j.compfluid.2013.02.011	10.2478/gsr-2014-0007	10.1155/2012/587987	10.1080/13647830.2010.547601	10.1080/00102202.2010.498798	10.1016/j.icheatmasstransfer.2009.10.006	10.1016/j.ijheatmasstransfer.2010.08.005	10.1007/s12217-008-9096-2	10.1016/j.proci.2008.06.221	10.1016/j.optlaseng.2009.05.004	10.1016/j.optlaseng.2008.08.002	10.1080/00102200903190851	10.1080/00102200601057394	10.1007/978-81-322-2211-8_16	
+Study Publication Author List	V Nayagam, DL Dietrich, MC Hicks, FA Williams	V. Nayagam	Farouk Tanvir, Dryer Frederick	Farouk Tanvir, Dryer Frederick L.	JM Hickman, DL Dietrich, MC Hicks, V Nayagam, D Stocker	MC Hicks, DL Dietrich, V Nayagam, FA Williams	Nayagam Vedha	Liu Yu Cheng, Rah Jeff K., Trenou Koffi N., Hicks Michael C., Avedisian C Thomas	Farouk Tanvir I., Dryer Frederick L.	Urzay Javier, Nayagam Vedha, Williams Forman A.	Nayagam Vedha, Williams F. A.	Nayagam Vedha, Dietrich Daniel L., Williams Forman A.	Seshadri Kalyanasundaram, Peters Norbert, Williams Forman A., Nayagam Vedha, Paczko Guenter	Alam Fahd E., Liu Y.C., Avedisian C.T., Dryer F.L., Farouk T.I.	Dietrich Daniel L., Nayagam Vedha, Hicks Michael C., Ferkul Paul V., Dryer Frederick L., Farouk Tanvir, Shaw Benjamin D., Suh Hyun Kyu, Choi Mun Y., Liu Yu Cheng, Avedisian C. Thomas, Williams Forman A.	N Ghata, BD Shaw	Shaw Benjamin D., Vang Chang L.	Shaw Benjamin D.	Xu Yuhao, Avedisian C. Thomas	Ghata Narugopal, Shaw Benjamin D.	Liu Y.C., Xu Y., Avedisian C.T., Hicks M.C.	Nayagam Vedha, Dietrich Daniel L., Hicks Michael C., Williams Forman A.	Prince Juan C., Williams Forman A., Ovando Guillermo E.	Paczko Guenter, Peters Norbert, Seshadri Kalyanasundaram, Williams Forman Arthur	Aharon I., Tam V. K., Shaw B. D.	Farouk T.I., Liu Y.C., Savas A.J., Avedisian C.T., Dryer F.L.	Liu Yu Cheng, Farouk Tanvir, Savas Anthony J., Dryer Frederick L., Thomas Avedisian C.	Liu Yu Cheng, Savas Anthony J., Avedisian C. Thomas	Liu Yu Cheng, Savas Anthony J., Thomas Avedisian C.	Dembia Christopher Lee, Liu Yu Cheng, Avedisian C. Thomas	Farouk Tanvir I., Dryer Frederick L.	Liu Yu Cheng, Avedisian C. Thomas	Liu Yu Cheng, Savas Anthony J., Avedisian C. Thomas	Nayagam Vedha, Dietrich Daniel L., Ferkul Paul V., Hicks Michael C., Williams Forman A.	Shaw B. D., Wang D. F.	Shringi D., Dwyer H.A., Shaw B.D.	Shringi D., Dwyer H.A., Shaw B.D.	Yu Fei, Shaw Benjamin D.	BD Shaw, J Wei	Farouk T., Dryer F. L.	Shaw B. D., Wei J. B.	Dzik Justin, Nayagam Vedha, Williams Forman A.	Jin Y., Shaw B.D.	Yan Jin, Shaw Benjamin D.	Bae J.H., Avedisian C.T.	Xiao J.S., Wei J.B., Shaw B.D., Peng Z.	Shringi D.S., Shaw B.D., Dwyer H.A.	Wei J. B., Shaw B. D.	SHAW B. D., WEI J. B.	Avedisian C. Thomas	DL Dietrich, VM Bryg, PV Ferkul, FA Williams, FL Dryer, BD Shaw, MY Choi, MV Nayagam, MC Hicks, CT Avedisian
+Study Publication Title	Methanol Droplet Combustion in Oxygen-Inert Environments in Microgravity	Methanol Droplet Extinction in Oxygen/Carbon-dioxide/Nitrogen Mixtures in Microgravity: Results from the International Space Station Experiments	A Numerical Study On The Extinction Characteristics Of Droplet Combustion Under Microgravity Conditions	Tethered methanol droplet combustion in carbon-dioxide enriched environment under microgravity conditions	FLEX: A Decisive Step Forward in NASA's Combustion Research Program	Dynamics of Water Absorption and Evaporation During Methanol Droplet Combustion in Microgravity	Activation energy asymptotics for methanol droplet extinction in microgravity	Experimental Study of Initial Diameter Effects on Convection-free Droplet Combustion in the Standard Atmosphere for n-Heptane, n-Octane, and n-Decane: International Space Station and Ground-based Experiments	Isolated n-heptane droplet combustion in microgravity: “Cool Flames” – Two-stage combustion	Theory of the propagation dynamics of spiral edges of diffusion flames in von Kármán swirling flows	Analysis of the melt phase of a rotating polymer disc supporting a diffusion flame	Partial-Burning Regime for Quasi-Steady Droplet Combustion Supported by Cool Flames	Asymptotic analysis of quasi-steady n-heptane droplet combustion supported by cool-flame chemistry	n-Butanol droplet combustion: Numerical modeling and reduced gravity experiments	Droplet Combustion Experiments Aboard the International Space Station	Computational modeling of the effects of support fibers on evaporation of fiber-supported droplets in reduced gravity	Oxygen Lewis Number Effects on Reduced Gravity Combustion of Methanol and n-Heptane Droplets	ISS Droplet Combustion Experiments - Uncertainties in Droplet Sizes and Burning Rates	Combustion of n-Butanol, Gasoline, and n-Butanol/Gasoline Mixture Droplets	Computational Modeling of Unsupported and Fiber-Supported n-Heptane Droplet Combustion in Reduced Gravity: A Study of Fiber Effects	The effect of support fibers on micro-convection in droplet combustion experiments	Cool-flame extinction during n-alkane droplet combustion in microgravity	A short mechanism for the low-temperature ignition of n-heptane at high pressures	The role of cool-flame chemistry in quasi-steady combustion and extinction of n-heptane droplets	Combustion of Submillimeter Heptane/Methanol and Heptane/Ethanol Droplets in Reduced Gravity	Sub-millimeter sized methyl butanoate droplet combustion: Microgravity experiments and detailed numerical modeling	On the spherically symmetrical combustion of methyl decanoate droplets and comparisons with detailed numerical modeling	The spherically symmetric droplet burning characteristics of Jet-A and biofuels derived from camelina and tallow	Spherically symmetric droplet combustion of three and four component miscible mixtures as surrogates for Jet-A	AUTOMATED DATA ANALYSIS FOR CONSECUTIVE IMAGES FROM DROPLET COMBUSTION EXPERIMENTS	On the extinction characteristics of alcohol droplet combustion under microgravity conditions – A numerical study	A comparison of the spherical flame characteristics of sub-millimeter droplets of binary mixtures of n-heptane/iso-octane and n-heptane/toluene with a commercial unleaded gasoline	Comparison of the Burning Characteristics of Indolene and Commercial Grade Gasoline Droplets without Convection	Can cool flames support quasi-steady alkane droplet burning?	Experiments on Submillimeter Free Droplet Flame Extinction	Influences of support fibers on vaporizing fuel droplets	Numerical studies of flows over liquid droplets on cylindrical fibers	Interpretation of Backlit Droplet Images from ISS Droplet Combustion Experiments	Combustion of Methanol Droplets in Air-Diluent Environments with Reduced and Normal Gravity	Microgravity droplet combustion: effect of tethering fiber on burning rate and flame structure	Influence of Gravity and Ambient Pressure on Combustion and Flammability of n-Heptane and 1-Propanol Droplets in Air-Diluent Environments	Ignition and combustion of n-heptane droplets in carbon dioxide enriched environments	Computational modeling of n-heptane droplet combustion in air–diluent environments under reduced-gravity	Numerical Simulation of Unsteady Flows and Shape Oscillations in Liquid Droplets Induced by Deployment Needle Retraction	Nonane droplet combustion with and without buoyant convection: Flame structure, burning rate and extinction in air and helium	Temperature and fiber optic spectroscopy composition measurements of heated propanol–acetone droplets	Laser-induced fluorescence imaging of acetone inside evaporating and burning fuel droplets	Reduced Gravity Combustion of Propanol Droplets in Oxygen-Inert Environments	PROPANOL DROPLET FLAMMABILITY AND COMBUSTION IN AIR-DILUENT ENVIRONMENTS UNDER NORMAL AND REDUCED GRAVITY	Developing Surrogates for Liquid Transportation Fuels: The Role of Spherically Symmetric Droplet Combustion	Detailed results from the flame extinugishment experiment (FLEX) - March 2009 to December 2011
+Study Publication Status	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published	published
+Study Publication Status Term Accession Number	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796
+Study Publication Status Term Source REF		EFO	EFO	EFO	EFO		EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO		EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	EFO	
+Comment[Study Publication Link]	http://ntrs.nasa.gov/search.jsp?R=20130014061	https://ntrs.nasa.gov/citations/20120016855	http://dx.doi.org/10.2514/6.2012-1252	http://dx.doi.org/10.1016/j.combustflame.2011.06.014	https://ntrs.nasa.gov/citations/20120015928	https://ntrs.nasa.gov/search.jsp?R=20130010979	http://dx.doi.org/10.1016/j.combustflame.2013.05.011	http://dx.doi.org/10.2514/6.2014-1019	http://dx.doi.org/10.1016/j.combustflame.2013.09.011	http://dx.doi.org/10.1016/j.combustflame.2010.08.015	http://dx.doi.org/10.1017/jfm.2011.349	http://dx.doi.org/10.2514/1.j054437	http://dx.doi.org/10.1080/13647830.2016.1248494	http://dx.doi.org/10.1016/j.proci.2014.06.043	http://dx.doi.org/10.1007/s12217-014-9372-2	http://www.sciencedirect.com/science/article/pii/S0017931014003925	http://dx.doi.org/10.1080/00102202.2015.1072176	http://dx.doi.org/10.1007/s12217-014-9377-x	http://dx.doi.org/10.1021/acs.energyfuels.5b00158	http://dx.doi.org/10.1080/00102202.2014.971950	http://dx.doi.org/10.1016/j.proci.2014.07.022	http://dx.doi.org/10.1016/j.combustflame.2015.01.012	http://dx.doi.org/10.1016/j.fuel.2014.08.063	http://dx.doi.org/10.1080/13647830.2014.934296	http://dx.doi.org/10.1155/2013/154202	http://dx.doi.org/10.1016/j.proci.2012.07.074	http://dx.doi.org/10.1016/j.combustflame.2012.11.006	http://dx.doi.org/10.1016/j.fuel.2013.02.025	http://dx.doi.org/10.1016/j.proci.2012.05.065	http://dx.doi.org/10.5566/ias.v31.p137-148	http://dx.doi.org/10.1016/j.combustflame.2012.04.005	http://dx.doi.org/10.1016/j.combustflame.2011.08.015	http://dx.doi.org/10.1021/ef3007849	http://dx.doi.org/10.1016/j.combustflame.2012.07.012	http://dx.doi.org/10.1080/00102202.2012.759946	http://dx.doi.org/10.1016/j.compfluid.2013.02.005	http://dx.doi.org/10.1016/j.compfluid.2013.02.011	http://dx.doi.org/10.2478/gsr-2014-0007	https://doi.org/10.1155/2012/587987	http://dx.doi.org/10.1080/13647830.2010.547601	http://dx.doi.org/10.1080/00102202.2010.498798	http://dx.doi.org/10.1016/j.icheatmasstransfer.2009.10.006	http://dx.doi.org/10.1016/j.ijheatmasstransfer.2010.08.005	http://dx.doi.org/10.1007/s12217-008-9096-2	http://dx.doi.org/10.1016/j.proci.2008.06.221	http://dx.doi.org/10.1016/j.optlaseng.2009.05.004	http://dx.doi.org/10.1016/j.optlaseng.2008.08.002	http://dx.doi.org/10.1080/00102200903190851	http://dx.doi.org/10.1080/00102200601057394	http://dx.doi.org/10.1007/978-81-322-2211-8_16	https://ntrs.nasa.gov/citations/20150023456
+STUDY FACTORS
+Study Factor Name
+Study Factor Type
+Study Factor Type Term Accession Number
+Study Factor Type Term Source REF
+STUDY ASSAYS
+Study Assay File Name
+Study Assay Measurement Type
+Study Assay Measurement Type Term Accession Number
+Study Assay Measurement Type Term Source REF
+Study Assay Technology Type
+Study Assay Technology Type Term Accession Number
+Study Assay Technology Type Term Source REF
+Study Assay Technology Platform
+STUDY PROTOCOLS
+Study Protocol Name
+Study Protocol Type
+Study Protocol Type Term Accession Number
+Study Protocol Type Term Source REF
+Study Protocol Description
+Study Protocol URI
+Study Protocol Version
+Study Protocol Parameters Name
+Study Protocol Parameters Name Term Accession Number
+Study Protocol Parameters Name Term Source REF
+Study Protocol Components Name
+Study Protocol Components Type
+Study Protocol Components Type Term Accession Number
+Study Protocol Components Type Term Source REF
+STUDY CONTACTS
+Study Person Last Name	Shaw	Hicks	Williams	Nayagam	Choi	Dryer	Dietrich
+Study Person First Name	Benjamin	Michael	Forman	Vedha	Mun	Frederick	Daniel
+Study Person Mid Initials	D	C	A		Y	L	
+Study Person Email	bdshaw@ucdavis.edu	michael.c.hicks@nasa.gov	faw@ucsd.edu	vedha.nayagam-1@nasa.gov	choimun@umsystem.edu	dryerf@mailbox.sc.edu	daniel.l.dietrich@nasa.goc
+Study Person Phone							
+Study Person Fax							
+Study Person Address							
+Study Person Affiliation	University of California, Davis	NASA GRC	University of California, San Diego	Case Western Reserve University	University of Missouri	University of South Carolina	NASA GRC
+Study Person Roles	Co-Investigator (Co-I)	Co-Investigator (Co-I)	Principal Investigator (PI)	Co-Investigator (Co-I)	Co-Investigator (Co-I)	Co-Investigator (Co-I)	Project Scientist
+Study Person Roles Term Accession Number	Co-Investigator (Co-I)	Co-Investigator (Co-I)	Principal Investigator (PI)	Co-Investigator (Co-I)	Co-Investigator (Co-I)	Co-Investigator (Co-I)	Project Scientist
+Study Person Roles Term Source REF							
+Comment[Study Person REF]							

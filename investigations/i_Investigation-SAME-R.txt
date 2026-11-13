@@ -1,0 +1,125 @@
+ONTOLOGY SOURCE REFERENCE
+Term Source Name	PSI	EFO
+Term Source File	https://psi.nasa.gov/	http://data.bioontology.org/ontologies/EFO
+Term Source Version	1.0	132
+Term Source Description	User defined terms	Experimental Factor Ontology
+INVESTIGATION
+Investigation Identifier	
+Investigation Title	
+Investigation Description	
+Investigation Submission Date	
+Investigation Public Release Date	
+INVESTIGATION PUBLICATIONS
+Investigation PubMed ID
+Investigation Publication DOI
+Investigation Publication Author List
+Investigation Publication Title
+Investigation Publication Status
+Investigation Publication Status Term Accession Number
+Investigation Publication Status Term Source REF
+INVESTIGATION CONTACTS
+Investigation Person Last Name
+Investigation Person First Name
+Investigation Person Mid Initials
+Investigation Person Email
+Investigation Person Phone
+Investigation Person Fax
+Investigation Person Address
+Investigation Person Affiliation
+Investigation Person Roles
+Investigation Person Roles Term Accession Number
+Investigation Person Roles Term Source REF
+STUDY
+Study Identifier	PSI-101
+Study Title	Smoke Aerosol Measurement Experiment-Reflight
+Study Description	
+Study Submission Date	18-Sep-2024
+Study Public Release Date	18-Sep-2024
+Study File Name	s_PSI-101.txt
+Comment[Acknowledgments]	
+Comment[Approach]	"SAME-R utilized the SAME hardware used on-orbit. Based on the experience gained from SAME, SAME-R included the following modifications: 1) a new test material,
+Pyrell®, an intumescent fire-retardant foam by Foamex, was introduced to replace DBP samples, 2) test conditions were broadened including higher heating temperatures and no-flow during sample heating time, and 3) a new instrument, M-pass, developed in-house GRC, was used to replace one of the two Commercial Diagnostic Enclosures that includes a DustTrak and an ionization detector used in SAME. SAME-R flight tests were conducted from July 16, to September 9, 2010, successfully completing 66 test points. After SAME-R flight tests, three major post–flight ground tests were performed to improve data reduction process and to validate the lognormal distribution assumption, the key to the moment method employed by SAME and SAME-R."
+Comment[DOI]	10.60555/2np7-jv14
+Comment[Data Source Accession]	
+Comment[Data Source Link]	
+Comment[Experiment Hardware]	Comparitive Soot Diagnostic Hardware; Refer to final report
+Comment[Experiment Hardware Link]	https://ntrs.nasa.gov/api/citations/19960008413/downloads/19960008413.pdf
+Comment[Flight Platform]	International Space Station (ISS)
+Comment[Funding]	
+Comment[Hypothesis]	"The three hypotheses that motivated the original SAME investigation is also applicable for the reflight SAME-R investigation:
+In a μg environment, with the absence of the strong buoyancy-induced flows, smoke particle growth from a pyrolyzing/smoldering source, as a result of nucleation, condensation, and coagulation, will lead to larger particles compared to those produced in 1g. The formation of the larger particles is favored by the expected higher vapor concentration and smoke residence times near the source due to the reduced velocities and mixing at μg conditions. In particular, it is hypothesized that liquid aerosol smokes produced in microgravity will exhibit substantially larger droplet sizes than under the same conditions in normal gravity (with a corresponding decrease in the particle number density for the same mass of smoke). The change in the size distribution and number density will, in turn, affect the response of the smoke detectors and possibly result in some detectors not producing an alarm when exposed to this smoke."
+Comment[Identifiers]	
+Comment[Investigation Acronym]	SAME-R
+Comment[Investigation End Date]	09-30-2010
+Comment[Investigation Start Date]	07-01-2010
+Comment[Managing NASA Center]	Glenn Research Center (GRC)
+Comment[Mission End]	
+Comment[Mission Link]	
+Comment[Mission Name]	
+Comment[Mission Start]	
+Comment[Objective]	Similar to the original SAME investigation, the primary objective of the SAME-R investigation was to quantify the sizes that the liquid smoke particulate achieves in low gravity and to relate the droplet size distribution to the smoke generation and smoke transport conditions in the experiment. One of the problems encountered during the SAME investigation was that after the thermal precipitators were returned to the ground, it was found that all the TEM grids were severely contaminated with some unidentified foreign particles, making these grids unusable although some of them showed shapes of certain types of smoke particles. Based on that experience the SAME-R investigation employed several modification covering new materials, extended operating conditions, and diagnostic equipments.
+Comment[Project Identifier]	
+Comment[Project Link]	
+Comment[Project Title]	
+Comment[Project Type]	Microgravity Investigation
+Comment[Proposal Title]	
+Comment[Research Area]	Combustion Science
+Comment[Research Impacts]	Along with the results from the original SAME investigation, the results from SAME-R can lead to technology for an advanced fire detector for future spacecraft that will be used for long duration missions. SAME will provide quantitative data on the sensitivity of these detectors to reduced gravity smokes that will allow evaluation of the adequacy of these existing technologies using relevant data. The current Fire Prevention, Detection, and Suppression (FPDS) program plan allows for the re-evaluation of future sensor technology, to allow new technology and capability to be utilized. The results from SAME are needed to provide the reduced gravity baseline data against which future detection technology developments can be evaluated. The smoke detectors developed from the results of SAME can also be useful in other extreme environments on Earth, such as submarines or underwater laboratories. Accurate detection of smoke in these environments can save lives.
+Comment[Space Program]	National Aeronautics and Space Administration (NASA)
+Comment[Study Grant Number]	
+Comment[SubResearch Area]	Spacecraft Fire Safety
+STUDY DESIGN DESCRIPTORS
+Study Design Type	Soot	SAME	Spacecraft Fire Safety	Smoke	Flames	Transmission Electron Microscopy	Teflon	Kapton	Pyrell	Silicon Rubber	Cotton	SAME-2
+Study Design Type Term Accession Number	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/
+Study Design Type Term Source REF	PSI	PSI	PSI	PSI	PSI	PSI	PSI	PSI	PSI	PSI	PSI	PSI
+STUDY PUBLICATIONS
+Study PubMed ID						33654340
+Study Publication DOI	10.2514/6.2013-3433		10.2514/6.2012-3536			10.1016/j.firesaf.2018.04.004
+Study Publication Author List	Meyer Marit E., Urban David L., Ruff Gary A., Mulholland George, Yuan Zeng-guang, Bryg Victoria, Cleary Thomas, Yang Jiann	D Urban, G Ruff, G Mulholland, M Meyer, ZG Yuan, T Cleary, J Yang, P Greenberg, V Bryg	Urban David, Ruff Gary, Greenberg Paul, Fischer David, Meyer Marit, Mulholland George, Yuan Zeng-guang, Bryg Victoria, Cleary Thomas, Yang Jiann	D Urban, G Ruff, M Meyer, T Cleary, J Yang, G Mulholland, ZG Yuan, V Bryg	DL Urban, D Griffin, G Ruff, T Cleary, J Yang, G Mulholland, ZG Yuan	Meyer Marit E., Urban David L., Mulholland George W., Bryg Victoria, Yuan Zeng-Guang, Ruff Gary A., Cleary Thomas, Yang Jiann
+Study Publication Title	Smoke Aerosol Measurement Experiment-2: Comparison of Flight Experiment Results with Ground Test Results	Evaluation of Low-Gravity Smoke Particulate for Spacecraft Fire Detection	Particle Morphology and Size Results from the Smoke Aerosol Measurement Experiment-2	Preliminary Results from the Smoke Aerosol Measurement Experiment - Reflight	Detection of Smoke from Microgravity Fires	Evaluation of spacecraft smoke detector performance in the low-gravity environment
+Study Publication Status	published	published	published	published	published	published
+Study Publication Status Term Accession Number	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796
+Study Publication Status Term Source REF	EFO	EFO	EFO		EFO	EFO
+Comment[Study Publication Link]	http://dx.doi.org/10.2514/6.2013-3433	https://ntrs.nasa.gov/api/citations/20140006579/downloads/20140006579.pdf	http://dx.doi.org/10.2514/6.2012-3536	http://adsabs.harvard.edu/abs/2012ESASP.699E..82U	https://www.jstor.org/stable/44682732	http://dx.doi.org/10.1016/j.firesaf.2018.04.004
+STUDY FACTORS
+Study Factor Name
+Study Factor Type
+Study Factor Type Term Accession Number
+Study Factor Type Term Source REF
+STUDY ASSAYS
+Study Assay File Name
+Study Assay Measurement Type
+Study Assay Measurement Type Term Accession Number
+Study Assay Measurement Type Term Source REF
+Study Assay Technology Type
+Study Assay Technology Type Term Accession Number
+Study Assay Technology Type Term Source REF
+Study Assay Technology Platform
+STUDY PROTOCOLS
+Study Protocol Name
+Study Protocol Type
+Study Protocol Type Term Accession Number
+Study Protocol Type Term Source REF
+Study Protocol Description
+Study Protocol URI
+Study Protocol Version
+Study Protocol Parameters Name
+Study Protocol Parameters Name Term Accession Number
+Study Protocol Parameters Name Term Source REF
+Study Protocol Components Name
+Study Protocol Components Type
+Study Protocol Components Type Term Accession Number
+Study Protocol Components Type Term Source REF
+STUDY CONTACTS
+Study Person Last Name	Yuan	Fortenberry	Urban	Yang	Cleary	Mulholland
+Study Person First Name	Zeng-guang	Claire	David	Jiann	Thomas	George
+Study Person Mid Initials				C		W
+Study Person Email	zgyuan@grc.nasa.gov	claire.fortenberry@nasa.gov	david.urban@nasa.gov	jiann.yang@nist.gov	thomas.cleary@nist.gov	georgewm@umd.edu
+Study Person Phone						
+Study Person Fax						
+Study Person Address						
+Study Person Affiliation	NASA GRC	NASA GRC	NASA GRC	National Institute for Standards and Technology (NIST)	National Institute for Standards and Technology (NIST)	University of Maryland
+Study Person Roles	Co-Investigator (Co-I)	Project Scientist	Principal Investigator (PI)	Co-Investigator (Co-I)	Co-Investigator (Co-I)	Co-Investigator (Co-I)
+Study Person Roles Term Accession Number	Co-Investigator (Co-I)	Project Scientist	Principal Investigator (PI)	Co-Investigator (Co-I)	Co-Investigator (Co-I)	Co-Investigator (Co-I)
+Study Person Roles Term Source REF						
+Comment[Study Person REF]						
