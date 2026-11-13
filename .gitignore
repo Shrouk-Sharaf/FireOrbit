@@ -1,19 +1,46 @@
-# Python
+# ---------- Python ----------
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
-.env
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# ---------- Virtual environments ----------
 venv/
+.venv/
 env/
 
-# Data processed SQLite & DB files
+# ---------- Secrets ----------
+.env
+.env.*
+*.key
+
+# ---------- Vector index (generated, rebuild with build_index.py) ----------
+index/
+embedding/chroma_db/
+chroma_db/
+
+# ---------- DB files ----------
 *.db
 *.sqlite3
 
-# OS / Editor files
+# ---------- Downloaded models / caches ----------
+.cache/
+huggingface/
+models/
+
+# ---------- Logs & temp ----------
+*.log
+tmp/
+temp/
+
+# ---------- OS / Editor files ----------
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
-
