@@ -1,0 +1,387 @@
+[
+ {
+  "id": "q01",
+  "ok": true,
+  "rank": 1,
+  "top": [
+   "experiment-PSI-159-CFIG-Inv-21270_A2-R1::chunk-0001",
+   "experiment-PSI-159-CFIG-Inv-21270_A1-R1::chunk-0001",
+   "experiment-PSI-159-CFIG-Inv-21270_H2-R1::chunk-0001"
+  ]
+ },
+ {
+  "id": "q02",
+  "ok": true,
+  "rank": 1,
+  "top": [
+   "experiment-PSI-159-CFIG-Inv-21209_B2-R1::chunk-0001",
+   "experiment-PSI-159-CFIG-Inv-21209_B1-R1::chunk-0001",
+   "experiment-PSI-159-CFIG-Inv-21209_A3-R1::chunk-0001"
+  ]
+ },
+ {
+  "id": "q03",
+  "ok": true,
+  "rank": 1,
+  "top": [
+   "experiment-PSI-159-CFIG-Inv-21209_A3-R1::chunk-0001",
+   "experiment-PSI-159-CFIG-Inv-21209_B2-R1::chunk-0001",
+   "experiment-PSI-159-CFIG-Inv-21202_K2-R1::chunk-0001"
+  ]
+ },
+ {
+  "id": "q04",
+  "ok": true,
+  "rank": 1,
+  "top": [
+   "experiment-PSI-69-FLEX-30-R1::chunk-0001",
+   "experiment-PSI-69-FLEX-25-R1::chunk-0001",
+   "experiment-PSI-69-FLEX-29-R1::chunk-0001"
+  ]
+ },
+ {
+  "id": "q05",
+  "ok": true,
+  "rank": 1,
+  "top": [
+   "experiment-PSI-159-CFIG-Inv-21270_C1-R1::chunk-0001",
+   "experiment-PSI-159-CFIG-Inv-21209_H1-R1::chunk-0001",
+   "experiment-PSI-159-CFIG-Inv-21216_J1-R1::chunk-0001"
+  ]
+ },
+ {
+  "id": "q06",
+  "ok": true,
+  "rank": 1,
+  "top": [
+   "experiment-PSI-39-CFI-1287-R1::chunk-0001",
+   "experiment-PSI-39-CFI-1285-R1::chunk-0001",
+   "experiment-PSI-39-CFI-1288-R1::chunk-0001"
+  ]
+ },
+ {
+  "id": "q07",
+  "ok": true,
+  "rank": 1,
+  "top": [
+   "experiment-PSI-20-BRE-Feb25-O2_34.0-R1::chunk-0001",
+   "experiment-PSI-20-BRE-Sept3-O2_34.0-R1::chunk-0001",
+   "experiment-PSI-20-BRE-Feb20-O2_34.0-R1::chunk-0001"
+  ]
+ },
+ {
+  "id": "q08",
+  "ok": false,
+  "rank": null,
+  "top": [
+   "107 SPICE/report/Dotson_umd_0117N_10980.pdf::page-62::chunk-0002",
+   "np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf::page-30::chunk-0002",
+   "np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf::page-30::chunk-0004"
+  ]
+ },
+ {
+  "id": "q09",
+  "ok": true,
+  "rank": 1,
+  "top": [
+   "experiment-PSI-69-FLEX-114-R1::chunk-0001",
+   "experiment-PSI-69-FLEX-5-R1::chunk-0001",
+   "experiment-PSI-69-FLEX-83-R1::chunk-0001"
+  ]
+ },
+ {
+  "id": "q10",
+  "ok": true,
+  "rank": 1,
+  "top": [
+   "experiment-PSI-159-CFIG-Inv-21222_A5-R1::chunk-0001",
+   "experiment-PSI-159-CFIG-Inv-21222_A4-R1::chunk-0001",
+   "experiment-PSI-159-CFIG-Inv-21222_A3-R1::chunk-0001"
+  ]
+ },
+ {
+  "id": "q11",
+  "ok": true,
+  "rank": 1,
+  "top": [
+   "experiment-PSI-101-SAMER-Kapton-T61a-R1::chunk-0001",
+   "experiment-PSI-101-SAMER-Kapton-T62a-R1::chunk-0001",
+   "experiment-PSI-101-SAMER-Kapton-T73a-R1::chunk-0001"
+  ]
+ },
+ {
+  "id": "q12",
+  "ok": true,
+  "rank": 1,
+  "top": [
+   "experiment-PSI-98-S1-R1::chunk-0001",
+   "experiment-PSI-98-S2-R1::chunk-0001",
+   "experiment-PSI-26-BASS-T45.0-S8.0-R1::chunk-0001"
+  ]
+ },
+ {
+  "id": "q13",
+  "ok": true,
+  "rank": 1,
+  "top": [
+   "experiment-PSI-101-SAMER-Teflon-T57-R1::chunk-0001",
+   "experiment-PSI-101-SAMER-Kapton-T90-R1::chunk-0001",
+   "experiment-PSI-101-SAMER-Lampwick-T57-R1::chunk-0001"
+  ]
+ },
+ {
+  "id": "q14",
+  "ok": false,
+  "rank": null,
+  "top": [
+   "investigation-PSI-100::chunk-0003",
+   "investigation-PSI-99::chunk-0003",
+   "investigation-PSI-100::chunk-0005"
+  ]
+ },
+ {
+  "id": "q15",
+  "ok": true,
+  "rank": 1,
+  "top": [
+   "experiment-PSI-68-FLEX2-Heptane__pure_-R1::chunk-0001",
+   "experiment-PSI-69-FLEX-32-R1::chunk-0001",
+   "experiment-PSI-69-FLEX-9-R1::chunk-0001"
+  ]
+ },
+ {
+  "id": "q16",
+  "ok": true,
+  "rank": 1,
+  "top": [
+   "experiment-PSI-22-EFIELD-Day18319.0-Row28-R1::chunk-0001",
+   "experiment-PSI-107-SPICE-GMT48-14_43_58-R1::chunk-0001",
+   "experiment-PSI-22-EFIELD-Day18274.0-Row15-R1::chunk-0001"
+  ]
+ },
+ {
+  "id": "q17",
+  "ok": true,
+  "rank": 1,
+  "top": [
+   "investigation-PSI-107::chunk-0001",
+   "investigation-PSI-102::chunk-0001",
+   "investigation-PSI-106::chunk-0001"
+  ]
+ },
+ {
+  "id": "q18",
+  "ok": true,
+  "rank": 2,
+  "top": [
+   "investigation-PSI-101::chunk-0001",
+   "investigation-PSI-102::chunk-0001",
+   "investigation-PSI-47::chunk-0001"
+  ]
+ },
+ {
+  "id": "q19",
+  "ok": true,
+  "rank": 3,
+  "top": [
+   "101 SAME-R/SAMER_Final 0602 2014.pdf::page-2::chunk-0002",
+   "101 SAME-R/SAMER_Final 0602 2014.pdf::page-2::chunk-0001",
+   "investigation-PSI-101::chunk-0001"
+  ]
+ },
+ {
+  "id": "q20",
+  "ok": true,
+  "rank": 1,
+  "top": [
+   "investigation-PSI-25::chunk-0001",
+   "investigation-PSI-26::chunk-0001",
+   "investigation-PSI-25::chunk-0005"
+  ]
+ },
+ {
+  "id": "q21",
+  "ok": true,
+  "rank": 1,
+  "top": [
+   "investigation-PSI-26::chunk-0001",
+   "investigation-PSI-25::chunk-0001",
+   "investigation-PSI-20::chunk-0002"
+  ]
+ },
+ {
+  "id": "q22",
+  "ok": false,
+  "rank": null,
+  "top": [
+   "20 ACME BRE/BRE_final_report_20220201.pdf::page-163::chunk-0001",
+   "20 ACME BRE/BRE_final_report_20220201.pdf::page-165::chunk-0002",
+   "20 ACME BRE/BRE_final_report_20220201.pdf::page-164::chunk-0003"
+  ]
+ },
+ {
+  "id": "q23",
+  "ok": true,
+  "rank": 1,
+  "top": [
+   "investigation-PSI-159::chunk-0001",
+   "investigation-PSI-106::chunk-0001",
+   "investigation-PSI-39::chunk-0001"
+  ]
+ },
+ {
+  "id": "q24",
+  "ok": true,
+  "rank": 2,
+  "top": [
+   "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-78::chunk-0001",
+   "investigation-PSI-22::chunk-0001",
+   "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-93::chunk-0005"
+  ]
+ },
+ {
+  "id": "q25",
+  "ok": true,
+  "rank": 2,
+  "top": [
+   "np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf::page-14::chunk-0003",
+   "investigation-PSI-106::chunk-0001",
+   "np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf::page-14::chunk-0001"
+  ]
+ },
+ {
+  "id": "q26",
+  "ok": true,
+  "rank": 1,
+  "top": [
+   "investigation-PSI-100::chunk-0001",
+   "investigation-PSI-100::chunk-0003",
+   "investigation-PSI-99::chunk-0001"
+  ]
+ },
+ {
+  "id": "q27",
+  "ok": true,
+  "rank": 1,
+  "top": [
+   "107 SPICE/report/Dotson_umd_0117N_10980.pdf::page-60::chunk-0001",
+   "107 SPICE/report/SPICE Final Report 12_2_2012.pdf::page-23::chunk-0003",
+   "107 SPICE/report/Dotson_umd_0117N_10980.pdf::page-61::chunk-0001"
+  ]
+ },
+ {
+  "id": "q28",
+  "ok": true,
+  "rank": 5,
+  "top": [
+   "102 SAME/SAME Final Science report  03 18 10 with papers attached.pdf::page-36::chunk-0001",
+   "102 SAME/SAME Final Science report  03 18 10 with papers attached.pdf::page-43::chunk-0003",
+   "investigation-PSI-102::chunk-0002"
+  ]
+ },
+ {
+  "id": "q29",
+  "ok": false,
+  "rank": null,
+  "top": [
+   "experiment-PSI-101-SAMER-Lampwick-T57-R1::chunk-0001",
+   "101 SAME-R/SAMER_Final 0602 2014.pdf::page-2::chunk-0004",
+   "experiment-PSI-101-SAMER-Silicone-T65-R1::chunk-0001"
+  ]
+ },
+ {
+  "id": "q30",
+  "ok": true,
+  "rank": 5,
+  "top": [
+   "20 ACME BRE/BRE_final_report_20220201.pdf::page-76::chunk-0001",
+   "20 ACME BRE/BRE_final_report_20220201.pdf::page-92::chunk-0001",
+   "20 ACME BRE/BRE_final_report_20220201.pdf::page-40::chunk-0003"
+  ]
+ },
+ {
+  "id": "q31",
+  "ok": true,
+  "rank": 1,
+  "top": [
+   "25 BASS-2/BASS-II Summary Report.pdf::page-39::chunk-0003",
+   "25 BASS-2/BASS-II Summary Report.pdf::page-39::chunk-0001",
+   "25 BASS-2/BASS-II Summary Report.pdf::page-39::chunk-0002"
+  ]
+ },
+ {
+  "id": "q32",
+  "ok": true,
+  "rank": 1,
+  "top": [
+   "25 BASS-2/BASS-II Summary Report.pdf::page-109::chunk-0002",
+   "25 BASS-2/BASS-II Summary Report.pdf::page-101::chunk-0002",
+   "25 BASS-2/BASS-II Summary Report.pdf::page-101::chunk-0003"
+  ]
+ },
+ {
+  "id": "q33",
+  "ok": false,
+  "rank": null,
+  "top": [
+   "np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf::page-33::chunk-0002",
+   "20 ACME BRE/BRE_final_report_20220201.pdf::page-4::chunk-0004",
+   "20 ACME BRE/BRE_final_report_20220201.pdf::page-18::chunk-0002"
+  ]
+ },
+ {
+  "id": "q34",
+  "ok": true,
+  "rank": 1,
+  "top": [
+   "22 ACME E-FIELD Flames/Reports/E-FIELD Flames 30-day report Inc 57-58 20190601.pdf::page-2::chunk-0001",
+   "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-44::chunk-0001",
+   "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-39::chunk-0004"
+  ]
+ },
+ {
+  "id": "q35",
+  "ok": false,
+  "rank": null,
+  "top": [
+   "159 ACME-CFI-G/PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf::page-61::chunk-0001",
+   "107 SPICE/report/Dotson_umd_0117N_10980.pdf::page-91::chunk-0001",
+   "107 SPICE/report/Dotson_umd_0117N_10980.pdf::page-69::chunk-0001"
+  ]
+ },
+ {
+  "id": "q36",
+  "ok": true,
+  "rank": 1,
+  "top": [
+   "np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf::page-31::chunk-0002",
+   "25 BASS-2/BASS-II Summary Report.pdf::page-138::chunk-0001",
+   "25 BASS-2/BASS-II Summary Report.pdf::page-36::chunk-0003"
+  ]
+ },
+ {
+  "id": "q37",
+  "ok": true,
+  "top_score": null
+ },
+ {
+  "id": "q38",
+  "ok": false,
+  "top_score": 0.7054938077926636
+ },
+ {
+  "id": "q39",
+  "ok": false,
+  "top_score": 0.6292850375175476
+ },
+ {
+  "id": "q40",
+  "ok": false,
+  "top_score": 0.5897126793861389
+ },
+ {
+  "id": "q41",
+  "ok": false,
+  "top_score": 0.5810665488243103
+ }
+]
