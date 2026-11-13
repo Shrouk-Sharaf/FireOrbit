@@ -63,6 +63,9 @@ STUDY_LEVEL_CONDITIONS = {
     },
 }
 
+O2_FINAL_VALID_MIN = 5.0
+O2_FINAL_VALID_MAX = 30.0
+
 MOON_BASE_TARGET = {
     "o2_pct": 30.0,
     "pressure_atm": 0.694,  # 10.2 psia
@@ -359,6 +362,17 @@ def finalize_experiment_record(rec):
         if "pressure_atm" not in invalid:
             invalid.append("pressure_atm")
 
+    # BASS-II (PSI-25): final O2 outside a physically plausible band is a data-entry error.
+    # (valid values in the CSV span 13.5-22.2 %; the bad ones are 0.6, 0.9, 1.6, 39.1, 40.4)
+    o2_final = rec.get("o2_final_pct")
+    if o2_final is not None and not (O2_FINAL_VALID_MIN <= o2_final <= O2_FINAL_VALID_MAX):
+        rec["o2_final_pct"] = None
+        rec["o2_final_source_note"] = (
+            f"reported final O2 {o2_final} % is implausible; nulled and flagged invalid"
+        )
+        if "o2_final_pct" not in invalid:
+            invalid.append("o2_final_pct")
+
     rec["pressure_values"] = _positive_values(rec.get("pressure_values"))
     rec["flow_values"] = [
         v for v in (rec.get("flow_values") or [])
@@ -377,6 +391,16 @@ def finalize_experiment_record(rec):
     rec["include_in_atmosphere_solver"] = exclude_reason is None
     if exclude_reason:
         rec["solver_exclude_reason"] = exclude_reason
+    elif any(f in invalid for f in ("flow_velocity_cm_s", "pressure_atm")):
+        # row whose condition value was invalid must not feed the Moon-base score
+        rec["include_in_atmosphere_solver"] = False
+        rec["solver_exclude_reason"] = "invalid condition value: " + ", ".join(invalid)
+
+    # PSI-159 inverse flames: oxidizer-stream O2 (e.g. 85 %), not cabin air. Keep but flag.
+    if psi_id == "PSI-159" and (rec.get("o2_concentration_pct") or 0) >= 80:
+        rec["needs_verification"] = True
+        rec["include_in_atmosphere_solver"] = False
+        rec["solver_exclude_reason"] = "oxidizer-stream O2 >= 80 %: verify against report before use"
 
     rec["assumed_fields"] = assumed
     rec["invalid_fields"] = invalid

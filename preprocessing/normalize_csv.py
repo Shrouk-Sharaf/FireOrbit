@@ -504,7 +504,14 @@ def normalize_csv_files():
     # 11. SPICE
     f = base_dir / "107 SPICE" / "exp" / "PSI-107_Experimental table_Spice.csv"
     if f.exists():
-        df = read_csv_safe(f).drop_duplicates().reset_index(drop=True)
+        df = read_csv_safe(f)
+        # GMT times are written both as 14:37:08 and 14.37.08; unify before dropping duplicates
+        for col in df.columns:
+            if "GMT" in col:
+                df[col] = df[col].map(
+                    lambda v: re.sub(r"[.]", ":", v) if isinstance(v, str) else v
+                )
+        df = df.drop_duplicates().reset_index(drop=True)
         for idx, r in df.iterrows():
             fuel = clean_val(getv(r, "Fuel"))
             if not fuel:
