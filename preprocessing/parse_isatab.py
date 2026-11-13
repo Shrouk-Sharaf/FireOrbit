@@ -2,6 +2,9 @@ import os
 import re
 import json
 from pathlib import Path
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+BASE_DIR = PROJECT_ROOT / "DATA" / "nasa final data"
+OUTPUT_DIR = PROJECT_ROOT / "data_processed"
 
 def parse_isatab_file(filepath):
     """
@@ -67,8 +70,8 @@ def parse_isatab_file(filepath):
     return data
 
 def main():
-    base_dir = Path(r"d:\FireOrbit\FireOrbit\DATA\nasa final data")
-    out_file = Path(r"d:\FireOrbit\FireOrbit\data_processed\investigations_metadata.json")
+    base_dir = BASE_DIR
+    out_file = OUTPUT_DIR / "investigations_metadata.json"
     
     results = {}
     

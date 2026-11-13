@@ -3,6 +3,9 @@ import re
 import json
 from pathlib import Path
 import fitz # PyMuPDF
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+BASE_DIR = PROJECT_ROOT / "DATA" / "nasa final data"
+OUTPUT_DIR = PROJECT_ROOT / "data_processed"
 
 def extract_pdf_data(pdf_path):
     doc = fitz.open(pdf_path)
@@ -37,8 +40,8 @@ def extract_pdf_data(pdf_path):
     }
 
 def main():
-    base_dir = Path(r"d:\FireOrbit\FireOrbit\DATA\nasa final data")
-    out_file = Path(r"d:\FireOrbit\FireOrbit\data_processed\extracted_pdf_reports.json")
+    base_dir = BASE_DIR
+    out_file = OUTPUT_DIR / "extracted_pdf_reports.json"
     
     pdf_results = {}
     
