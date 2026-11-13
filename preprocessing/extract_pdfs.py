@@ -9,14 +9,110 @@ HEADING_RE = re.compile(
     r"(?im)^\s*(abstract|introduction|objective[s]?|results?|conclusions?|summary|recommendations?)\s*:?\s*$"
 )
 
+AXIS_KEYWORDS = [
+    "dp, nm", "reduced dn/dlndp", "reduced dv/dlndp", "time, s", "time (s)",
+    "temperature, c", "temperature (c)", "temperature, k", "wavelength, nm",
+    "intensity, a.u.", "concentration, ppm", "distance, mm", "height, mm"
+]
+
+
+def table_to_markdown(matrix):
+    """
+    Converts a 2D list extracted by PyMuPDF into a clean GitHub-flavored Markdown table.
+    """
+    if not matrix or len(matrix) < 1:
+        return ""
+    cleaned = []
+    for row in matrix:
+        cleaned.append([str(c or "").replace("\n", " ").strip() for c in row])
+        
+    headers = cleaned[0]
+    headers = [h if h else f"Col_{i+1}" for i, h in enumerate(headers)]
+    
+    lines = [
+        "| " + " | ".join(headers) + " |",
+        "| " + " | ".join(["---"] * len(headers)) + " |"
+    ]
+    for row in cleaned[1:]:
+        while len(row) < len(headers):
+            row.append("")
+        lines.append("| " + " | ".join(row[:len(headers)]) + " |")
+    return "\n".join(lines)
+
+
+def is_graph_axis_noise(text):
+    """
+    Identifies fragmented numeric blocks and axis label artifacts from plots.
+    """
+    lines = [l.strip() for l in text.split("\n") if l.strip()]
+    if not lines:
+        return True
+    
+    # Standalone single page number or tiny digits
+    if len(lines) == 1 and len(lines[0]) <= 3 and lines[0].isdigit():
+        return True
+
+    numeric_count = sum(1 for l in lines if l.replace(".", "").replace("-", "").isdigit())
+    axis_key_count = sum(1 for l in lines if any(k in l.lower() for k in AXIS_KEYWORDS))
+    
+    total_noise_lines = numeric_count + axis_key_count
+    if len(lines) > 0 and (total_noise_lines / len(lines)) >= 0.7:
+        return True
+    return False
+
+
+def clean_page_content(page):
+    """
+    Extracts structured tables and prose blocks from a PDF page,
+    eliminating table cell duplication and chart axis noise.
+    """
+    # 1. Detect and convert tables into Markdown
+    tabs = page.find_tables()
+    tab_rects = [fitz.Rect(t.bbox) for t in tabs.tables]
+    md_tables = []
+    
+    for t in tabs.tables:
+        matrix = t.extract()
+        md_tab = table_to_markdown(matrix)
+        if md_tab:
+            md_tables.append(md_tab)
+            
+    # 2. Extract prose blocks excluding table bboxes
+    blocks = page.get_text("blocks")
+    prose = []
+    
+    for b in blocks:
+        r = fitz.Rect(b[:4])
+        # Skip if block is inside a recognized table region
+        if any(r.intersects(tr) for tr in tab_rects):
+            continue
+            
+        txt = b[4].strip()
+        if not txt:
+            continue
+            
+        # Filter out graph axis and disconnected numeric noise
+        if is_graph_axis_noise(txt):
+            continue
+            
+        # Reconnect words split by hyphenation at line breaks
+        cleaned_block = re.sub(r"(\w+)-\n(\w+)", r"\1\2", txt)
+        prose.append(cleaned_block)
+        
+    combined_parts = prose + md_tables
+    return "\n\n".join(combined_parts).strip()
+
 
 def extract_pdf_data(pdf_path):
     doc = fitz.open(pdf_path)
     pages = []
+    
     for page_num in range(len(doc)):
-        txt = doc[page_num].get_text("text")
-        if txt and txt.strip():
-            pages.append({"page": page_num + 1, "text": txt.strip()})
+        page = doc[page_num]
+        cleaned_text = clean_page_content(page)
+        if cleaned_text:
+            pages.append({"page": page_num + 1, "text": cleaned_text})
+            
     full_text = "\n\n".join(p["text"] for p in pages)
     sections = {}
     matches = list(HEADING_RE.finditer(full_text))
@@ -27,6 +123,7 @@ def extract_pdf_data(pdf_path):
         body = full_text[start:end].strip()
         if body and heading not in sections:
             sections[heading] = body[:3000]
+            
     return {
         "filename": Path(pdf_path).name,
         "total_pages": len(doc),
@@ -74,7 +171,7 @@ def main():
         if folder and folder.lower().endswith(".pdf"):
             folder = None
             psi_id = None
-        print(f"Processing PDF: {rel}")
+        print(f"Processing PDF (table & graph aware): {rel}")
         try:
             data = extract_pdf_data(pdf_path)
             data.update({
@@ -127,7 +224,7 @@ def main():
 
     out_file = OUTPUT_DIR / "extracted_pdf_reports.json"
     dump_json(out_file, pdf_results)
-    print(f"\nExtracted {len(pdf_results)} documents into: {out_file}")
+    print(f"\nExtracted {len(pdf_results)} documents with table & graph awareness into: {out_file}")
 
 
 if __name__ == "__main__":
