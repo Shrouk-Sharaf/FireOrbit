@@ -1,116 +1,136 @@
-import os
+import csv
 import re
-import json
 from pathlib import Path
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-BASE_DIR = PROJECT_ROOT / "DATA" / "nasa final data"
-OUTPUT_DIR = PROJECT_ROOT / "data_processed"
+
+from utils import (
+    BASE_DIR,
+    OUTPUT_DIR,
+    dump_json,
+    ensure_output_dir,
+    extract_sensors,
+    strip_wrapping_quotes,
+)
+
+PUB_PREFIXES = ("Study Publication", "Investigation Publication")
+
+
+def _read_isatab_rows(filepath):
+    with open(filepath, "r", encoding="utf-8", errors="replace", newline="") as f:
+        return list(csv.reader(f, delimiter="\t", quotechar='"'))
+
 
 def parse_isatab_file(filepath):
-    """
-    Parses an ISA-Tab i_Investigation*.txt file into structured key-values.
-    Handles multi-column tab-separated entries such as study descriptors,
-    publications, and comments.
-    """
     data = {
         "raw_fields": {},
         "publications": [],
-        "design_descriptors": []
+        "design_descriptors": [],
+        "contacts": [],
     }
-    
-    with open(filepath, "r", encoding="utf-8", errors="replace") as f:
-        lines = f.readlines()
-        
     pub_keys = {}
-    
-    for line in lines:
-        line_clean = line.strip("\r\n")
-        if not line_clean:
+    contact_keys = {}
+
+    for parts in _read_isatab_rows(filepath):
+        if not parts:
             continue
-        parts = [p.strip() for p in line_clean.split("\t")]
-        key = parts[0]
-        vals = [p for p in parts[1:] if p]
-        
-        # Publications handling
-        if key.startswith("Study Publication") or key.startswith("Investigation Publication"):
+        key = (parts[0] or "").strip()
+        if not key:
+            continue
+        vals = [strip_wrapping_quotes(p) if p is not None else "" for p in parts[1:]]
+
+        if key.startswith(PUB_PREFIXES) or key == "Comment[Study Publication Link]":
             pub_keys[key] = vals
             continue
-            
-        if key == "Study Design Type":
-            data["design_descriptors"].extend(vals)
+        if key.startswith("Study Person") or key.startswith("Investigation Person"):
+            contact_keys[key] = vals
             continue
-            
-        # Comments & standard fields
-        # E.g. Comment[Approach], Comment[Objective], Study Title, etc.
+        if key == "Study Design Type":
+            data["design_descriptors"].extend([v for v in vals if v])
+            continue
+
         m = re.match(r"Comment\[(.*?)\]", key)
         if m:
             clean_key = m.group(1).lower().replace(" ", "_")
-            data["raw_fields"][clean_key] = " ".join(vals) if vals else ""
         else:
             clean_key = key.lower().replace(" ", "_")
-            data["raw_fields"][clean_key] = " ".join(vals) if vals else ""
+        data["raw_fields"][clean_key] = " ".join(v for v in vals if v)
 
-    # Align publication columns if found
-    pub_titles = pub_keys.get("Study Publication Title", pub_keys.get("Investigation Publication Title", []))
-    pub_dois = pub_keys.get("Study Publication DOI", pub_keys.get("Investigation Publication DOI", []))
-    pub_authors = pub_keys.get("Study Publication Author List", pub_keys.get("Investigation Publication Author List", []))
-    pub_links = pub_keys.get("Comment[Study Publication Link]", [])
+    titles = pub_keys.get("Study Publication Title", pub_keys.get("Investigation Publication Title", []))
+    dois = pub_keys.get("Study Publication DOI", pub_keys.get("Investigation Publication DOI", []))
+    authors = pub_keys.get("Study Publication Author List", pub_keys.get("Investigation Publication Author List", []))
+    links = pub_keys.get("Comment[Study Publication Link]", [])
+    max_pubs = max(len(titles), len(dois), len(authors), len(links), 0)
 
-    max_pubs = max(len(pub_titles), len(pub_dois), len(pub_authors), 0)
+    def at(seq, i):
+        return seq[i] if i < len(seq) else ""
+
     for i in range(max_pubs):
         pub = {
-            "title": pub_titles[i] if i < len(pub_titles) else "",
-            "doi": pub_dois[i] if i < len(pub_dois) else "",
-            "authors": pub_authors[i] if i < len(pub_authors) else "",
-            "link": pub_links[i] if i < len(pub_links) else ""
+            "title": at(titles, i),
+            "doi": at(dois, i),
+            "authors": at(authors, i),
+            "link": at(links, i),
         }
         if pub["title"] or pub["doi"]:
             data["publications"].append(pub)
-            
+
+    last_names = contact_keys.get("Study Person Last Name", contact_keys.get("Investigation Person Last Name", []))
+    first_names = contact_keys.get("Study Person First Name", contact_keys.get("Investigation Person First Name", []))
+    affiliations = contact_keys.get("Study Person Affiliation", contact_keys.get("Investigation Person Affiliation", []))
+    roles = contact_keys.get("Study Person Roles", contact_keys.get("Investigation Person Roles", []))
+    max_people = max(len(last_names), len(first_names), 0)
+    for i in range(max_people):
+        last = at(last_names, i)
+        first = at(first_names, i)
+        if last or first:
+            data["contacts"].append({
+                "name": " ".join(p for p in [first, last] if p).strip(),
+                "affiliation": at(affiliations, i),
+                "role": at(roles, i),
+            })
+
     return data
 
+
+def classify_pillar(acronym, sub_area, descriptors):
+    acr = (acronym or "").lower()
+    desc = " ".join(descriptors).lower()
+    sub = (sub_area or "").lower()
+    if any(w in acr for w in ["bass", "saffire", "bre"]):
+        return "Prevention (Flammability)"
+    if "cfi-g" in acr or "cfig" in acr.replace("-", "").replace(" ", ""):
+        return "Prevention (Flammability)"
+    if any(w in acr for w in ["same", "daft"]):
+        return "Detection (Smoke/Aerosol)"
+    if "flex" in acr or re.search(r"\bcfi\b", acr):
+        return "Suppression (Extinction)"
+    if "fire safety" in sub or "fire safety" in desc:
+        return "Prevention (Flammability)"
+    return "Fundamental Combustion"
+
+
 def main():
-    base_dir = BASE_DIR
-    out_file = OUTPUT_DIR / "investigations_metadata.json"
-    
+    ensure_output_dir()
     results = {}
-    
-    # Scan subdirectories
+    base_dir = BASE_DIR
+
     for item in sorted(base_dir.iterdir()):
         if not item.is_dir():
             continue
-        
-        # Look for i_Investigation*.txt
         inv_files = list(item.glob("i_Investigation*.txt"))
         if not inv_files:
             continue
-            
-        inv_path = inv_files[0]
-        parsed = parse_isatab_file(inv_path)
-        
+        parsed = parse_isatab_file(inv_files[0])
         raw = parsed["raw_fields"]
         folder_name = item.name
-        
-        # Extract standardized identifier and acronym
         study_id = raw.get("study_identifier", "")
         acronym = raw.get("investigation_acronym", folder_name)
         title = raw.get("study_title", raw.get("investigation_title", folder_name))
-        
-        # Map pillar
         sub_area = raw.get("subresearch_area", "")
         research_area = raw.get("research_area", "")
-        descriptors = " ".join(parsed["design_descriptors"]).lower()
-        
-        # Classify Fire Safety Pillar
-        pillar = "Fundamental Combustion"
-        if any(w in acronym.lower() for w in ["bass", "saffire", "bre", "cfi-g"]):
-            pillar = "Prevention (Flammability)"
-        elif any(w in acronym.lower() for w in ["same", "daft"]):
-            pillar = "Detection (Smoke/Aerosol)"
-        elif any(w in acronym.lower() for w in ["flex", "cfi"]):
-            pillar = "Suppression (Extinction)"
-        elif "fire safety" in sub_area.lower() or "fire safety" in descriptors:
-            pillar = "Prevention (Flammability)"
+        pillar = classify_pillar(acronym, sub_area, parsed["design_descriptors"])
+        objective = raw.get("objective", "")
+        approach = raw.get("approach", "")
+        impacts = raw.get("research_impacts", "")
 
         inv_record = {
             "folder": folder_name,
@@ -118,29 +138,31 @@ def main():
             "acronym": acronym,
             "title": title,
             "pillar": pillar,
+            "subresearch_area": sub_area,
+            "research_area": research_area,
             "hardware": raw.get("experiment_hardware", ""),
             "flight_platform": raw.get("flight_platform", "ISS"),
             "managing_center": raw.get("managing_nasa_center", "GRC"),
             "start_date": raw.get("investigation_start_date", ""),
             "end_date": raw.get("investigation_end_date", ""),
             "doi": raw.get("doi", ""),
-            "objective": raw.get("objective", ""),
+            "objective": objective,
             "hypothesis": raw.get("hypothesis", ""),
-            "approach": raw.get("approach", ""),
-            "research_impacts": raw.get("research_impacts", ""),
-            "descriptors": list(set(parsed["design_descriptors"])),
-            "publications": parsed["publications"]
+            "approach": approach,
+            "research_impacts": impacts,
+            "descriptors": sorted(set(parsed["design_descriptors"])),
+            "publications": parsed["publications"],
+            "contacts": parsed["contacts"],
+            "sensors": extract_sensors(objective, approach, impacts),
         }
-        
         key = study_id if study_id else folder_name
         results[key] = inv_record
         print(f"Parsed {folder_name} -> {inv_record['acronym']} ({inv_record['pillar']})")
 
-    with open(out_file, "w", encoding="utf-8") as f:
-        json.dump(results, f, indent=2, ensure_ascii=False)
-        
+    out_file = OUTPUT_DIR / "investigations_metadata.json"
+    dump_json(out_file, results)
     print(f"\nSaved metadata for {len(results)} investigations to: {out_file}")
+
 
 if __name__ == "__main__":
     main()
-
