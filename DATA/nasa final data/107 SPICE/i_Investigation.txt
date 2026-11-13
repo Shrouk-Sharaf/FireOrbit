@@ -1,0 +1,133 @@
+ONTOLOGY SOURCE REFERENCE
+Term Source Name	EFO	PSI
+Term Source File	http://data.bioontology.org/ontologies/EFO	https://psi.nasa.gov/
+Term Source Version	132	1.0
+Term Source Description	Experimental Factor Ontology	User defined terms
+INVESTIGATION
+Investigation Identifier	
+Investigation Title	
+Investigation Description	
+Investigation Submission Date	
+Investigation Public Release Date	
+INVESTIGATION PUBLICATIONS
+Investigation PubMed ID
+Investigation Publication DOI
+Investigation Publication Author List
+Investigation Publication Title
+Investigation Publication Status
+Investigation Publication Status Term Accession Number
+Investigation Publication Status Term Source REF
+INVESTIGATION CONTACTS
+Investigation Person Last Name
+Investigation Person First Name
+Investigation Person Mid Initials
+Investigation Person Email
+Investigation Person Phone
+Investigation Person Fax
+Investigation Person Address
+Investigation Person Affiliation
+Investigation Person Roles
+Investigation Person Roles Term Accession Number
+Investigation Person Roles Term Source REF
+STUDY
+Study Identifier	PSI-107
+Study Title	Smoke Point In Co-flow Experiment
+Study Description	
+Study Submission Date	18-Sep-2024
+Study Public Release Date	18-Sep-2024
+Study File Name	s_PSI-107.txt
+Comment[Acknowledgments]	
+Comment[Approach]	The experimental setup in the microgravity science glovebox consisted of an apparatus with a flow duct with integrated nozzles, cameras, and fuel delivery systems. Fuels tested included methane, ethylene, propane, propylene, and propylene mixtures. Each flame was ignited in a controlled co-flow air environment, with burner diameters of 0.41 mm, 0.76 mm, and 1.6 mm and co-flow velocities ranging from 5.4 cm/s to 65 cm/s. Fuel flow rates were adjusted to identify the smoke point, marked by the flame's transition to emitting soot. Data such as flame lengths were recorded using still and video cameras. Measurements included flame height, radiative heat losses, and co-flow air velocity distributions. In total 526 flames were studied.
+Comment[DOI]	10.60555/9kbh-e962
+Comment[Data Source Accession]	
+Comment[Data Source Link]	
+Comment[Experiment Hardware]	Microgravity Science Glovebox (MSG)
+Comment[Experiment Hardware Link]	https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Columbus/Microgravity_Science_Glovebox
+Comment[Flight Platform]	International Space Station (ISS)
+Comment[Funding]	
+Comment[Hypothesis]	The research hypothesizes that by minimizing gravity-driven transport phenomena scientists can study the laminar smoke-point properties of non-buoyant jet diffusion flames. Flame properties are expected to differ significantly from those observed under normal gravity.
+Comment[Identifiers]	
+Comment[Investigation Acronym]	SPICE
+Comment[Investigation End Date]	
+Comment[Investigation Start Date]	
+Comment[Managing NASA Center]	Glenn Research Center (GRC)
+Comment[Mission End]	
+Comment[Mission Link]	
+Comment[Mission Name]	
+Comment[Mission Start]	
+Comment[Objective]	"The objective of SPICE is to better understand the complex process of combustion by observing flames in a microgravity environment aboard the International Space Station (ISS) and analogous ground experiments.
+
+Specific objectives were:
+(1) Identify the laminar smoke-point properties of non-buoyant jet diffusion flames under various co-flow conditions in microgravity.
+(2) Determine the effects of burner diameter and co-flow velocity on the luminous flame lengths and smoke points.
+(3) Quantify the sooting propensity of different fuels, such as ethylene, propane, and propylene mixtures.
+(4) Validate the correlation between luminous flame shape and residence time under microgravity conditions.
+(5) Investigate the impact of air and fuel flow rate variations on smoke point phenomena in space."
+Comment[Project Identifier]	
+Comment[Project Link]	
+Comment[Project Title]	
+Comment[Project Type]	Microgravity Investigation
+Comment[Proposal Title]	
+Comment[Research Area]	Combustion Science
+Comment[Research Impacts]	"(1) Will improve our understanding of soot formation mechanisms and help design safer spacecraft environments.
+(2) Will contribute to refining our computational models for predicting flame behaviors under non-buoyant conditions.
+(3) Will enhance our knowledge of soot generation
+(4) Could possibly provide insights to better fuel formulations and combustion processes."
+Comment[Space Program]	National Aeronautics and Space Administration (NASA)
+Comment[Study Grant Number]	
+Comment[SubResearch Area]	Fire Safety
+STUDY DESIGN DESCRIPTORS
+Study Design Type	Soot	Laminar diffusion flames	Emisssions	butane-lighter flame
+Study Design Type Term Accession Number	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/
+Study Design Type Term Source REF	PSI	PSI	PSI	PSI
+STUDY PUBLICATIONS
+Study PubMed ID									
+Study Publication DOI	10.2514/6.2010-1105	10.1007/978-1-4020-8682-3_22		10.2514/6.2006-941	10.1080/00102202.2022.2041621	10.1016/j.combustflame.2004.12.009	10.1016/S0010-2180(98)00100-X		10.1016/j.firesaf.2011.08.002
+Study Publication Author List	Dotson Keenan, Sunderland Peter, Yuan Zeng-Guang, Urban David	Sunderland Peter B., Urban David L., Nayagam Vedha	RA Spivey, LB Jeter, C Vonk	Spivey Reggie, Luz Paul	Dobbins Richard R., Tinjero Jesse, Squeo Joseph, Zhao Xinyu, Hall Robert J., Colket Meredith B., Long Marshall B., Smooke Mitchell D.	Aalburg C., Diez F.J., Faeth G.M., Sunderland P.B., Urban D.L., Yuan Z.-G.	LIN K, FAETH G, SUNDERLAND P, URBAN D, YUAN Z	KT Dotson	Dotson K.T., Sunderland P.B., Yuan Z.-G., Urban D.L.
+Study Publication Title	Laminar Smoke Points in Coflow Measured Aboard the International Space Station	Scaling of Gas-Jet Flame Lengths in Elevated Gravity	The Microgravity Science Glovebox (MSG), a Resource for Gravity-Dependent Phenomena Research on the International Space Station (ISS)	The Microgravity Science Glovebox as a Platform for Exploration Research on the International Space Station	A Combined Experimental and Computational Study of Soot Formation in Normal and Microgravity Conditions	Shapes of nonbuoyant round hydrocarbon-fueled laminar-jet diffusion flames in still air	Shapes of nonbuoyant round luminous hydrocarbon/air laminar jet diffusion flames	Smoke Points of Microgravity and Normal Gravity Coflow Diffusion	Laminar smoke points of coflowing flames in microgravity
+Study Publication Status	published	published	published	published	published	published	published	published	published
+Study Publication Status Term Accession Number	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796
+Study Publication Status Term Source REF	EFO	EFO		EFO	EFO	EFO	EFO	EFO	EFO
+Comment[Study Publication Link]	http://dx.doi.org/10.2514/6.2010-1105	https://doi.org/10.1007/978-1-4020-8682-3_22	http://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20070013892_2007012126.pdf	http://dx.doi.org/10.2514/6.2006-941	http://dx.doi.org/10.1080/00102202.2022.2041621	http://dx.doi.org/10.1016/j.combustflame.2004.12.009	http://dx.doi.org/10.1016/s0010-2180(98)00100-x	https://drum.lib.umd.edu/items/e1cf9d1d-2c54-475a-a201-a57d3874011b	https://doi.org/10.1016/j.firesaf.2011.08.002
+STUDY FACTORS
+Study Factor Name
+Study Factor Type
+Study Factor Type Term Accession Number
+Study Factor Type Term Source REF
+STUDY ASSAYS
+Study Assay File Name
+Study Assay Measurement Type
+Study Assay Measurement Type Term Accession Number
+Study Assay Measurement Type Term Source REF
+Study Assay Technology Type
+Study Assay Technology Type Term Accession Number
+Study Assay Technology Type Term Source REF
+Study Assay Technology Platform
+STUDY PROTOCOLS
+Study Protocol Name
+Study Protocol Type
+Study Protocol Type Term Accession Number
+Study Protocol Type Term Source REF
+Study Protocol Description
+Study Protocol URI
+Study Protocol Version
+Study Protocol Parameters Name
+Study Protocol Parameters Name Term Accession Number
+Study Protocol Parameters Name Term Source REF
+Study Protocol Components Name
+Study Protocol Components Type
+Study Protocol Components Type Term Accession Number
+Study Protocol Components Type Term Source REF
+STUDY CONTACTS
+Study Person Last Name	Sunderland	Urban
+Study Person First Name	Peter	David
+Study Person Mid Initials		
+Study Person Email	pbs@umd.edu	david.urban@nasa.gov
+Study Person Phone		
+Study Person Fax		
+Study Person Address		
+Study Person Affiliation	University of Maryland	NASA GRC
+Study Person Roles	Co-Investigator (Co-I)	Principal Investigator (PI)
+Study Person Roles Term Accession Number	Co-Investigator (Co-I)	Principal Investigator (PI)
+Study Person Roles Term Source REF		
+Comment[Study Person REF]		

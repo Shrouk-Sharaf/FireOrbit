@@ -1,0 +1,133 @@
+ONTOLOGY SOURCE REFERENCE
+Term Source Name	EFO	PSI
+Term Source File	http://data.bioontology.org/ontologies/EFO	https://psi.nasa.gov/
+Term Source Version	132	1.0
+Term Source Description	Experimental Factor Ontology	User defined terms
+INVESTIGATION
+Investigation Identifier	
+Investigation Title	
+Investigation Description	
+Investigation Submission Date	
+Investigation Public Release Date	
+INVESTIGATION PUBLICATIONS
+Investigation PubMed ID
+Investigation Publication DOI
+Investigation Publication Author List
+Investigation Publication Title
+Investigation Publication Status
+Investigation Publication Status Term Accession Number
+Investigation Publication Status Term Source REF
+INVESTIGATION CONTACTS
+Investigation Person Last Name
+Investigation Person First Name
+Investigation Person Mid Initials
+Investigation Person Email
+Investigation Person Phone
+Investigation Person Fax
+Investigation Person Address
+Investigation Person Affiliation
+Investigation Person Roles
+Investigation Person Roles Term Accession Number
+Investigation Person Roles Term Source REF
+STUDY
+Study Identifier	PSI-106
+Study Title	Structure and Liftoff In Combustion Experiment
+Study Description	
+Study Submission Date	18-Sep-2024
+Study Public Release Date	18-Sep-2024
+Study File Name	s_PSI-106.txt
+Comment[Acknowledgments]	
+Comment[Approach]	The SLICE apparatus consisted of a fan-driven flow duct, exchangeable burner tubes, and integrated sensors to measure flow rates and temperature. This setup used several fuels such as methane, ethylene, and nitrogen-diluted mixtures. Flames were then manually ignited and observed under controlled coflow air conditions. A high resolution camera captured still images while sensor data was overlaid on these images. Calibration tests for airflow velocity, soot measurement, and the fans were conducted to ensure the accuracy of the results. More than 4,000 high-resolution images were captured across 13 testing experiments. Data was then analyzed to correlate flame structure with stability with flow dynamics and fuel properties.
+Comment[DOI]	10.60555/pm12-rg61
+Comment[Data Source Accession]	
+Comment[Data Source Link]	
+Comment[Experiment Hardware]	
+Comment[Experiment Hardware Link]	
+Comment[Flight Platform]	International Space Station (ISS)
+Comment[Funding]	
+Comment[Hypothesis]	The hypothesis is that the structure and stability of laminar diffusion flames in microgravity are significantly influenced by burner diameter, coflow velocity, and fuel composition and are fundamentally different than flames observed on Earth.
+Comment[Identifiers]	
+Comment[Investigation Acronym]	SLICE
+Comment[Investigation End Date]	
+Comment[Investigation Start Date]	
+Comment[Managing NASA Center]	Glenn Research Center (GRC)
+Comment[Mission End]	
+Comment[Mission Link]	
+Comment[Mission Name]	
+Comment[Mission Start]	
+Comment[Objective]	"Objective: The objective of this investigation is to better understand the structure and stability of laminar diffusion flames in microgravity.
+
+Specific objectives of this investigation were:
+1. To investigate the structure of laminar diffusion flames in microgravity to understand the stabilizing mechanisms at the flames base.
+2. Determine the liftoff velocity limits for different fuels and burner diameters.
+3. Evaluate the impact of fuel dilution with nitrogen on soot formation and flame stability.
+4. Quantify the effects of microgravity on flame length and radiative heat loss compared to normal gravity conditions.
+5. Validate numerical models for flame dynamics, soot production, and thermal radiation in non-premixed flames."
+Comment[Project Identifier]	
+Comment[Project Link]	
+Comment[Project Title]	
+Comment[Project Type]	Microgravity Investigation
+Comment[Proposal Title]	
+Comment[Research Area]	Combustion Science
+Comment[Research Impacts]	"1. Improved numerical models for flame behavior lead to more efficient combustion technologies on Earth.
+2. Understanding soot formation aids in designing combustion systems with minimum emissions.
+3. Insights into flame stability and behavior to enhance fire safety.
+4. Findings will inform the development of cleaner, more efficient engines and industrial burners."
+Comment[Space Program]	National Aeronautics and Space Administration (NASA)
+Comment[Study Grant Number]	
+Comment[SubResearch Area]	
+STUDY DESIGN DESCRIPTORS
+Study Design Type	fuel dilution	inlet velocity	Diffusion Flame	Fuels
+Study Design Type Term Accession Number	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/
+Study Design Type Term Source REF	PSI	PSI	PSI	PSI
+STUDY PUBLICATIONS
+Study PubMed ID					
+Study Publication DOI	10.1016/j.proci.2014.05.138	10.1080/00102202.2022.2041621		10.1016/j.proci.2014.05.064	10.1016/j.combustflame.2016.02.012
+Study Publication Author List	Cao S., Ma B., Bennett B.A.V., Giassi D., Stocker D.P., Takahashi F., Long M.B., Smooke M.D.	Dobbins Richard R., Tinjero Jesse, Squeo Joseph, Zhao Xinyu, Hall Robert J., Colket Meredith B., Long Marshall B., Smooke Mitchell D.	S Cao, BAV Bennett, B Ma, D Giassi, DP Stocker, F Takahashi, MB Long, MD Smooke	Ma Bin, Cao Su, Giassi Davide, Stocker Dennis P., Takahashi Fumiaki, Bennett Beth Anne V., Smooke Mitchell D., Long Marshall B.	Giassi Davide, Cao Su, Bennett Beth Anne V., Stocker Dennis P., Takahashi Fumiaki, Smooke Mitchell D., Long Marshall B.
+Study Publication Title	A computational and experimental study of coflow laminar methane/air diffusion flames: Effects of fuel dilution, inlet velocity, and gravity	A Combined Experimental and Computational Study of Soot Formation in Normal and Microgravity Conditions	Effects of Fuel Dilution and Gravity on Laminar Coflow Methane-Air Diffusion Flames: A Computational and Experimental Investigation	An experimental and computational study of soot formation in a coflow jet flame under microgravity and normal gravity	Analysis of CH* concentration and flame heat release rate in laminar coflow diffusion flames under microgravity and normal gravity
+Study Publication Status	published	published	published	published	published
+Study Publication Status Term Accession Number	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796
+Study Publication Status Term Source REF	EFO	EFO		EFO	EFO
+Comment[Study Publication Link]	http://dx.doi.org/10.1016/j.proci.2014.05.138	http://dx.doi.org/10.1080/00102202.2022.2041621	https://sutherland.che.utah.edu/USCI2013/PAPERS/3F01-070LT-0256.pdf	http://dx.doi.org/10.1016/j.proci.2014.05.064	http://dx.doi.org/10.1016/j.combustflame.2016.02.012
+STUDY FACTORS
+Study Factor Name
+Study Factor Type
+Study Factor Type Term Accession Number
+Study Factor Type Term Source REF
+STUDY ASSAYS
+Study Assay File Name
+Study Assay Measurement Type
+Study Assay Measurement Type Term Accession Number
+Study Assay Measurement Type Term Source REF
+Study Assay Technology Type
+Study Assay Technology Type Term Accession Number
+Study Assay Technology Type Term Source REF
+Study Assay Technology Platform
+STUDY PROTOCOLS
+Study Protocol Name
+Study Protocol Type
+Study Protocol Type Term Accession Number
+Study Protocol Type Term Source REF
+Study Protocol Description
+Study Protocol URI
+Study Protocol Version
+Study Protocol Parameters Name
+Study Protocol Parameters Name Term Accession Number
+Study Protocol Parameters Name Term Source REF
+Study Protocol Components Name
+Study Protocol Components Type
+Study Protocol Components Type Term Accession Number
+Study Protocol Components Type Term Source REF
+STUDY CONTACTS
+Study Person Last Name	Smooke	Takahashi	Long	Stocker
+Study Person First Name	Mitchell	Fumiaki	Marshall	Dennis
+Study Person Mid Initials	D.			
+Study Person Email	mitchell.smooke@yale.edu	fumiaki.takahashi@case.edu	marshall.long@yale.edu	dennis.p.stocker@nasa.gov
+Study Person Phone				
+Study Person Fax				
+Study Person Address				
+Study Person Affiliation	Yale University	Case Western University	Yale University	NASA GRC
+Study Person Roles	Co-Investigator (Co-I)	Co-Investigator (Co-I)	Principal Investigator (PI)	Project Scientist
+Study Person Roles Term Accession Number	Co-Investigator (Co-I)	Co-Investigator (Co-I)	Principal Investigator (PI)	Project Scientist
+Study Person Roles Term Source REF				
+Comment[Study Person REF]				

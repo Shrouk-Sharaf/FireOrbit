@@ -1,0 +1,128 @@
+ONTOLOGY SOURCE REFERENCE
+Term Source Name	EFO	PSI
+Term Source File	http://data.bioontology.org/ontologies/EFO	https://psi.nasa.gov/
+Term Source Version	132	1.0
+Term Source Description	Experimental Factor Ontology	User defined terms
+INVESTIGATION
+Investigation Identifier	
+Investigation Title	
+Investigation Description	
+Investigation Submission Date	
+Investigation Public Release Date	
+INVESTIGATION PUBLICATIONS
+Investigation PubMed ID
+Investigation Publication DOI
+Investigation Publication Author List
+Investigation Publication Title
+Investigation Publication Status
+Investigation Publication Status Term Accession Number
+Investigation Publication Status Term Source REF
+INVESTIGATION CONTACTS
+Investigation Person Last Name
+Investigation Person First Name
+Investigation Person Mid Initials
+Investigation Person Email
+Investigation Person Phone
+Investigation Person Fax
+Investigation Person Address
+Investigation Person Affiliation
+Investigation Person Roles
+Investigation Person Roles Term Accession Number
+Investigation Person Roles Term Source REF
+STUDY
+Study Identifier	PSI-26
+Study Title	Burning and Suppression of Solids
+Study Description	
+Study Submission Date	30-Jun-2013
+Study Public Release Date	30-Jun-2013
+Study File Name	s_PSI-26.txt
+Comment[Acknowledgments]	
+Comment[Approach]	"The experiment was conducted aboard the International Space Station (ISS) inside the Microgravity Glove Box (MSG). Custom-made fabric samples consisting of 75% cotton and 25% fiberglass (by mass) measuring were used as a fuel source as well as Nomex fabric and Ultem. A Kanthal wire (29-gage)igniter was used to initiate combustion at one end of the fabric. Airflow was controlled using a variable speed fan, with airflow speeds reaching as high as 40 cm/s. The airflow was directed along the fuel surface in either the opposed or concurrent direction.
+
+This investigation explored two primary air flow configurations; concurrent-flow and opposed-flow. With concurrent-flow air flows in the same direction as the flame spread and in opposed-flow air flows in the opposite direction of flame spread. Flames were observed in the top and edge profiles and data was collected on flame size, shape, color, spread rate, and potential flame quenching. The samples were placed in a small flow duct (76 mm x 76 mm cross section) that allowed for airflow across the fabric. Other sample shapes were utilized as well including spheres and cylinders."
+Comment[DOI]	10.60555/58h4-dy80
+Comment[Data Source Accession]	
+Comment[Data Source Link]	
+Comment[Experiment Hardware]	Microgravity Science Glovebox
+Comment[Experiment Hardware Link]	https://www1.grc.nasa.gov/space/iss-research/msg/
+Comment[Flight Platform]	International Space Station (ISS)
+Comment[Funding]	
+Comment[Hypothesis]	BASS experiments were based on the hypothesis that materials in microgravity, with adequate ventilation, burn as well if not better than the same material in normal gravity with other conditions being identical (pressure, oxygen concentration, temperature, etc.) To test this hypothesis with any but the thinnest materials requires extended microgravity time – longer than available in drop towers or parabolic aircraft.
+Comment[Identifiers]	
+Comment[Investigation Acronym]	BASS
+Comment[Investigation End Date]	06-30-2013
+Comment[Investigation Start Date]	10-01-2009
+Comment[Managing NASA Center]	Glenn Research Center (GRC)
+Comment[Mission End]	
+Comment[Mission Link]	
+Comment[Mission Name]	
+Comment[Mission Start]	
+Comment[Objective]	"The two main objectives for BASS are to:
+    1.) Begin to bridge the gap between the normal gravity NASA-STD-6001 Test#1 method, ground-based microgravity tests, and actual material flammability in microgravity. The relation between these can be investigated by observing flames burning for the longer times available in flight. Practical, realistic (thicker) fuels in typical geometries will be examined, including wake flames which have characteristics of a fire burning behind another object (for example, a fire burning in tight area which may not be easily accessible).
+    2.) Assess the effectiveness of an inert, gaseous extinguishing agent (similar to that used on ISS) in putting out flames over different materials, geometries, preheating, and flow."
+Comment[Project Identifier]	
+Comment[Project Link]	
+Comment[Project Title]	
+Comment[Project Type]	Microgravity Investigation
+Comment[Proposal Title]	
+Comment[Research Area]	Combustion Science
+Comment[Research Impacts]	"Current NASA spacecraft materials selection is based on a standard test method (NASA–STD–6001 Test 1) that segregates material based on 1-g behavior without consideration of low gravity effects. A critical element of this understanding is the radiative heat emission from the flame. These results are used in first order models and predictions of heat release in spacecraft fires and as a means to extend heat release data from tests like the NASA cone calorimeter test (NASA–STD–6001 Test 2) to a performance-based material selection process. Using nitrogen as a flame suppressant in microgravity provides a direct link to current and planned extinguishment techniques.
+BASS results provide essential guidance to ground-based microgravity combustion research efforts. Detailed combustion models are validated using the simpler flow environment afforded by tests in microgravity. Once validated, they can be used to build more complex combustion models needed to capture the important details of flames burning in normal gravity. These models have wide applicability to the general understanding of many terrestrial combustion problems and will guide novel spacecraft design and ensure the safety of future crewed missions."
+Comment[Space Program]	National Aeronautics and Space Administration (NASA)
+Comment[Study Grant Number]	
+Comment[SubResearch Area]	Spacecraft Fire Safety
+STUDY DESIGN DESCRIPTORS
+Study Design Type	Flame Spread	Fire safety	Fire suppression system	Forced Flow Flame	Damkohler number	Kinetic regime	Boundary layer
+Study Design Type Term Accession Number	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/
+Study Design Type Term Source REF	PSI	PSI	PSI	PSI	PSI	PSI	PSI
+STUDY PUBLICATIONS
+Study PubMed ID										
+Study Publication DOI	10.2514/6.2006-941	10.1016/j.firesaf.2015.11.011	10.1016/j.proci.2014.07.017	10.1080/00102202.2014.900056	10.1504/PCFD.2012.048249	10.1299/jsmeatem.2015.14.289			10.1016/j.proci.2012.05.076	
+Study Publication Author List	Spivey Reggie, Luz Paul	Bhattacharjee Subrata, Laue Matthew, Carmignani Luca, Ferkul Paul, Olson Sandra	Takahashi Shuhei, Ebisawa Tomoya, Bhattacharjee Subrata, Ihara Tadayoshi	S Bhattacharjee, R Nagarkar, Y Nakamura	Bhattacharjee Subrata, Paolini Christopher P., Miller Fletcher, Nagarkar Rohit	Bhattacharjee Subrata, Cartnignani Luca	JR Villaraza, L Carmignani, S Bhattacharjee	P Ferkul, SL Olson, F Takahashi, M Endo, MC Johnston, JS Tien	S Bhattacharjee, M Bundy, C Paolini, G Patel, W Tran.	GR Bornand, FJ Miller, JM Pepper, SL Olson, IS Wichman
+Study Publication Title	The Microgravity Science Glovebox as a Platform for Exploration Research on the International Space Station	Opposed-flow flame spread: A comparison of microgravity and normal gravity experiments to establish the thermal regime	Simplified model for predicting difference between flammability limits of a thin material in normal gravity and microgravity environments	A Correlation for an Effective Flow Velocity for Capturing the Boundary Layer Effect in Opposed-Flow Flame Spread over Thin Fuels	Radiation signature in opposed-flow flame spread	OS24-1 The Effect of Boundary Layer on Blow-Off Extinction in Opposed-Flow Flame Spread: Results of Experiments and Simplified Analysis(invited,Scale modeling on solid combustion,OS24 Scale modeling,FLUID AND THERMODYNAMICS)	Role of Gas Radiation in the Mechanism of Opposed-Flow Flame Spread in a Microgravity Environment	Thickness and Fuel Preheating Effects on Material Flammability in Microgravity from the BASS Experiment	A novel apparatus for flame spread study	Opposed-Flow Flame Spread in a Narrow Channel Apparatus over Thin PMMA Sheets
+Study Publication Status	published	published	published	published	published	published	published	published	published	published
+Study Publication Status Term Accession Number	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796
+Study Publication Status Term Source REF	EFO	EFO	EFO	EFO	EFO	EFO		EFO	EFO	
+Comment[Study Publication Link]	http://dx.doi.org/10.2514/6.2006-941	http://dx.doi.org/10.1016/j.firesaf.2015.11.011	http://dx.doi.org/10.1016/j.proci.2014.07.017	http://www.tandfonline.com/doi/abs/10.1080/00102202.2014.900056	http://dx.doi.org/10.1504/pcfd.2012.048249	http://dx.doi.org/10.1299/jsmeatem.2015.14.289	https://www.researchgate.net/publication/289899025_Role_of_gas_radiation_in_the_mechanism_of_opposed-flow_flame_spread_in_a_microgravity_environment	https://ntrs.nasa.gov/api/citations/20140011099/downloads/20140011099.pdf	https://www.sciencedirect.com/science/article/pii/S1540748912000776	https://ntrs.nasa.gov/search.jsp?R=20140004923&qs=N%3D4294927886%2B4294965812%2B4294960150
+STUDY FACTORS
+Study Factor Name
+Study Factor Type
+Study Factor Type Term Accession Number
+Study Factor Type Term Source REF
+STUDY ASSAYS
+Study Assay File Name
+Study Assay Measurement Type
+Study Assay Measurement Type Term Accession Number
+Study Assay Measurement Type Term Source REF
+Study Assay Technology Type
+Study Assay Technology Type Term Accession Number
+Study Assay Technology Type Term Source REF
+Study Assay Technology Platform
+STUDY PROTOCOLS
+Study Protocol Name
+Study Protocol Type
+Study Protocol Type Term Accession Number
+Study Protocol Type Term Source REF
+Study Protocol Description
+Study Protocol URI
+Study Protocol Version
+Study Protocol Parameters Name
+Study Protocol Parameters Name Term Accession Number
+Study Protocol Parameters Name Term Source REF
+Study Protocol Components Name
+Study Protocol Components Type
+Study Protocol Components Type Term Accession Number
+Study Protocol Components Type Term Source REF
+STUDY CONTACTS
+Study Person Last Name	Olson	Ferkul	Takahashi	T'ien
+Study Person First Name	Sandra L.	Paul	Funiaki	James
+Study Person Mid Initials				
+Study Person Email	sandra.olson@nasa.gov	paul.ferkul@nasa.gov	fumiaki.takahashi@case.edu	jst2@case.edu
+Study Person Phone				
+Study Person Fax				
+Study Person Address				
+Study Person Affiliation	NASA GRC	NASA GRC	Case Western Reserve University	Case Western Reserve University
+Study Person Roles	Project Scientist	Principal Investigator (PI)	Co-Investigator (Co-I)	Co-Investigator (Co-I)
+Study Person Roles Term Accession Number	Project Scientist	Principal Investigator (PI)	Co-Investigator (Co-I)	Co-Investigator (Co-I)
+Study Person Roles Term Source REF				
+Comment[Study Person REF]				

@@ -1,0 +1,132 @@
+ONTOLOGY SOURCE REFERENCE
+Term Source Name	EFO	NCIT	PSI
+Term Source File	http://data.bioontology.org/ontologies/EFO		https://psi.nasa.gov/
+Term Source Version	132		1.0
+Term Source Description	Experimental Factor Ontology		User defined terms
+INVESTIGATION
+Investigation Identifier	
+Investigation Title	
+Investigation Description	
+Investigation Submission Date	
+Investigation Public Release Date	
+INVESTIGATION PUBLICATIONS
+Investigation PubMed ID
+Investigation Publication DOI
+Investigation Publication Author List
+Investigation Publication Title
+Investigation Publication Status
+Investigation Publication Status Term Accession Number
+Investigation Publication Status Term Source REF
+INVESTIGATION CONTACTS
+Investigation Person Last Name
+Investigation Person First Name
+Investigation Person Mid Initials
+Investigation Person Email
+Investigation Person Phone
+Investigation Person Fax
+Investigation Person Address
+Investigation Person Affiliation
+Investigation Person Roles
+Investigation Person Roles Term Accession Number
+Investigation Person Roles Term Source REF
+STUDY
+Study Identifier	PSI-159
+Study Title	Advanced Combustion via Microgravity Experiments / Cool Flames Investigation with Gases
+Study Description	
+Study Submission Date	20-Nov-2025
+Study Public Release Date	20-Nov-2025
+Study File Name	s_PSI-159.txt
+Comment[Acknowledgments]	
+Comment[Approach]	Perform spherical diffusion flame tests aboard the International Space Station. Consider multiple fuels, a range of reactant dilutions, flow rates, and pressures for normal and inverse convection directions. Observe the flames with a broad suite of cameras, radiometers, photomultiplier tubes, and thermocouples.
+Comment[DOI]	10.60555/cyt1-kh64
+Comment[Data Source Accession]	
+Comment[Data Source Link]	
+Comment[Experiment Hardware]	ACME, Combustion Integrated Rack (CIR)
+Comment[Experiment Hardware Link]	https://www1.grc.nasa.gov/space/iss-research/iss-fcf/combustion-science/acme/implementation/, https://www1.grc.nasa.gov/space/iss-research/iss-fcf/cir/
+Comment[Flight Platform]	International Space Station (ISS)
+Comment[Funding]	
+Comment[Hypothesis]	"The hypotheses of this research are that testing aboard the ISS can demonstrate the following for the first time, contributing to an improved understanding of cool flame kinetics.
+  1. Steady-state cool diffusion flames on spherical porous burners.
+  2. Cool diffusion flames burning propane, n-butane, and n-pentane.
+  3. Cool diffusion flames for a wide range of Zst, Tad, and pressures.
+  4. Inverse cool diffusion flames.
+  5. Cool diffusion flames for which a decrease in fluent flow rate will cause extinction, whereas an increase will cause a transition to a hot diffusion flame, with oscillation possible between hot and cool flames."
+Comment[Identifiers]	
+Comment[Investigation Acronym]	ACME CFI-G
+Comment[Investigation End Date]	
+Comment[Investigation Start Date]	
+Comment[Managing NASA Center]	Glenn Research Center (GRC)
+Comment[Mission End]	
+Comment[Mission Link]	
+Comment[Mission Name]	
+Comment[Mission Start]	
+Comment[Objective]	"1. Plan and support flight testing on the International Space Station (ISS).
+2. Determine the conditions for which cool diffusion flames occur for propane, n-butane, and n-pentane; normal and inverse flames; and a broad range of Zst, Tad, and fluent flow rate.
+3. Support the flight tests with advanced CFD simulations.
+4. Identify or develop a chemical kinetics mechanism that yields good agreement between the CFD predictions and the ISS measurements.
+5. Disseminate the results as widely as possible."
+Comment[Project Identifier]	
+Comment[Project Link]	
+Comment[Project Title]	
+Comment[Project Type]	Microgravity Investigation
+Comment[Proposal Title]	ISS: Collaborative Research: Spherical Cool Diffusion Flames Burning Gaseous Fuels
+Comment[Research Area]	Combustion Science
+Comment[Research Impacts]	Combustion provides 86% of the world’s energy and an even higher fraction of the energy used for transportation. The internal combustion engines used for transportation generally have thermal efficiencies of 38% or lower because of thermal losses. These efficiencies may increase to 60% if future engines can take advantage of ultra-lean combustion. However, this progress is being impeded by the limited understanding of the chemistry of cool flames. Research into cool diffusion flames (whose peak temperatures are 500 – 1000 K) has grown exponentially since they were discovered in 2012.  The measurements performed for this project will help to test and advance cool flame kinetics mechanisms. This should facilitate the development of more efficient internal combustion engines.
+Comment[Space Program]	National Science Foundation (NSF), Center for the Advancement of Science in Space (CASIS)
+Comment[Study Grant Number]	
+Comment[SubResearch Area]	Flames of Gaseous Fuels
+STUDY DESIGN DESCRIPTORS
+Study Design Type	chemical kinetics	dilution	ethane	formaldehyde	heat loss	intensified video camera	low-temperature combustion	n-butane	porous burner	negative-temperature coefficient
+Study Design Type Term Accession Number	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/
+Study Design Type Term Source REF	PSI	PSI	PSI	PSI	PSI	PSI	PSI	PSI	PSI	PSI
+STUDY PUBLICATIONS
+Study PubMed ID		
+Study Publication DOI	10.1016/j.proci.2022.07.015	10.1016/j.combustflame.2023.112852
+Study Publication Author List	Kim Minhyeng, Waddell Kendyl A., Sunderland Peter B., Nayagam Vedha, Stocker Dennis P., Dietrich Daniel L., Ju Yiguang, Williams Forman A., Irace Phillip, Axelbaum Richard L.	Waddell Kendyl A., Lee Han Ju, Nayagam Vedha, Axelbaum Richard L., Sunderland Peter B.
+Study Publication Title	Spherical gas-fueled cool diffusion flames	Cool diffusion flames in a stably stratified stagnation flow
+Study Publication Status	published	published
+Study Publication Status Term Accession Number	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796
+Study Publication Status Term Source REF	EFO	EFO
+Comment[Study Publication Link]	https://doi.org/10.1016/j.proci.2022.07.015	https://doi.org/10.1016/j.combustflame.2023.112852
+STUDY FACTORS
+Study Factor Name
+Study Factor Type
+Study Factor Type Term Accession Number
+Study Factor Type Term Source REF
+STUDY ASSAYS
+Study Assay File Name
+Study Assay Measurement Type
+Study Assay Measurement Type Term Accession Number
+Study Assay Measurement Type Term Source REF
+Study Assay Technology Type
+Study Assay Technology Type Term Accession Number
+Study Assay Technology Type Term Source REF
+Study Assay Technology Platform
+STUDY PROTOCOLS
+Study Protocol Name
+Study Protocol Type
+Study Protocol Type Term Accession Number
+Study Protocol Type Term Source REF
+Study Protocol Description
+Study Protocol URI
+Study Protocol Version
+Study Protocol Parameters Name
+Study Protocol Parameters Name Term Accession Number
+Study Protocol Parameters Name Term Source REF
+Study Protocol Components Name
+Study Protocol Components Type
+Study Protocol Components Type Term Accession Number
+Study Protocol Components Type Term Source REF
+STUDY CONTACTS
+Study Person Last Name	Stocker	Sunderland	Axelbaum	Williams
+Study Person First Name	Dennis	Peter	Richard	Forman
+Study Person Mid Initials	P.	B.	L.	
+Study Person Email	dennis.p.stocker@nasa.gov	pbs@umd.edu	axelbaum@wustl.edu	fwilliams@ucsd.edu
+Study Person Phone				
+Study Person Fax				
+Study Person Address				
+Study Person Affiliation	NASA GRC	University of Maryland	Washington University in St. Louis	UC San Diego
+Study Person Roles	Project Scientist	Principal Investigator (PI)	Co-Investigator (Co-I)	Co-Investigator (Co-I)
+Study Person Roles Term Accession Number	Project Scientist	Principal Investigator (PI)	Co-Investigator (Co-I)	Co-Investigator (Co-I)
+Study Person Roles Term Source REF				
+Comment[orcidIdentifier]	0000-0002-7069-7144		0000-0001-8958-146X	

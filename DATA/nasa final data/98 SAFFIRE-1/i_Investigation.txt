@@ -1,0 +1,124 @@
+ONTOLOGY SOURCE REFERENCE
+Term Source Name	EFO	PSI
+Term Source File	http://data.bioontology.org/ontologies/EFO	https://psi.nasa.gov/
+Term Source Version	132	1.0
+Term Source Description	Experimental Factor Ontology	User defined terms
+INVESTIGATION
+Investigation Identifier	
+Investigation Title	
+Investigation Description	
+Investigation Submission Date	
+Investigation Public Release Date	
+INVESTIGATION PUBLICATIONS
+Investigation PubMed ID
+Investigation Publication DOI
+Investigation Publication Author List
+Investigation Publication Title
+Investigation Publication Status
+Investigation Publication Status Term Accession Number
+Investigation Publication Status Term Source REF
+INVESTIGATION CONTACTS
+Investigation Person Last Name
+Investigation Person First Name
+Investigation Person Mid Initials
+Investigation Person Email
+Investigation Person Phone
+Investigation Person Fax
+Investigation Person Address
+Investigation Person Affiliation
+Investigation Person Roles
+Investigation Person Roles Term Accession Number
+Investigation Person Roles Term Source REF
+STUDY
+Study Identifier	PSI-98
+Study Title	Spacecraft Fire Safety Experiment-I
+Study Description	
+Study Submission Date	18-Sep-2024
+Study Public Release Date	18-Sep-2024
+Study File Name	s_PSI-98.txt
+Comment[Acknowledgments]	
+Comment[Approach]	The Saffire-1 experiments was performed on the Orbital Science’s Cygnus resupply vehicle after it deberthed from the ISS. The sample material for Saffire-I is a composite fabric called Sibal consisting of cotton on a fiberglass substrate (75% cotton, 25% fiberglass by weight). It has been used in many space experiments because it burns like cotton but maintains structural integrity after the cotton is consumed. The sample was approximately 0.94 meters long and 0.4 meters wide, simulating a large piece of flammable fabric. The Saffire-1 flight unit had a sample card installed in the middle of a large flow duct. Air is drawn through the flow duct by fans located at the top of the duct with flow straighteners at the bottom of the experiment module. Saffire-I was conducted at an air flow velocity of 20 cm/s. Once the sample was ignited flame images were captured using two cameras. In addition, thermocouples provided flow, flame, and plume temperatures, two radiometers recorded flame radiation, solid state sensors were used to measure pressure, CO2 and O2 mole faction, and two anemometer tracked flow velocity. All data was compressed, and subsequently downlinked.
+Comment[DOI]	10.60555/0t15-1z43
+Comment[Data Source Accession]	
+Comment[Data Source Link]	
+Comment[Experiment Hardware]	Saffire 1 enclosure in Cygnus
+Comment[Experiment Hardware Link]	https://www1.grc.nasa.gov/space/iss-research/msg/saffire/
+Comment[Flight Platform]	International Space Station (ISS)
+Comment[Funding]	NASA
+Comment[Hypothesis]	This investigation hypothesizes that due to large differences between fire behavior in normal and reduced gravity, the use of terrestrial fires and fire standards to design spacecraft fire safety systems presents an inherent risk to the vehicle because of the significant level of uncertainty. While this approach has been successful thus far, the uncertainty and risk will increase as exploration missions venture further from earth with considerably longer transit times for a safe return. There is a significant lack of microgravity data available for spacecraft designers on which to base their fire safety designs and procedures. To address this knowledge gap, this investigation proposed to conduct large-scale fire safety experiments in an expendable spacecraft without risk to a crew.
+Comment[Identifiers]	
+Comment[Investigation Acronym]	SAFFIRE-I
+Comment[Investigation End Date]	02-28-2008
+Comment[Investigation Start Date]	03-02-2001
+Comment[Managing NASA Center]	Glenn Research Center (GRC)
+Comment[Mission End]	
+Comment[Mission Link]	
+Comment[Mission Name]	
+Comment[Mission Start]	
+Comment[Objective]	"The objectives of this investigation were to:
+(1) determine how rapidly a large scale fire grows in low-gravity and (2) investigate the low-g flammability limits compared to those obtained in NASA’s normal
+gravity material flammability screening test."
+Comment[Project Identifier]	
+Comment[Project Link]	
+Comment[Project Title]	
+Comment[Project Type]	Microgravity Investigation
+Comment[Proposal Title]	Characterization of Smoke from Microgravity Fires for Improved Spacecraft Fire Detection
+Comment[Research Area]	Combustion Science
+Comment[Research Impacts]	The Saffire-I experiment provides a new way to study a realistic fire on an exploration vehicle, which has not been possible in the past because the risks are too high. Instruments on an unmanned cargo vessel measure oxygen, carbon dioxide, heat, pressure and flame growth, and two video cameras provide views of the flame. Results determine microgravity flammability limits for several spacecraft materials, help to validate NASA’s material selection criteria, and how microgravity and limited oxygen affect flame size. The investigation is crucial for the safety of current and future space missions. Studying fire in small, sealed environments such as the Cygnus cargo supply vehicle benefits fire safety and prevention efforts on Earth, including inside mines, airplanes, or submarines.
+Comment[Space Program]	National Aeronautics and Space Administration (NASA)
+Comment[Study Grant Number]	
+Comment[SubResearch Area]	Spacecraft Fire, Smoke Distribution
+STUDY DESIGN DESCRIPTORS
+Study Design Type	Cygnus	Fire	SAFFIRE	Oxidizer flux	Flame Spread	Solid burning rate	Surface Combustion	Smoldering	Fire Safety
+Study Design Type Term Accession Number	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/	https://psi.nasa.gov/
+Study Design Type Term Source REF	PSI	PSI	PSI	PSI	PSI	PSI	PSI	PSI	PSI
+STUDY PUBLICATIONS
+Study PubMed ID						
+Study Publication DOI			10.1016/j.combustflame.2018.10.012	10.1016/j.proci.2018.05.168	10.1016/j.actaastro.2014.11.025	
+Study Publication Author List	W Schoren, GA Ruff, DL Urban	JE Niehaus, PV Ferkul, SA Gokoglu, GA Ruff	Urban David L., Ferkul Paul, Olson Sandra, Ruff Gary A., Easton John, T'ien James S., Liao Ya-Ting T., Li Chengyao, Fernandez-Pello Carlos, Torero Jose L., Legros Guillaume, Eigenbrod Christian, Smirnov Nickolay, Fujita Osamu, Rouvreau Sébastien, Toth Balazs, Jomaas Grunde	Li Chengyao, Liao Ya-Ting T., T'ien James S., Urban David L., Ferkul Paul, Olson Sandra, Ruff Gary A., Easton John	Jomaas Grunde, Torero Jose L., Eigenbrod Christian, Niehaus Justin, Olson Sandra L., Ferkul Paul V., Legros Guillaume, Fernandez-Pello A. Carlos, Cowlard Adam J., Rouvreau Sebastien, Smirnov Nickolay, Fujita Osamu, T׳ien James S., Ruff Gary A., Urban David L.	Gary A. Ruff and David L. Urban.
+Study Publication Title	The Spacecraft Fire Experiment (Saffire) - Objectives, Development and Status	Buoyant Effects on the Flammability of Silicone Samples Planned for the Spacecraft Fire Experiment (Saffire)	Flame spread: Effects of microgravity and scale	Transient flame growth and spread processes over a large solid fabric in concurrent low-speed flows in microgravity – Model versus experiment	Fire safety in space – beyond flammability testing of small samples	Operation and Development Status of the Spacecraft Fire Experiments (Saffire)
+Study Publication Status	published	published	published	published	published	published
+Study Publication Status Term Accession Number	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796	http://www.ebi.ac.uk/efo/EFO_0001796
+Study Publication Status Term Source REF		EFO	EFO	EFO	EFO	EFO
+Comment[Study Publication Link]	https://ntrs.nasa.gov/search.jsp?R=20170001636	https://www.researchgate.net/publication/282252038_Buoyant_Effects_on_the_Flammability_of_Silicone_Samples_Planned_for_the_Spacecraft_Fire_Safety_Experiment_Saffire	http://dx.doi.org/10.1016/j.combustflame.2018.10.012	http://dx.doi.org/10.1016/j.proci.2018.05.168	http://dx.doi.org/10.1016/j.actaastro.2014.11.025	https://ntrs.nasa.gov/api/citations/20170000230/downloads/20170000230.pdf
+STUDY FACTORS
+Study Factor Name
+Study Factor Type
+Study Factor Type Term Accession Number
+Study Factor Type Term Source REF
+STUDY ASSAYS
+Study Assay File Name
+Study Assay Measurement Type
+Study Assay Measurement Type Term Accession Number
+Study Assay Measurement Type Term Source REF
+Study Assay Technology Type
+Study Assay Technology Type Term Accession Number
+Study Assay Technology Type Term Source REF
+Study Assay Technology Platform
+STUDY PROTOCOLS
+Study Protocol Name
+Study Protocol Type
+Study Protocol Type Term Accession Number
+Study Protocol Type Term Source REF
+Study Protocol Description
+Study Protocol URI
+Study Protocol Version
+Study Protocol Parameters Name
+Study Protocol Parameters Name Term Accession Number
+Study Protocol Parameters Name Term Source REF
+Study Protocol Components Name
+Study Protocol Components Type
+Study Protocol Components Type Term Accession Number
+Study Protocol Components Type Term Source REF
+STUDY CONTACTS
+Study Person Last Name	Urban
+Study Person First Name	David
+Study Person Mid Initials	L.
+Study Person Email	david.urban@nasa.gov
+Study Person Phone	
+Study Person Fax	
+Study Person Address	
+Study Person Affiliation	NASA GRC
+Study Person Roles	Principal Investigator (PI)
+Study Person Roles Term Accession Number	Principal Investigator (PI)
+Study Person Roles Term Source REF	
