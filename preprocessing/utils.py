@@ -28,6 +28,47 @@ HARDWARE_GROUPS = {
     "PSI-47": "MSG (smoke/aerosol)",
 }
 
+# Investigations that are not combustion-atmosphere datasets for habitat matching.
+ATMOSPHERE_SOLVER_EXCLUDE = {
+    "PSI-47": "DAFT/DAFT-2 is an aerosol-instrument feasibility test, not a combustion atmosphere dataset",
+}
+
+# Study-level condition anchors that are not reported per executed test row.
+STUDY_LEVEL_CONDITIONS = {
+    "PSI-20": {
+        "pressure_atm_values": [0.558, 0.694, 1.0],
+        "pressure_source": (
+            "planned, unconfirmed: NASA-considered habitat atmospheres from the study objective "
+            "(8.2 psia = 0.558 atm, 10.2 psia = 0.694 atm, 14.7 psia = 1.0 atm). "
+            "The experimental table notes chamber pressure was varied but does not identify per-test values."
+        ),
+        "pressure_status": "planned_unconfirmed",
+        "pressure_is_assumed": True,
+        "pressure_condition_level": "study",
+    },
+    "PSI-68": {
+        "o2_pct_values": [17.0, 21.0, 25.0, 30.0],
+        "pressure_atm_values": [0.5, 1.0, 1.5, 2.0, 3.0],
+        "flow_values": [0.1, 5.0],
+        "o2_source": "FLEX-2 design matrix Oxygen Mole Fraction 0.17; 0.21; 0.25; 0.3 converted to percent",
+        "pressure_source": "FLEX-2 design matrix Ambient Pressure (atm): 0.5; 1.0; 1.5; 2.0; 3.0",
+        "flow_source": "FLEX-2 design matrix Flow Velocity (cm/s): 0.1 - 5",
+        "o2_status": "design_matrix",
+        "pressure_status": "design_matrix",
+        "o2_is_assumed": False,
+        "pressure_is_assumed": False,
+        "o2_condition_level": "study",
+        "pressure_condition_level": "study",
+        "flow_condition_level": "study",
+    },
+}
+
+MOON_BASE_TARGET = {
+    "o2_pct": 30.0,
+    "pressure_atm": 0.694,  # 10.2 psia
+    "flow_cm_s": 0.0,
+}
+
 RELATED_INVESTIGATIONS = {
     "PSI-98": ["PSI-99", "PSI-100"],
     "PSI-99": ["PSI-98", "PSI-100"],
@@ -285,3 +326,64 @@ def dump_json(path, obj):
     ensure_output_dir()
     with open(path, "w", encoding="utf-8") as f:
         json.dump(obj, f, indent=2, ensure_ascii=False, default=str)
+
+
+def _positive_values(vals):
+    return [v for v in (vals or []) if v is not None and v > 0]
+
+
+def _nonnegative_values(vals):
+    return [v for v in (vals or []) if v is not None and v >= 0]
+
+
+def finalize_experiment_record(rec):
+    """Null invalid numbers, expose a single is_assumed flag, and tag solver scope."""
+    invalid = list(rec.get("invalid_fields") or [])
+    assumed = list(rec.get("assumed_fields") or [])
+
+    flow = rec.get("flow_velocity_cm_s")
+    if flow is not None and flow < 0:
+        rec["flow_velocity_cm_s"] = None
+        rec["flow_values"] = _nonnegative_values(rec.get("flow_values"))
+        src = rec.get("flow_velocity_source") or ""
+        rec["flow_velocity_source"] = (src + " [invalid negative airflow nulled]").strip()
+        if "flow_velocity_cm_s" not in invalid:
+            invalid.append("flow_velocity_cm_s")
+
+    pressure = rec.get("pressure_atm")
+    if pressure is not None and pressure <= 0:
+        rec["pressure_atm"] = None
+        rec["pressure_values"] = _positive_values(rec.get("pressure_values"))
+        src = rec.get("pressure_source") or ""
+        rec["pressure_source"] = (src + " [invalid non-positive pressure nulled]").strip()
+        if "pressure_atm" not in invalid:
+            invalid.append("pressure_atm")
+
+    rec["pressure_values"] = _positive_values(rec.get("pressure_values"))
+    rec["flow_values"] = [
+        v for v in (rec.get("flow_values") or [])
+        if v is not None and v >= 0
+    ]
+
+    if rec.get("o2_is_assumed") and "o2_concentration_pct" not in assumed:
+        assumed.append("o2_concentration_pct")
+    if rec.get("pressure_is_assumed") and "pressure_atm" not in assumed:
+        assumed.append("pressure_atm")
+    if rec.get("flow_is_assumed") and "flow_velocity_cm_s" not in assumed:
+        assumed.append("flow_velocity_cm_s")
+
+    psi_id = rec.get("investigation_id")
+    exclude_reason = ATMOSPHERE_SOLVER_EXCLUDE.get(psi_id)
+    rec["include_in_atmosphere_solver"] = exclude_reason is None
+    if exclude_reason:
+        rec["solver_exclude_reason"] = exclude_reason
+
+    rec["assumed_fields"] = assumed
+    rec["invalid_fields"] = invalid
+    rec["is_assumed"] = bool(assumed)
+    rec["has_invalid_values"] = bool(invalid)
+    rec["value_status"] = (
+        "invalid" if invalid else ("assumed" if assumed else "reported")
+    )
+    rec.setdefault("condition_level", "experiment")
+    return rec

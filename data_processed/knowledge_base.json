@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T14:18:00.026792+00:00",
+  "generated_at": "2026-11-13T14:29:17.245637+00:00",
   "total_investigations": 16,
   "total_normalized_datapoints": 1593,
   "global_documents": [
@@ -31,6 +31,212 @@
       "detail": "Planned habitat atmospheres are ~30% O2 at 10.2 psi or less. Few investigations report both elevated oxygen and reduced pressure together."
     }
   ],
+  "moon_base_ranking": [
+    {
+      "rank": 1,
+      "psi_id": "PSI-20",
+      "acronym": "ACME BRE",
+      "moon_base_score": 91.0,
+      "notes": [
+        "habitat O2 covers the 26.5–34% Moon-cabin band",
+        "pressure includes the 0.694 atm (10.2 psia) Moon-cabin anchor",
+        "pressure anchors are study-level planned, unconfirmed",
+        "quiescent (no-ventilation) burning is in scope",
+        "airflow 0 is assumed from a quiescent chamber description; CSV has no airflow column",
+        "burning-rate emulator maps to condensed crew-cabin materials"
+      ],
+      "covers_moon_cabin_o2": true,
+      "covers_reduced_pressure": true,
+      "assumed_experiment_count": 43,
+      "pressure_status": "planned_unconfirmed"
+    },
+    {
+      "rank": 2,
+      "psi_id": "PSI-69",
+      "acronym": "FLEX",
+      "moon_base_score": 75.0,
+      "notes": [
+        "habitat O2 covers the 26.5–34% Moon-cabin band",
+        "pressure includes the 0.694 atm (10.2 psia) Moon-cabin anchor",
+        "quiescent (no-ventilation) burning is in scope",
+        "airflow 0 is assumed from a quiescent chamber description; CSV has no airflow column"
+      ],
+      "covers_moon_cabin_o2": true,
+      "covers_reduced_pressure": true,
+      "assumed_experiment_count": 274,
+      "pressure_status": null
+    },
+    {
+      "rank": 3,
+      "psi_id": "PSI-68",
+      "acronym": "FLEX-2",
+      "moon_base_score": 52.0,
+      "notes": [
+        "habitat O2 covers the 26.5–34% Moon-cabin band",
+        "pressure includes reduced-pressure points at or below 0.70 atm",
+        "O2/pressure come from the study-level design matrix, not one executed cell per row"
+      ],
+      "covers_moon_cabin_o2": true,
+      "covers_reduced_pressure": true,
+      "assumed_experiment_count": 0,
+      "pressure_status": "design_matrix"
+    },
+    {
+      "rank": 4,
+      "psi_id": "PSI-159",
+      "acronym": "ACME CFI-G",
+      "moon_base_score": 52.0,
+      "notes": [
+        "habitat O2 covers the 26.5–34% Moon-cabin band",
+        "pressure includes reduced-pressure points at or below 0.70 atm"
+      ],
+      "covers_moon_cabin_o2": true,
+      "covers_reduced_pressure": true,
+      "assumed_experiment_count": 0,
+      "pressure_status": null
+    },
+    {
+      "rank": 5,
+      "psi_id": "PSI-25",
+      "acronym": "BASS-II",
+      "moon_base_score": 40.0,
+      "notes": [
+        "quiescent (no-ventilation) burning is in scope",
+        "crew-relevant solid materials"
+      ],
+      "covers_moon_cabin_o2": false,
+      "covers_reduced_pressure": false,
+      "assumed_experiment_count": 0,
+      "pressure_status": null
+    },
+    {
+      "rank": 6,
+      "psi_id": "PSI-101",
+      "acronym": "SAME-R",
+      "moon_base_score": 34.0,
+      "notes": [
+        "quiescent (no-ventilation) burning is in scope",
+        "crew-relevant solid materials"
+      ],
+      "covers_moon_cabin_o2": false,
+      "covers_reduced_pressure": false,
+      "assumed_experiment_count": 0,
+      "pressure_status": null
+    },
+    {
+      "rank": 7,
+      "psi_id": "PSI-39",
+      "acronym": "CFI",
+      "moon_base_score": 33.0,
+      "notes": [
+        "pressure includes reduced-pressure points at or below 0.70 atm",
+        "quiescent (no-ventilation) burning is in scope",
+        "airflow 0 is assumed from a quiescent chamber description; CSV has no airflow column"
+      ],
+      "covers_moon_cabin_o2": false,
+      "covers_reduced_pressure": true,
+      "assumed_experiment_count": 79,
+      "pressure_status": null
+    },
+    {
+      "rank": 8,
+      "psi_id": "PSI-99",
+      "acronym": "SAFFIRE-II",
+      "moon_base_score": 28.0,
+      "notes": [
+        "crew-relevant solid materials"
+      ],
+      "covers_moon_cabin_o2": false,
+      "covers_reduced_pressure": false,
+      "assumed_experiment_count": 0,
+      "pressure_status": null
+    },
+    {
+      "rank": 9,
+      "psi_id": "PSI-98",
+      "acronym": "SAFFIRE-I",
+      "moon_base_score": 28.0,
+      "notes": [
+        "crew-relevant solid materials"
+      ],
+      "covers_moon_cabin_o2": false,
+      "covers_reduced_pressure": false,
+      "assumed_experiment_count": 0,
+      "pressure_status": null
+    },
+    {
+      "rank": 10,
+      "psi_id": "PSI-102",
+      "acronym": "SAME",
+      "moon_base_score": 22.0,
+      "notes": [
+        "crew-relevant solid materials"
+      ],
+      "covers_moon_cabin_o2": false,
+      "covers_reduced_pressure": false,
+      "assumed_experiment_count": 0,
+      "pressure_status": null
+    },
+    {
+      "rank": 11,
+      "psi_id": "PSI-26",
+      "acronym": "BASS",
+      "moon_base_score": 22.0,
+      "notes": [
+        "crew-relevant solid materials"
+      ],
+      "covers_moon_cabin_o2": false,
+      "covers_reduced_pressure": false,
+      "assumed_experiment_count": 0,
+      "pressure_status": null
+    },
+    {
+      "rank": 12,
+      "psi_id": "PSI-100",
+      "acronym": "SAFFIRE-III",
+      "moon_base_score": 22.0,
+      "notes": [
+        "crew-relevant solid materials"
+      ],
+      "covers_moon_cabin_o2": false,
+      "covers_reduced_pressure": false,
+      "assumed_experiment_count": 0,
+      "pressure_status": null
+    },
+    {
+      "rank": 13,
+      "psi_id": "PSI-107",
+      "acronym": "SPICE",
+      "moon_base_score": 8.0,
+      "notes": [],
+      "covers_moon_cabin_o2": false,
+      "covers_reduced_pressure": false,
+      "assumed_experiment_count": 0,
+      "pressure_status": null
+    },
+    {
+      "rank": 14,
+      "psi_id": "PSI-22",
+      "acronym": "ACME E-FIELD Flames",
+      "moon_base_score": 0.0,
+      "notes": [],
+      "covers_moon_cabin_o2": false,
+      "covers_reduced_pressure": false,
+      "assumed_experiment_count": 0,
+      "pressure_status": null
+    },
+    {
+      "rank": 15,
+      "psi_id": "PSI-106",
+      "acronym": "SLICE",
+      "moon_base_score": 0.0,
+      "notes": [],
+      "covers_moon_cabin_o2": false,
+      "covers_reduced_pressure": false,
+      "assumed_experiment_count": 0,
+      "pressure_status": null
+    }
+  ],
   "investigations": [
     {
       "psi_id": "PSI-102",
@@ -46,7 +252,13 @@
         "PSI-47"
       ],
       "relevance_score": 78.0,
+      "moon_base_score": 22.0,
+      "moon_base_score_notes": [
+        "crew-relevant solid materials"
+      ],
       "moon_base_applicable": true,
+      "include_in_atmosphere_solver": true,
+      "solver_exclude_reason": null,
       "covers_elevated_o2": false,
       "covers_moon_cabin_o2": false,
       "covers_reduced_pressure": false,
@@ -224,6 +436,9 @@
         "min": null,
         "max": null
       },
+      "study_level_conditions": null,
+      "assumed_experiment_count": 0,
+      "invalid_experiment_count": 0,
       "experiment_count": 8,
       "reports_count": 1,
       "reports": [
@@ -283,7 +498,14 @@
             "Weight loss rate (mg/min)": 2.0,
             "Aging Duration (minutes)": 1.0
           },
-          "measurement_type": "smoke_particle_size"
+          "measurement_type": "smoke_particle_size",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-102-SAME-S2-R1",
@@ -324,7 +546,14 @@
             "Weight loss rate (mg/min)": 1.0,
             "Aging Duration (minutes)": 1.0
           },
-          "measurement_type": "smoke_particle_size"
+          "measurement_type": "smoke_particle_size",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-102-SAME-S3-R1",
@@ -365,7 +594,14 @@
             "Weight loss rate (mg/min)": 2.0,
             "Aging Duration (minutes)": 20.0
           },
-          "measurement_type": "smoke_particle_size"
+          "measurement_type": "smoke_particle_size",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-102-SAME-S4-R1",
@@ -406,7 +642,14 @@
             "Weight loss rate (mg/min)": 2.0,
             "Aging Duration (minutes)": 1.0
           },
-          "measurement_type": "smoke_particle_size"
+          "measurement_type": "smoke_particle_size",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-102-SAME-S5-R1",
@@ -442,7 +685,14 @@
             "Sample #": 5,
             "Sample Material": "Kapton: same conditions as 1-4"
           },
-          "measurement_type": "smoke_particle_size"
+          "measurement_type": "smoke_particle_size",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-102-SAME-S6-R1",
@@ -478,7 +728,14 @@
             "Sample #": 6,
             "Sample Material": "Silicone Rubber: same conditions as 1-4"
           },
-          "measurement_type": "smoke_particle_size"
+          "measurement_type": "smoke_particle_size",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-102-SAME-S7-R1",
@@ -514,7 +771,14 @@
             "Sample #": 7,
             "Sample Material": "Lampwick: same conditions as 1-4"
           },
-          "measurement_type": "smoke_particle_size"
+          "measurement_type": "smoke_particle_size",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-102-SAME-S8-R1",
@@ -550,7 +814,14 @@
             "Sample #": 8,
             "Sample Material": "Dibutyl Phthalate: same conditions as 1-4"
           },
-          "measurement_type": "smoke_particle_size"
+          "measurement_type": "smoke_particle_size",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         }
       ]
     },
@@ -568,7 +839,14 @@
         "PSI-47"
       ],
       "relevance_score": 76.0,
+      "moon_base_score": 34.0,
+      "moon_base_score_notes": [
+        "quiescent (no-ventilation) burning is in scope",
+        "crew-relevant solid materials"
+      ],
       "moon_base_applicable": true,
+      "include_in_atmosphere_solver": true,
+      "solver_exclude_reason": null,
       "covers_elevated_o2": false,
       "covers_moon_cabin_o2": false,
       "covers_reduced_pressure": false,
@@ -698,6 +976,9 @@
         "min": null,
         "max": null
       },
+      "study_level_conditions": null,
+      "assumed_experiment_count": 0,
+      "invalid_experiment_count": 0,
       "experiment_count": 109,
       "reports_count": 1,
       "reports": [
@@ -761,7 +1042,14 @@
             "Primary mixing time (sec)": 8.0,
             "Net aging time (sec)": 38.0
           },
-          "measurement_type": "smoke_particle_size"
+          "measurement_type": "smoke_particle_size",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-101-SAMER-Kapton-T51a-R1",
@@ -805,7 +1093,14 @@
             "Duration (sec)": 60.0,
             "Net aging time (sec)": 261.0
           },
-          "measurement_type": "smoke_particle_size"
+          "measurement_type": "smoke_particle_size",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-101-SAMER-Kapton-T61-R1",
@@ -851,7 +1146,14 @@
             "Primary mixing time (sec)": 8.0,
             "Net aging time (sec)": 38.0
           },
-          "measurement_type": "smoke_particle_size"
+          "measurement_type": "smoke_particle_size",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-101-SAMER-Kapton-T61a-R1",
@@ -894,7 +1196,14 @@
             "Rt/R0": 1.38,
             "Net aging time (sec)": 807.0
           },
-          "measurement_type": "smoke_particle_size"
+          "measurement_type": "smoke_particle_size",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-101-SAMER-Kapton-T62-R1",
@@ -940,7 +1249,14 @@
             "Primary mixing time (sec)": 8.0,
             "Net aging time (sec)": 39.0
           },
-          "measurement_type": "smoke_particle_size"
+          "measurement_type": "smoke_particle_size",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-101-SAMER-Kapton-T62a-R1",
@@ -983,7 +1299,14 @@
             "Rt/R0": 1.48,
             "Net aging time (sec)": 808.0
           },
-          "measurement_type": "smoke_particle_size"
+          "measurement_type": "smoke_particle_size",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-101-SAMER-Kapton-T70-R1",
@@ -1029,7 +1352,14 @@
             "Primary mixing time (sec)": 8.0,
             "Net aging time (sec)": 747.0
           },
-          "measurement_type": "smoke_particle_size"
+          "measurement_type": "smoke_particle_size",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-101-SAMER-Kapton-T73-R1",
@@ -1075,7 +1405,14 @@
             "Primary mixing time (sec)": 8.0,
             "Net aging time (sec)": 33.0
           },
-          "measurement_type": "smoke_particle_size"
+          "measurement_type": "smoke_particle_size",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-101-SAMER-Kapton-T73a-R1",
@@ -1118,7 +1455,14 @@
             "Rt/R0": 1.38,
             "Net aging time (sec)": 560.0
           },
-          "measurement_type": "smoke_particle_size"
+          "measurement_type": "smoke_particle_size",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-101-SAMER-Kapton-T75-R1",
@@ -1164,7 +1508,14 @@
             "Primary mixing time (sec)": 8.0,
             "Net aging time (sec)": 32.0
           },
-          "measurement_type": "smoke_particle_size"
+          "measurement_type": "smoke_particle_size",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-101-SAMER-Kapton-T75a-R1",
@@ -1207,7 +1558,14 @@
             "Rt/R0": 1.43,
             "Net aging time (sec)": 563.0
           },
-          "measurement_type": "smoke_particle_size"
+          "measurement_type": "smoke_particle_size",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-101-SAMER-Kapton-T77-R1",
@@ -1253,7 +1611,14 @@
             "Primary mixing time (sec)": 8.0,
             "Net aging time (sec)": 31.0
           },
-          "measurement_type": "smoke_particle_size"
+          "measurement_type": "smoke_particle_size",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-101-SAMER-Kapton-T77a-R1",
@@ -1296,7 +1661,14 @@
             "Rt/R0": 1.48,
             "Net aging time (sec)": 559.0
           },
-          "measurement_type": "smoke_particle_size"
+          "measurement_type": "smoke_particle_size",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-101-SAMER-Kapton-T85-R1",
@@ -1342,7 +1714,14 @@
             "Primary mixing time (sec)": 8.0,
             "Net aging time (sec)": 33.0
           },
-          "measurement_type": "smoke_particle_size"
+          "measurement_type": "smoke_particle_size",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-101-SAMER-Kapton-T85a-R1",
@@ -1385,7 +1764,14 @@
             "Rt/R0": 1.43,
             "Net aging time (sec)": 563.0
           },
-          "measurement_type": "smoke_particle_size"
+          "measurement_type": "smoke_particle_size",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         }
       ]
     },
@@ -1403,10 +1789,21 @@
         "PSI-159"
       ],
       "relevance_score": 75.0,
+      "moon_base_score": 91.0,
+      "moon_base_score_notes": [
+        "habitat O2 covers the 26.5–34% Moon-cabin band",
+        "pressure includes the 0.694 atm (10.2 psia) Moon-cabin anchor",
+        "pressure anchors are study-level planned, unconfirmed",
+        "quiescent (no-ventilation) burning is in scope",
+        "airflow 0 is assumed from a quiescent chamber description; CSV has no airflow column",
+        "burning-rate emulator maps to condensed crew-cabin materials"
+      ],
       "moon_base_applicable": true,
+      "include_in_atmosphere_solver": true,
+      "solver_exclude_reason": null,
       "covers_elevated_o2": true,
       "covers_moon_cabin_o2": true,
-      "covers_reduced_pressure": false,
+      "covers_reduced_pressure": true,
       "crew_materials": false,
       "partial_g_proxy": false,
       "earth_application": false,
@@ -1577,9 +1974,22 @@
         "max": null
       },
       "pressure_range_atm": {
-        "min": null,
-        "max": null
+        "min": 0.558,
+        "max": 1.0
       },
+      "study_level_conditions": {
+        "pressure_atm_values": [
+          0.558,
+          0.694,
+          1.0
+        ],
+        "pressure_source": "planned, unconfirmed: NASA-considered habitat atmospheres from the study objective (8.2 psia = 0.558 atm, 10.2 psia = 0.694 atm, 14.7 psia = 1.0 atm). The experimental table notes chamber pressure was varied but does not identify per-test values.",
+        "pressure_status": "planned_unconfirmed",
+        "pressure_is_assumed": true,
+        "pressure_condition_level": "study"
+      },
+      "assumed_experiment_count": 43,
+      "invalid_experiment_count": 0,
       "experiment_count": 43,
       "reports_count": 1,
       "reports": [
@@ -1613,14 +2023,18 @@
           "o2_source": "reported in experimental table under 'Oxygen Conc (percent)'",
           "o2_is_assumed": false,
           "pressure_atm": null,
-          "pressure_values": [],
-          "pressure_source": "not reported in source table (chamber pressures were varied per note)",
-          "pressure_is_assumed": false,
+          "pressure_values": [
+            0.558,
+            0.694,
+            1.0
+          ],
+          "pressure_source": "planned, unconfirmed: NASA-considered habitat atmospheres from the study objective (8.2 psia = 0.558 atm, 10.2 psia = 0.694 atm, 14.7 psia = 1.0 atm). The experimental table notes chamber pressure was varied but does not identify per-test values.",
+          "pressure_is_assumed": true,
           "flow_velocity_cm_s": 0.0,
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent microgravity ambient per investigation protocol",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": null,
@@ -1639,7 +2053,19 @@
             "Flames Ignited": 10,
             "Notes": "Oxygen Conc. (as diluted with nitrogen on a volume basis) was varied between tests where approximate concentrations for tests that ignited are listed. The chamber pressures were also varied but are not identified in this summary table."
           },
-          "day_flames_ignited": 10.0
+          "pressure_condition_level": "study",
+          "pressure_status": "planned_unconfirmed",
+          "condition_level": "mixed",
+          "day_flames_ignited": 10.0,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "pressure_atm",
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed"
         },
         {
           "experiment_id": "PSI-20-BRE-Feb8-O2_26.5-R1",
@@ -1659,14 +2085,18 @@
           "o2_source": "reported in experimental table under 'Oxygen Conc (percent)'",
           "o2_is_assumed": false,
           "pressure_atm": null,
-          "pressure_values": [],
-          "pressure_source": "not reported in source table (chamber pressures were varied per note)",
-          "pressure_is_assumed": false,
+          "pressure_values": [
+            0.558,
+            0.694,
+            1.0
+          ],
+          "pressure_source": "planned, unconfirmed: NASA-considered habitat atmospheres from the study objective (8.2 psia = 0.558 atm, 10.2 psia = 0.694 atm, 14.7 psia = 1.0 atm). The experimental table notes chamber pressure was varied but does not identify per-test values.",
+          "pressure_is_assumed": true,
           "flow_velocity_cm_s": 0.0,
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent microgravity ambient per investigation protocol",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": null,
@@ -1685,7 +2115,19 @@
             "Flames Ignited": 10,
             "Notes": "Oxygen Conc. (as diluted with nitrogen on a volume basis) was varied between tests where approximate concentrations for tests that ignited are listed. The chamber pressures were also varied but are not identified in this summary table."
           },
-          "day_flames_ignited": 10.0
+          "pressure_condition_level": "study",
+          "pressure_status": "planned_unconfirmed",
+          "condition_level": "mixed",
+          "day_flames_ignited": 10.0,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "pressure_atm",
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed"
         },
         {
           "experiment_id": "PSI-20-BRE-Feb8-O2_40.0-R1",
@@ -1705,14 +2147,18 @@
           "o2_source": "reported in experimental table under 'Oxygen Conc (percent)'",
           "o2_is_assumed": false,
           "pressure_atm": null,
-          "pressure_values": [],
-          "pressure_source": "not reported in source table (chamber pressures were varied per note)",
-          "pressure_is_assumed": false,
+          "pressure_values": [
+            0.558,
+            0.694,
+            1.0
+          ],
+          "pressure_source": "planned, unconfirmed: NASA-considered habitat atmospheres from the study objective (8.2 psia = 0.558 atm, 10.2 psia = 0.694 atm, 14.7 psia = 1.0 atm). The experimental table notes chamber pressure was varied but does not identify per-test values.",
+          "pressure_is_assumed": true,
           "flow_velocity_cm_s": 0.0,
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent microgravity ambient per investigation protocol",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": null,
@@ -1731,7 +2177,19 @@
             "Flames Ignited": 10,
             "Notes": "Oxygen Conc. (as diluted with nitrogen on a volume basis) was varied between tests where approximate concentrations for tests that ignited are listed. The chamber pressures were also varied but are not identified in this summary table."
           },
-          "day_flames_ignited": 10.0
+          "pressure_condition_level": "study",
+          "pressure_status": "planned_unconfirmed",
+          "condition_level": "mixed",
+          "day_flames_ignited": 10.0,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "pressure_atm",
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed"
         },
         {
           "experiment_id": "PSI-20-BRE-Feb20-O2_26.5-R1",
@@ -1751,14 +2209,18 @@
           "o2_source": "reported in experimental table under 'Oxygen Conc (percent)'",
           "o2_is_assumed": false,
           "pressure_atm": null,
-          "pressure_values": [],
-          "pressure_source": "not reported in source table (chamber pressures were varied per note)",
-          "pressure_is_assumed": false,
+          "pressure_values": [
+            0.558,
+            0.694,
+            1.0
+          ],
+          "pressure_source": "planned, unconfirmed: NASA-considered habitat atmospheres from the study objective (8.2 psia = 0.558 atm, 10.2 psia = 0.694 atm, 14.7 psia = 1.0 atm). The experimental table notes chamber pressure was varied but does not identify per-test values.",
+          "pressure_is_assumed": true,
           "flow_velocity_cm_s": 0.0,
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent microgravity ambient per investigation protocol",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": null,
@@ -1777,7 +2239,19 @@
             "Flames Ignited": 8,
             "Notes": "Flames Ignited is the number ignited on that day (neglecting the day change on ISS)."
           },
-          "day_flames_ignited": 8.0
+          "pressure_condition_level": "study",
+          "pressure_status": "planned_unconfirmed",
+          "condition_level": "mixed",
+          "day_flames_ignited": 8.0,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "pressure_atm",
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed"
         },
         {
           "experiment_id": "PSI-20-BRE-Feb20-O2_34.0-R1",
@@ -1797,14 +2271,18 @@
           "o2_source": "reported in experimental table under 'Oxygen Conc (percent)'",
           "o2_is_assumed": false,
           "pressure_atm": null,
-          "pressure_values": [],
-          "pressure_source": "not reported in source table (chamber pressures were varied per note)",
-          "pressure_is_assumed": false,
+          "pressure_values": [
+            0.558,
+            0.694,
+            1.0
+          ],
+          "pressure_source": "planned, unconfirmed: NASA-considered habitat atmospheres from the study objective (8.2 psia = 0.558 atm, 10.2 psia = 0.694 atm, 14.7 psia = 1.0 atm). The experimental table notes chamber pressure was varied but does not identify per-test values.",
+          "pressure_is_assumed": true,
           "flow_velocity_cm_s": 0.0,
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent microgravity ambient per investigation protocol",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": null,
@@ -1823,7 +2301,19 @@
             "Flames Ignited": 8,
             "Notes": "Flames Ignited is the number ignited on that day (neglecting the day change on ISS)."
           },
-          "day_flames_ignited": 8.0
+          "pressure_condition_level": "study",
+          "pressure_status": "planned_unconfirmed",
+          "condition_level": "mixed",
+          "day_flames_ignited": 8.0,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "pressure_atm",
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed"
         },
         {
           "experiment_id": "PSI-20-BRE-Feb25-O2_21.0-R1",
@@ -1843,14 +2333,18 @@
           "o2_source": "reported in experimental table under 'Oxygen Conc (percent)'",
           "o2_is_assumed": false,
           "pressure_atm": null,
-          "pressure_values": [],
-          "pressure_source": "not reported in source table (chamber pressures were varied per note)",
-          "pressure_is_assumed": false,
+          "pressure_values": [
+            0.558,
+            0.694,
+            1.0
+          ],
+          "pressure_source": "planned, unconfirmed: NASA-considered habitat atmospheres from the study objective (8.2 psia = 0.558 atm, 10.2 psia = 0.694 atm, 14.7 psia = 1.0 atm). The experimental table notes chamber pressure was varied but does not identify per-test values.",
+          "pressure_is_assumed": true,
           "flow_velocity_cm_s": 0.0,
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent microgravity ambient per investigation protocol",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": null,
@@ -1868,7 +2362,19 @@
             "Oxygen Conc (percent)": "21; 26.5; 34; 40",
             "Flames Ignited": 8
           },
-          "day_flames_ignited": 8.0
+          "pressure_condition_level": "study",
+          "pressure_status": "planned_unconfirmed",
+          "condition_level": "mixed",
+          "day_flames_ignited": 8.0,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "pressure_atm",
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed"
         },
         {
           "experiment_id": "PSI-20-BRE-Feb25-O2_26.5-R1",
@@ -1888,14 +2394,18 @@
           "o2_source": "reported in experimental table under 'Oxygen Conc (percent)'",
           "o2_is_assumed": false,
           "pressure_atm": null,
-          "pressure_values": [],
-          "pressure_source": "not reported in source table (chamber pressures were varied per note)",
-          "pressure_is_assumed": false,
+          "pressure_values": [
+            0.558,
+            0.694,
+            1.0
+          ],
+          "pressure_source": "planned, unconfirmed: NASA-considered habitat atmospheres from the study objective (8.2 psia = 0.558 atm, 10.2 psia = 0.694 atm, 14.7 psia = 1.0 atm). The experimental table notes chamber pressure was varied but does not identify per-test values.",
+          "pressure_is_assumed": true,
           "flow_velocity_cm_s": 0.0,
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent microgravity ambient per investigation protocol",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": null,
@@ -1913,7 +2423,19 @@
             "Oxygen Conc (percent)": "21; 26.5; 34; 40",
             "Flames Ignited": 8
           },
-          "day_flames_ignited": 8.0
+          "pressure_condition_level": "study",
+          "pressure_status": "planned_unconfirmed",
+          "condition_level": "mixed",
+          "day_flames_ignited": 8.0,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "pressure_atm",
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed"
         },
         {
           "experiment_id": "PSI-20-BRE-Feb25-O2_34.0-R1",
@@ -1933,14 +2455,18 @@
           "o2_source": "reported in experimental table under 'Oxygen Conc (percent)'",
           "o2_is_assumed": false,
           "pressure_atm": null,
-          "pressure_values": [],
-          "pressure_source": "not reported in source table (chamber pressures were varied per note)",
-          "pressure_is_assumed": false,
+          "pressure_values": [
+            0.558,
+            0.694,
+            1.0
+          ],
+          "pressure_source": "planned, unconfirmed: NASA-considered habitat atmospheres from the study objective (8.2 psia = 0.558 atm, 10.2 psia = 0.694 atm, 14.7 psia = 1.0 atm). The experimental table notes chamber pressure was varied but does not identify per-test values.",
+          "pressure_is_assumed": true,
           "flow_velocity_cm_s": 0.0,
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent microgravity ambient per investigation protocol",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": null,
@@ -1958,7 +2484,19 @@
             "Oxygen Conc (percent)": "21; 26.5; 34; 40",
             "Flames Ignited": 8
           },
-          "day_flames_ignited": 8.0
+          "pressure_condition_level": "study",
+          "pressure_status": "planned_unconfirmed",
+          "condition_level": "mixed",
+          "day_flames_ignited": 8.0,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "pressure_atm",
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed"
         },
         {
           "experiment_id": "PSI-20-BRE-Feb25-O2_40.0-R1",
@@ -1978,14 +2516,18 @@
           "o2_source": "reported in experimental table under 'Oxygen Conc (percent)'",
           "o2_is_assumed": false,
           "pressure_atm": null,
-          "pressure_values": [],
-          "pressure_source": "not reported in source table (chamber pressures were varied per note)",
-          "pressure_is_assumed": false,
+          "pressure_values": [
+            0.558,
+            0.694,
+            1.0
+          ],
+          "pressure_source": "planned, unconfirmed: NASA-considered habitat atmospheres from the study objective (8.2 psia = 0.558 atm, 10.2 psia = 0.694 atm, 14.7 psia = 1.0 atm). The experimental table notes chamber pressure was varied but does not identify per-test values.",
+          "pressure_is_assumed": true,
           "flow_velocity_cm_s": 0.0,
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent microgravity ambient per investigation protocol",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": null,
@@ -2003,7 +2545,19 @@
             "Oxygen Conc (percent)": "21; 26.5; 34; 40",
             "Flames Ignited": 8
           },
-          "day_flames_ignited": 8.0
+          "pressure_condition_level": "study",
+          "pressure_status": "planned_unconfirmed",
+          "condition_level": "mixed",
+          "day_flames_ignited": 8.0,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "pressure_atm",
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed"
         },
         {
           "experiment_id": "PSI-20-BRE-March4-O2_26.5-R1",
@@ -2023,14 +2577,18 @@
           "o2_source": "reported in experimental table under 'Oxygen Conc (percent)'",
           "o2_is_assumed": false,
           "pressure_atm": null,
-          "pressure_values": [],
-          "pressure_source": "not reported in source table (chamber pressures were varied per note)",
-          "pressure_is_assumed": false,
+          "pressure_values": [
+            0.558,
+            0.694,
+            1.0
+          ],
+          "pressure_source": "planned, unconfirmed: NASA-considered habitat atmospheres from the study objective (8.2 psia = 0.558 atm, 10.2 psia = 0.694 atm, 14.7 psia = 1.0 atm). The experimental table notes chamber pressure was varied but does not identify per-test values.",
+          "pressure_is_assumed": true,
           "flow_velocity_cm_s": 0.0,
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent microgravity ambient per investigation protocol",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": null,
@@ -2048,7 +2606,19 @@
             "Oxygen Conc (percent)": "26.5; 40",
             "Flames Ignited": 6
           },
-          "day_flames_ignited": 6.0
+          "pressure_condition_level": "study",
+          "pressure_status": "planned_unconfirmed",
+          "condition_level": "mixed",
+          "day_flames_ignited": 6.0,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "pressure_atm",
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed"
         },
         {
           "experiment_id": "PSI-20-BRE-March4-O2_40.0-R1",
@@ -2068,14 +2638,18 @@
           "o2_source": "reported in experimental table under 'Oxygen Conc (percent)'",
           "o2_is_assumed": false,
           "pressure_atm": null,
-          "pressure_values": [],
-          "pressure_source": "not reported in source table (chamber pressures were varied per note)",
-          "pressure_is_assumed": false,
+          "pressure_values": [
+            0.558,
+            0.694,
+            1.0
+          ],
+          "pressure_source": "planned, unconfirmed: NASA-considered habitat atmospheres from the study objective (8.2 psia = 0.558 atm, 10.2 psia = 0.694 atm, 14.7 psia = 1.0 atm). The experimental table notes chamber pressure was varied but does not identify per-test values.",
+          "pressure_is_assumed": true,
           "flow_velocity_cm_s": 0.0,
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent microgravity ambient per investigation protocol",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": null,
@@ -2093,7 +2667,19 @@
             "Oxygen Conc (percent)": "26.5; 40",
             "Flames Ignited": 6
           },
-          "day_flames_ignited": 6.0
+          "pressure_condition_level": "study",
+          "pressure_status": "planned_unconfirmed",
+          "condition_level": "mixed",
+          "day_flames_ignited": 6.0,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "pressure_atm",
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed"
         },
         {
           "experiment_id": "PSI-20-BRE-March7-O2_34.0-R1",
@@ -2113,14 +2699,18 @@
           "o2_source": "reported in experimental table under 'Oxygen Conc (percent)'",
           "o2_is_assumed": false,
           "pressure_atm": null,
-          "pressure_values": [],
-          "pressure_source": "not reported in source table (chamber pressures were varied per note)",
-          "pressure_is_assumed": false,
+          "pressure_values": [
+            0.558,
+            0.694,
+            1.0
+          ],
+          "pressure_source": "planned, unconfirmed: NASA-considered habitat atmospheres from the study objective (8.2 psia = 0.558 atm, 10.2 psia = 0.694 atm, 14.7 psia = 1.0 atm). The experimental table notes chamber pressure was varied but does not identify per-test values.",
+          "pressure_is_assumed": true,
           "flow_velocity_cm_s": 0.0,
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent microgravity ambient per investigation protocol",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": null,
@@ -2138,7 +2728,19 @@
             "Oxygen Conc (percent)": "3400%",
             "Flames Ignited": 6
           },
-          "day_flames_ignited": 6.0
+          "pressure_condition_level": "study",
+          "pressure_status": "planned_unconfirmed",
+          "condition_level": "mixed",
+          "day_flames_ignited": 6.0,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "pressure_atm",
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed"
         },
         {
           "experiment_id": "PSI-20-BRE-March11-O2_26.5-R1",
@@ -2158,14 +2760,18 @@
           "o2_source": "reported in experimental table under 'Oxygen Conc (percent)'",
           "o2_is_assumed": false,
           "pressure_atm": null,
-          "pressure_values": [],
-          "pressure_source": "not reported in source table (chamber pressures were varied per note)",
-          "pressure_is_assumed": false,
+          "pressure_values": [
+            0.558,
+            0.694,
+            1.0
+          ],
+          "pressure_source": "planned, unconfirmed: NASA-considered habitat atmospheres from the study objective (8.2 psia = 0.558 atm, 10.2 psia = 0.694 atm, 14.7 psia = 1.0 atm). The experimental table notes chamber pressure was varied but does not identify per-test values.",
+          "pressure_is_assumed": true,
           "flow_velocity_cm_s": 0.0,
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent microgravity ambient per investigation protocol",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": null,
@@ -2183,7 +2789,19 @@
             "Oxygen Conc (percent)": "26.5; 34",
             "Flames Ignited": 7
           },
-          "day_flames_ignited": 7.0
+          "pressure_condition_level": "study",
+          "pressure_status": "planned_unconfirmed",
+          "condition_level": "mixed",
+          "day_flames_ignited": 7.0,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "pressure_atm",
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed"
         },
         {
           "experiment_id": "PSI-20-BRE-March11-O2_34.0-R1",
@@ -2203,14 +2821,18 @@
           "o2_source": "reported in experimental table under 'Oxygen Conc (percent)'",
           "o2_is_assumed": false,
           "pressure_atm": null,
-          "pressure_values": [],
-          "pressure_source": "not reported in source table (chamber pressures were varied per note)",
-          "pressure_is_assumed": false,
+          "pressure_values": [
+            0.558,
+            0.694,
+            1.0
+          ],
+          "pressure_source": "planned, unconfirmed: NASA-considered habitat atmospheres from the study objective (8.2 psia = 0.558 atm, 10.2 psia = 0.694 atm, 14.7 psia = 1.0 atm). The experimental table notes chamber pressure was varied but does not identify per-test values.",
+          "pressure_is_assumed": true,
           "flow_velocity_cm_s": 0.0,
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent microgravity ambient per investigation protocol",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": null,
@@ -2228,7 +2850,19 @@
             "Oxygen Conc (percent)": "26.5; 34",
             "Flames Ignited": 7
           },
-          "day_flames_ignited": 7.0
+          "pressure_condition_level": "study",
+          "pressure_status": "planned_unconfirmed",
+          "condition_level": "mixed",
+          "day_flames_ignited": 7.0,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "pressure_atm",
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed"
         },
         {
           "experiment_id": "PSI-20-BRE-March28-O2_26.5-R1",
@@ -2248,14 +2882,18 @@
           "o2_source": "reported in experimental table under 'Oxygen Conc (percent)'",
           "o2_is_assumed": false,
           "pressure_atm": null,
-          "pressure_values": [],
-          "pressure_source": "not reported in source table (chamber pressures were varied per note)",
-          "pressure_is_assumed": false,
+          "pressure_values": [
+            0.558,
+            0.694,
+            1.0
+          ],
+          "pressure_source": "planned, unconfirmed: NASA-considered habitat atmospheres from the study objective (8.2 psia = 0.558 atm, 10.2 psia = 0.694 atm, 14.7 psia = 1.0 atm). The experimental table notes chamber pressure was varied but does not identify per-test values.",
+          "pressure_is_assumed": true,
           "flow_velocity_cm_s": 0.0,
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent microgravity ambient per investigation protocol",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": null,
@@ -2273,7 +2911,19 @@
             "Oxygen Conc (percent)": "26.5; 34",
             "Flames Ignited": 8
           },
-          "day_flames_ignited": 8.0
+          "pressure_condition_level": "study",
+          "pressure_status": "planned_unconfirmed",
+          "condition_level": "mixed",
+          "day_flames_ignited": 8.0,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "pressure_atm",
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed"
         }
       ]
     },
@@ -2292,7 +2942,14 @@
         "PSI-106"
       ],
       "relevance_score": 73.0,
+      "moon_base_score": 40.0,
+      "moon_base_score_notes": [
+        "quiescent (no-ventilation) burning is in scope",
+        "crew-relevant solid materials"
+      ],
       "moon_base_applicable": true,
+      "include_in_atmosphere_solver": true,
+      "solver_exclude_reason": null,
       "covers_elevated_o2": false,
       "covers_moon_cabin_o2": false,
       "covers_reduced_pressure": false,
@@ -2493,6 +3150,9 @@
         "min": null,
         "max": null
       },
+      "study_level_conditions": null,
+      "assumed_experiment_count": 0,
+      "invalid_experiment_count": 0,
       "experiment_count": 129,
       "reports_count": 1,
       "reports": [
@@ -2575,7 +3235,14 @@
           "co_initial_ppm": 0.0,
           "co_final_ppm": 6.0,
           "radiometer_gain": "50",
-          "flow_direction_note": "opposed and concurrent both used; direction not a CSV column"
+          "flow_direction_note": "opposed and concurrent both used; direction not a CSV column",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-25-BASS2-B2-R1",
@@ -2635,7 +3302,14 @@
           "co_initial_ppm": 6.0,
           "co_final_ppm": null,
           "radiometer_gain": "50",
-          "flow_direction_note": "opposed and concurrent both used; direction not a CSV column"
+          "flow_direction_note": "opposed and concurrent both used; direction not a CSV column",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-25-BASS2-B3-R1",
@@ -2697,7 +3371,14 @@
           "co_initial_ppm": 12.0,
           "co_final_ppm": 19.0,
           "radiometer_gain": "50",
-          "flow_direction_note": "opposed and concurrent both used; direction not a CSV column"
+          "flow_direction_note": "opposed and concurrent both used; direction not a CSV column",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-25-BASS2-B4-R1",
@@ -2759,7 +3440,14 @@
           "co_initial_ppm": -1.0,
           "co_final_ppm": 10.0,
           "radiometer_gain": "50",
-          "flow_direction_note": "opposed and concurrent both used; direction not a CSV column"
+          "flow_direction_note": "opposed and concurrent both used; direction not a CSV column",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-25-BASS2-B5-R1",
@@ -2821,7 +3509,14 @@
           "co_initial_ppm": 0.0,
           "co_final_ppm": 12.0,
           "radiometer_gain": "50",
-          "flow_direction_note": "opposed and concurrent both used; direction not a CSV column"
+          "flow_direction_note": "opposed and concurrent both used; direction not a CSV column",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-25-BASS2-B6-R1",
@@ -2883,7 +3578,14 @@
           "co_initial_ppm": 0.0,
           "co_final_ppm": 0.3,
           "radiometer_gain": "10",
-          "flow_direction_note": "opposed and concurrent both used; direction not a CSV column"
+          "flow_direction_note": "opposed and concurrent both used; direction not a CSV column",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-25-BASS2-B7-R1",
@@ -2945,7 +3647,14 @@
           "co_initial_ppm": 1.0,
           "co_final_ppm": 17.0,
           "radiometer_gain": "50",
-          "flow_direction_note": "opposed and concurrent both used; direction not a CSV column"
+          "flow_direction_note": "opposed and concurrent both used; direction not a CSV column",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-25-BASS2-B8-R1",
@@ -3007,7 +3716,14 @@
           "co_initial_ppm": 0.0,
           "co_final_ppm": 131.0,
           "radiometer_gain": "10",
-          "flow_direction_note": "opposed and concurrent both used; direction not a CSV column"
+          "flow_direction_note": "opposed and concurrent both used; direction not a CSV column",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-25-BASS2-B9-R1",
@@ -3069,7 +3785,14 @@
           "co_initial_ppm": 0.0,
           "co_final_ppm": 10.0,
           "radiometer_gain": "10",
-          "flow_direction_note": "opposed and concurrent both used; direction not a CSV column"
+          "flow_direction_note": "opposed and concurrent both used; direction not a CSV column",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-25-BASS2-B10-R1",
@@ -3131,7 +3854,14 @@
           "co_initial_ppm": 0.0,
           "co_final_ppm": 23.0,
           "radiometer_gain": "10",
-          "flow_direction_note": "opposed and concurrent both used; direction not a CSV column"
+          "flow_direction_note": "opposed and concurrent both used; direction not a CSV column",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-25-BASS2-B11-R1",
@@ -3193,7 +3923,14 @@
           "co_initial_ppm": 0.0,
           "co_final_ppm": 46.0,
           "radiometer_gain": "10",
-          "flow_direction_note": "opposed and concurrent both used; direction not a CSV column"
+          "flow_direction_note": "opposed and concurrent both used; direction not a CSV column",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-25-BASS2-B12-R1",
@@ -3255,7 +3992,14 @@
           "co_initial_ppm": 17.0,
           "co_final_ppm": 33.0,
           "radiometer_gain": "50",
-          "flow_direction_note": "opposed and concurrent both used; direction not a CSV column"
+          "flow_direction_note": "opposed and concurrent both used; direction not a CSV column",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-25-BASS2-B13-R1",
@@ -3317,7 +4061,14 @@
           "co_initial_ppm": 0.0,
           "co_final_ppm": 61.0,
           "radiometer_gain": "10",
-          "flow_direction_note": "opposed and concurrent both used; direction not a CSV column"
+          "flow_direction_note": "opposed and concurrent both used; direction not a CSV column",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-25-BASS2-B14-R1",
@@ -3379,7 +4130,14 @@
           "co_initial_ppm": 0.2,
           "co_final_ppm": null,
           "radiometer_gain": "250",
-          "flow_direction_note": "opposed and concurrent both used; direction not a CSV column"
+          "flow_direction_note": "opposed and concurrent both used; direction not a CSV column",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-25-BASS2-B15-R1",
@@ -3441,7 +4199,14 @@
           "co_initial_ppm": 0.0,
           "co_final_ppm": 22.0,
           "radiometer_gain": "10",
-          "flow_direction_note": "opposed and concurrent both used; direction not a CSV column"
+          "flow_direction_note": "opposed and concurrent both used; direction not a CSV column",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         }
       ]
     },
@@ -3459,7 +4224,13 @@
         "PSI-100"
       ],
       "relevance_score": 71.5,
+      "moon_base_score": 28.0,
+      "moon_base_score_notes": [
+        "crew-relevant solid materials"
+      ],
       "moon_base_applicable": true,
+      "include_in_atmosphere_solver": true,
+      "solver_exclude_reason": null,
       "covers_elevated_o2": false,
       "covers_moon_cabin_o2": false,
       "covers_reduced_pressure": false,
@@ -3577,6 +4348,9 @@
         "min": null,
         "max": null
       },
+      "study_level_conditions": null,
+      "assumed_experiment_count": 0,
+      "invalid_experiment_count": 0,
       "experiment_count": 15,
       "reports_count": 0,
       "reports": [],
@@ -3638,7 +4412,14 @@
           "microg_burn_length": "~ 0",
           "microg_spread_length": null,
           "normalg_burn_length": "Complete",
-          "normalg_spread_rate": "Acceleratory"
+          "normalg_spread_rate": "Acceleratory",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-99-2-2-R1",
@@ -3696,7 +4477,14 @@
           "microg_burn_length": "~ 0",
           "microg_spread_length": null,
           "normalg_burn_length": "7.6 cm",
-          "normalg_spread_rate": "1.2 mm/s"
+          "normalg_spread_rate": "1.2 mm/s",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-99-2-3-R1",
@@ -3753,7 +4541,14 @@
           "microg_burn_length": "~ 0",
           "microg_spread_length": null,
           "normalg_burn_length": "~ 0",
-          "normalg_spread_rate": null
+          "normalg_spread_rate": null,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-99-2-4-R1",
@@ -3812,7 +4607,14 @@
           "microg_burn_length": "~ 0",
           "microg_spread_length": null,
           "normalg_burn_length": "Complete",
-          "normalg_spread_rate": "0.6 mm/s"
+          "normalg_spread_rate": "0.6 mm/s",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-99-2-5-R1",
@@ -3872,7 +4674,14 @@
           "microg_burn_length": "29 cm",
           "microg_spread_length": "2.1 mm/s",
           "normalg_burn_length": "Complete",
-          "normalg_spread_rate": "Acceleratory"
+          "normalg_spread_rate": "Acceleratory",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-99-2-6-R1",
@@ -3931,7 +4740,14 @@
           "microg_burn_length": "29 cm",
           "microg_spread_length": "2.6 mm/s",
           "normalg_burn_length": "Complete",
-          "normalg_spread_rate": "Acceleratory"
+          "normalg_spread_rate": "Acceleratory",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-99-2-7-R1",
@@ -3990,7 +4806,14 @@
           "microg_burn_length": "5 cm & 0 (note 2)",
           "microg_spread_length": "n/a (Nomex)",
           "normalg_burn_length": "~ 0 (Nomex)",
-          "normalg_spread_rate": "n/a (Nomex)"
+          "normalg_spread_rate": "n/a (Nomex)",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-99-2-8-R1",
@@ -4049,7 +4872,14 @@
           "microg_burn_length": "~ 10 cm (note 3)",
           "microg_spread_length": "Note 4",
           "normalg_burn_length": "Complete",
-          "normalg_spread_rate": "Acceleratory"
+          "normalg_spread_rate": "Acceleratory",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-99-2-9-R1",
@@ -4107,7 +4937,14 @@
           "microg_burn_length": "~ 10 cm (note 4)",
           "microg_spread_length": "Note 4",
           "normalg_burn_length": "Complete",
-          "normalg_spread_rate": "Acceleratory"
+          "normalg_spread_rate": "Acceleratory",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-99-F1C1_F1C2-R1",
@@ -4148,7 +4985,14 @@
           "microg_burn_length": null,
           "microg_spread_length": null,
           "normalg_burn_length": null,
-          "normalg_spread_rate": null
+          "normalg_spread_rate": null,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-99-F2C1_F2C2-R1",
@@ -4189,7 +5033,14 @@
           "microg_burn_length": null,
           "microg_spread_length": null,
           "normalg_burn_length": null,
-          "normalg_spread_rate": null
+          "normalg_spread_rate": null,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-99-Note_1_Derived_from_measured_CO2_production_and_referenced_to_initial_O2_concentration_reported_by_ISS.-R1",
@@ -4229,7 +5080,14 @@
           "microg_burn_length": null,
           "microg_spread_length": null,
           "normalg_burn_length": null,
-          "normalg_spread_rate": null
+          "normalg_spread_rate": null,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-99-Note_2_The_PMMA_portion_was_completely_consumed_but_the_Nomex_was_not_ignited.-R1",
@@ -4269,7 +5127,14 @@
           "microg_burn_length": null,
           "microg_spread_length": null,
           "normalg_burn_length": null,
-          "normalg_spread_rate": null
+          "normalg_spread_rate": null,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-99-Note_3_This_is_the_length_of_fuel_with_significant_visible_damage.-R1",
@@ -4309,7 +5174,14 @@
           "microg_burn_length": null,
           "microg_spread_length": null,
           "normalg_burn_length": null,
-          "normalg_spread_rate": null
+          "normalg_spread_rate": null,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-99-Note_4_The_flames_remain_anchored_at_the_base_of_the_sample_which_has_a_very_slow_regression_rate_0.01_to_0.04_mm_s_-R1",
@@ -4349,7 +5221,14 @@
           "microg_burn_length": null,
           "microg_spread_length": null,
           "normalg_burn_length": null,
-          "normalg_spread_rate": null
+          "normalg_spread_rate": null,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         }
       ]
     },
@@ -4367,7 +5246,13 @@
         "PSI-100"
       ],
       "relevance_score": 71.0,
+      "moon_base_score": 28.0,
+      "moon_base_score_notes": [
+        "crew-relevant solid materials"
+      ],
       "moon_base_applicable": true,
+      "include_in_atmosphere_solver": true,
+      "solver_exclude_reason": null,
       "covers_elevated_o2": false,
       "covers_moon_cabin_o2": false,
       "covers_reduced_pressure": false,
@@ -4470,6 +5355,9 @@
         "min": null,
         "max": null
       },
+      "study_level_conditions": null,
+      "assumed_experiment_count": 0,
+      "invalid_experiment_count": 0,
       "experiment_count": 2,
       "reports_count": 0,
       "reports": [],
@@ -4525,7 +5413,14 @@
             "Camera 2": "S1C2"
           },
           "ignition_power_w": 182.0,
-          "ignition_time_s": 8.0
+          "ignition_time_s": 8.0,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-98-S2-R1",
@@ -4577,7 +5472,14 @@
             "Camera 2": "S2C2"
           },
           "ignition_power_w": 182.0,
-          "ignition_time_s": 8.0
+          "ignition_time_s": 8.0,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         }
       ]
     },
@@ -4596,7 +5498,13 @@
         "PSI-106"
       ],
       "relevance_score": 68.0,
+      "moon_base_score": 22.0,
+      "moon_base_score_notes": [
+        "crew-relevant solid materials"
+      ],
       "moon_base_applicable": true,
+      "include_in_atmosphere_solver": true,
+      "solver_exclude_reason": null,
       "covers_elevated_o2": false,
       "covers_moon_cabin_o2": false,
       "covers_reduced_pressure": false,
@@ -4740,6 +5648,9 @@
         "min": null,
         "max": null
       },
+      "study_level_conditions": null,
+      "assumed_experiment_count": 0,
+      "invalid_experiment_count": 0,
       "experiment_count": 121,
       "reports_count": 0,
       "reports": [],
@@ -4781,7 +5692,14 @@
             "Test #": "1",
             "Sample #": 4.0,
             "Fuel Sample Material": "SIBAL 2 cm"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-26-BASS-T2.0-S24.0-R1",
@@ -4820,7 +5738,14 @@
             "Test #": "42",
             "Sample #": 24.0,
             "Fuel Sample Material": "PMMA sphere 2 cm"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-26-BASS-T3.0-S19.0-R1",
@@ -4859,7 +5784,14 @@
             "Test #": "18",
             "Sample #": 19.0,
             "Fuel Sample Material": "PMMA sphere 1 cm"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-26-BASS-T4.0-S10.0-R1",
@@ -4898,7 +5830,14 @@
             "Test #": "7",
             "Sample #": 10.0,
             "Fuel Sample Material": "SIBAL 2 cm"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-26-BASS-T5.0-S11.0-R1",
@@ -4937,7 +5876,14 @@
             "Test #": "8",
             "Sample #": 11.0,
             "Fuel Sample Material": "SIBAL 2 cm"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-26-BASS-T6.0-S24.0-R1",
@@ -4976,7 +5922,14 @@
             "Test #": "43",
             "Sample #": 24.0,
             "Fuel Sample Material": "PMMA sphere 2 cm"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-26-BASS-T7.0-S24.0-R1",
@@ -5015,7 +5968,14 @@
             "Test #": "44",
             "Sample #": 24.0,
             "Fuel Sample Material": "PMMA sphere 2 cm"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-26-BASS-T8.0-S24.0-R1",
@@ -5054,7 +6014,14 @@
             "Test #": "45",
             "Sample #": 24.0,
             "Fuel Sample Material": "PMMA sphere 2 cm"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-26-BASS-T9.0-S19.0-R1",
@@ -5093,7 +6060,14 @@
             "Test #": "19",
             "Sample #": 19.0,
             "Fuel Sample Material": "PMMA sphere 1 cm"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-26-BASS-T10.0-S19.0-R1",
@@ -5132,7 +6106,14 @@
             "Test #": "20",
             "Sample #": 19.0,
             "Fuel Sample Material": "PMMA sphere 1 cm"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-26-BASS-T11.0-S19.0-R1",
@@ -5171,7 +6152,14 @@
             "Test #": "21",
             "Sample #": 19.0,
             "Fuel Sample Material": "PMMA sphere 1 cm"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-26-BASS-T12.0-S12.0-R1",
@@ -5210,7 +6198,14 @@
             "Test #": "4",
             "Sample #": 12.0,
             "Fuel Sample Material": "SIBAL 2 cm"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-26-BASS-T13.0-S2.0-R1",
@@ -5249,7 +6244,14 @@
             "Test #": "10",
             "Sample #": 2.0,
             "Fuel Sample Material": "SIBAL 1 cm"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-26-BASS-T14.0-S27.0-R1",
@@ -5288,7 +6290,14 @@
             "Test #": "12",
             "Sample #": 27.0,
             "Fuel Sample Material": "Nomex blend 2 cm"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-26-BASS-T15.0-S21.0-R1",
@@ -5327,7 +6336,14 @@
             "Test #": "54",
             "Sample #": 21.0,
             "Fuel Sample Material": "PMMA 2 cm"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         }
       ]
     },
@@ -5345,7 +6361,15 @@
         "PSI-39"
       ],
       "relevance_score": 68.0,
+      "moon_base_score": 52.0,
+      "moon_base_score_notes": [
+        "habitat O2 covers the 26.5–34% Moon-cabin band",
+        "pressure includes reduced-pressure points at or below 0.70 atm",
+        "O2/pressure come from the study-level design matrix, not one executed cell per row"
+      ],
       "moon_base_applicable": true,
+      "include_in_atmosphere_solver": true,
+      "solver_exclude_reason": null,
       "covers_elevated_o2": true,
       "covers_moon_cabin_o2": true,
       "covers_reduced_pressure": true,
@@ -5738,6 +6762,37 @@
         "min": 0.5,
         "max": 3.0
       },
+      "study_level_conditions": {
+        "o2_pct_values": [
+          17.0,
+          21.0,
+          25.0,
+          30.0
+        ],
+        "pressure_atm_values": [
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          3.0
+        ],
+        "flow_values": [
+          0.1,
+          5.0
+        ],
+        "o2_source": "FLEX-2 design matrix Oxygen Mole Fraction 0.17; 0.21; 0.25; 0.3 converted to percent",
+        "pressure_source": "FLEX-2 design matrix Ambient Pressure (atm): 0.5; 1.0; 1.5; 2.0; 3.0",
+        "flow_source": "FLEX-2 design matrix Flow Velocity (cm/s): 0.1 - 5",
+        "o2_status": "design_matrix",
+        "pressure_status": "design_matrix",
+        "o2_is_assumed": false,
+        "pressure_is_assumed": false,
+        "o2_condition_level": "study",
+        "pressure_condition_level": "study",
+        "flow_condition_level": "study"
+      },
+      "assumed_experiment_count": 0,
+      "invalid_experiment_count": 0,
       "experiment_count": 8,
       "reports_count": 0,
       "reports": [],
@@ -5760,7 +6815,7 @@
             25.0,
             30.0
           ],
-          "o2_source": "parameter matrix O2 mole fractions 0.17; 0.21;0.25; 0.3 converted to percent",
+          "o2_source": "FLEX-2 design matrix Oxygen Mole Fraction 0.17; 0.21; 0.25; 0.3 converted to percent",
           "o2_is_assumed": false,
           "pressure_atm": null,
           "pressure_values": [
@@ -5770,14 +6825,14 @@
             2.0,
             3.0
           ],
-          "pressure_source": "parameter matrix pressures (atm): 0.5; 1.0; 1.5; 2.0; or 3.0",
+          "pressure_source": "FLEX-2 design matrix Ambient Pressure (atm): 0.5; 1.0; 1.5; 2.0; 3.0",
           "pressure_is_assumed": false,
           "flow_velocity_cm_s": null,
           "flow_values": [
             0.1,
             5.0
           ],
-          "flow_velocity_source": "parameter matrix flow (cm/s): 0.1 - 5",
+          "flow_velocity_source": "FLEX-2 design matrix Flow Velocity (cm/s): 0.1 - 5",
           "flow_direction": "forced flow",
           "flow_is_assumed": false,
           "burn_time_s": null,
@@ -5795,7 +6850,18 @@
             "Ambient Temperature (C)": 25,
             "Flow Velocity (cm/s)": "0.1 - 5"
           },
-          "is_parameter_matrix": true
+          "is_parameter_matrix": true,
+          "condition_level": "study",
+          "o2_condition_level": "study",
+          "pressure_condition_level": "study",
+          "pressure_status": "design_matrix",
+          "o2_status": "design_matrix",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported"
         },
         {
           "experiment_id": "PSI-68-FLEX2-n-Octane__pure_-R1",
@@ -5815,7 +6881,7 @@
             25.0,
             30.0
           ],
-          "o2_source": "parameter matrix O2 mole fractions 0.17; 0.21;0.25; 0.3 converted to percent",
+          "o2_source": "FLEX-2 design matrix Oxygen Mole Fraction 0.17; 0.21; 0.25; 0.3 converted to percent",
           "o2_is_assumed": false,
           "pressure_atm": null,
           "pressure_values": [
@@ -5825,14 +6891,14 @@
             2.0,
             3.0
           ],
-          "pressure_source": "parameter matrix pressures (atm): 0.5; 1.0; 1.5; 2.0; or 3.0",
+          "pressure_source": "FLEX-2 design matrix Ambient Pressure (atm): 0.5; 1.0; 1.5; 2.0; 3.0",
           "pressure_is_assumed": false,
           "flow_velocity_cm_s": null,
           "flow_values": [
             0.1,
             5.0
           ],
-          "flow_velocity_source": "parameter matrix flow (cm/s): 0.1 - 5",
+          "flow_velocity_source": "FLEX-2 design matrix Flow Velocity (cm/s): 0.1 - 5",
           "flow_direction": "forced flow",
           "flow_is_assumed": false,
           "burn_time_s": null,
@@ -5850,7 +6916,18 @@
             "Ambient Temperature (C)": 25,
             "Flow Velocity (cm/s)": "0.1 - 5"
           },
-          "is_parameter_matrix": true
+          "is_parameter_matrix": true,
+          "condition_level": "study",
+          "o2_condition_level": "study",
+          "pressure_condition_level": "study",
+          "pressure_status": "design_matrix",
+          "o2_status": "design_matrix",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported"
         },
         {
           "experiment_id": "PSI-68-FLEX2-Heptane__pure_-R1",
@@ -5870,7 +6947,7 @@
             25.0,
             30.0
           ],
-          "o2_source": "parameter matrix O2 mole fractions 0.17; 0.21;0.25; 0.3 converted to percent",
+          "o2_source": "FLEX-2 design matrix Oxygen Mole Fraction 0.17; 0.21; 0.25; 0.3 converted to percent",
           "o2_is_assumed": false,
           "pressure_atm": null,
           "pressure_values": [
@@ -5880,14 +6957,14 @@
             2.0,
             3.0
           ],
-          "pressure_source": "parameter matrix pressures (atm): 0.5; 1.0; 1.5; 2.0; or 3.0",
+          "pressure_source": "FLEX-2 design matrix Ambient Pressure (atm): 0.5; 1.0; 1.5; 2.0; 3.0",
           "pressure_is_assumed": false,
           "flow_velocity_cm_s": null,
           "flow_values": [
             0.1,
             5.0
           ],
-          "flow_velocity_source": "parameter matrix flow (cm/s): 0.1 - 5",
+          "flow_velocity_source": "FLEX-2 design matrix Flow Velocity (cm/s): 0.1 - 5",
           "flow_direction": "forced flow",
           "flow_is_assumed": false,
           "burn_time_s": null,
@@ -5905,7 +6982,18 @@
             "Ambient Temperature (C)": 25,
             "Flow Velocity (cm/s)": "0.1 - 5"
           },
-          "is_parameter_matrix": true
+          "is_parameter_matrix": true,
+          "condition_level": "study",
+          "o2_condition_level": "study",
+          "pressure_condition_level": "study",
+          "pressure_status": "design_matrix",
+          "o2_status": "design_matrix",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported"
         },
         {
           "experiment_id": "PSI-68-FLEX2-Decane__pure_-R1",
@@ -5925,7 +7013,7 @@
             25.0,
             30.0
           ],
-          "o2_source": "parameter matrix O2 mole fractions 0.17; 0.21;0.25; 0.3 converted to percent",
+          "o2_source": "FLEX-2 design matrix Oxygen Mole Fraction 0.17; 0.21; 0.25; 0.3 converted to percent",
           "o2_is_assumed": false,
           "pressure_atm": null,
           "pressure_values": [
@@ -5935,14 +7023,14 @@
             2.0,
             3.0
           ],
-          "pressure_source": "parameter matrix pressures (atm): 0.5; 1.0; 1.5; 2.0; or 3.0",
+          "pressure_source": "FLEX-2 design matrix Ambient Pressure (atm): 0.5; 1.0; 1.5; 2.0; 3.0",
           "pressure_is_assumed": false,
           "flow_velocity_cm_s": null,
           "flow_values": [
             0.1,
             5.0
           ],
-          "flow_velocity_source": "parameter matrix flow (cm/s): 0.1 - 5",
+          "flow_velocity_source": "FLEX-2 design matrix Flow Velocity (cm/s): 0.1 - 5",
           "flow_direction": "forced flow",
           "flow_is_assumed": false,
           "burn_time_s": null,
@@ -5960,7 +7048,18 @@
             "Ambient Temperature (C)": 25,
             "Flow Velocity (cm/s)": "0.1 - 5"
           },
-          "is_parameter_matrix": true
+          "is_parameter_matrix": true,
+          "condition_level": "study",
+          "o2_condition_level": "study",
+          "pressure_condition_level": "study",
+          "pressure_status": "design_matrix",
+          "o2_status": "design_matrix",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported"
         },
         {
           "experiment_id": "PSI-68-FLEX2-Ethanol__pure_-R1",
@@ -5980,7 +7079,7 @@
             25.0,
             30.0
           ],
-          "o2_source": "parameter matrix O2 mole fractions 0.17; 0.21;0.25; 0.3 converted to percent",
+          "o2_source": "FLEX-2 design matrix Oxygen Mole Fraction 0.17; 0.21; 0.25; 0.3 converted to percent",
           "o2_is_assumed": false,
           "pressure_atm": null,
           "pressure_values": [
@@ -5990,14 +7089,14 @@
             2.0,
             3.0
           ],
-          "pressure_source": "parameter matrix pressures (atm): 0.5; 1.0; 1.5; 2.0; or 3.0",
+          "pressure_source": "FLEX-2 design matrix Ambient Pressure (atm): 0.5; 1.0; 1.5; 2.0; 3.0",
           "pressure_is_assumed": false,
           "flow_velocity_cm_s": null,
           "flow_values": [
             0.1,
             5.0
           ],
-          "flow_velocity_source": "parameter matrix flow (cm/s): 0.1 - 5",
+          "flow_velocity_source": "FLEX-2 design matrix Flow Velocity (cm/s): 0.1 - 5",
           "flow_direction": "forced flow",
           "flow_is_assumed": false,
           "burn_time_s": null,
@@ -6015,7 +7114,18 @@
             "Ambient Temperature (C)": 25,
             "Flow Velocity (cm/s)": "0.1 - 5"
           },
-          "is_parameter_matrix": true
+          "is_parameter_matrix": true,
+          "condition_level": "study",
+          "o2_condition_level": "study",
+          "pressure_condition_level": "study",
+          "pressure_status": "design_matrix",
+          "o2_status": "design_matrix",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported"
         },
         {
           "experiment_id": "PSI-68-FLEX2-Propanol__95__Glycerol__5___mixture_-R1",
@@ -6035,7 +7145,7 @@
             25.0,
             30.0
           ],
-          "o2_source": "parameter matrix O2 mole fractions 0.17; 0.21;0.25; 0.3 converted to percent",
+          "o2_source": "FLEX-2 design matrix Oxygen Mole Fraction 0.17; 0.21; 0.25; 0.3 converted to percent",
           "o2_is_assumed": false,
           "pressure_atm": null,
           "pressure_values": [
@@ -6045,14 +7155,14 @@
             2.0,
             3.0
           ],
-          "pressure_source": "parameter matrix pressures (atm): 0.5; 1.0; 1.5; 2.0; or 3.0",
+          "pressure_source": "FLEX-2 design matrix Ambient Pressure (atm): 0.5; 1.0; 1.5; 2.0; 3.0",
           "pressure_is_assumed": false,
           "flow_velocity_cm_s": null,
           "flow_values": [
             0.1,
             5.0
           ],
-          "flow_velocity_source": "parameter matrix flow (cm/s): 0.1 - 5",
+          "flow_velocity_source": "FLEX-2 design matrix Flow Velocity (cm/s): 0.1 - 5",
           "flow_direction": "forced flow",
           "flow_is_assumed": false,
           "burn_time_s": null,
@@ -6070,7 +7180,18 @@
             "Ambient Temperature (C)": 25,
             "Flow Velocity (cm/s)": "0.1 - 5"
           },
-          "is_parameter_matrix": true
+          "is_parameter_matrix": true,
+          "condition_level": "study",
+          "o2_condition_level": "study",
+          "pressure_condition_level": "study",
+          "pressure_status": "design_matrix",
+          "o2_status": "design_matrix",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported"
         },
         {
           "experiment_id": "PSI-68-FLEX2-Heptane__50__IsoOctane__50___mixture_-R1",
@@ -6090,7 +7211,7 @@
             25.0,
             30.0
           ],
-          "o2_source": "parameter matrix O2 mole fractions 0.17; 0.21;0.25; 0.3 converted to percent",
+          "o2_source": "FLEX-2 design matrix Oxygen Mole Fraction 0.17; 0.21; 0.25; 0.3 converted to percent",
           "o2_is_assumed": false,
           "pressure_atm": null,
           "pressure_values": [
@@ -6100,14 +7221,14 @@
             2.0,
             3.0
           ],
-          "pressure_source": "parameter matrix pressures (atm): 0.5; 1.0; 1.5; 2.0; or 3.0",
+          "pressure_source": "FLEX-2 design matrix Ambient Pressure (atm): 0.5; 1.0; 1.5; 2.0; 3.0",
           "pressure_is_assumed": false,
           "flow_velocity_cm_s": null,
           "flow_values": [
             0.1,
             5.0
           ],
-          "flow_velocity_source": "parameter matrix flow (cm/s): 0.1 - 5",
+          "flow_velocity_source": "FLEX-2 design matrix Flow Velocity (cm/s): 0.1 - 5",
           "flow_direction": "forced flow",
           "flow_is_assumed": false,
           "burn_time_s": null,
@@ -6125,7 +7246,18 @@
             "Ambient Temperature (C)": 25,
             "Flow Velocity (cm/s)": "0.1 - 5"
           },
-          "is_parameter_matrix": true
+          "is_parameter_matrix": true,
+          "condition_level": "study",
+          "o2_condition_level": "study",
+          "pressure_condition_level": "study",
+          "pressure_status": "design_matrix",
+          "o2_status": "design_matrix",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported"
         },
         {
           "experiment_id": "PSI-68-FLEX2-Propanol__80__Glycerol__20___mixture_-R1",
@@ -6145,7 +7277,7 @@
             25.0,
             30.0
           ],
-          "o2_source": "parameter matrix O2 mole fractions 0.17; 0.21;0.25; 0.3 converted to percent",
+          "o2_source": "FLEX-2 design matrix Oxygen Mole Fraction 0.17; 0.21; 0.25; 0.3 converted to percent",
           "o2_is_assumed": false,
           "pressure_atm": null,
           "pressure_values": [
@@ -6155,14 +7287,14 @@
             2.0,
             3.0
           ],
-          "pressure_source": "parameter matrix pressures (atm): 0.5; 1.0; 1.5; 2.0; or 3.0",
+          "pressure_source": "FLEX-2 design matrix Ambient Pressure (atm): 0.5; 1.0; 1.5; 2.0; 3.0",
           "pressure_is_assumed": false,
           "flow_velocity_cm_s": null,
           "flow_values": [
             0.1,
             5.0
           ],
-          "flow_velocity_source": "parameter matrix flow (cm/s): 0.1 - 5",
+          "flow_velocity_source": "FLEX-2 design matrix Flow Velocity (cm/s): 0.1 - 5",
           "flow_direction": "forced flow",
           "flow_is_assumed": false,
           "burn_time_s": null,
@@ -6180,7 +7312,18 @@
             "Ambient Temperature (C)": 25,
             "Flow Velocity (cm/s)": "0.1 - 5"
           },
-          "is_parameter_matrix": true
+          "is_parameter_matrix": true,
+          "condition_level": "study",
+          "o2_condition_level": "study",
+          "pressure_condition_level": "study",
+          "pressure_status": "design_matrix",
+          "o2_status": "design_matrix",
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported"
         }
       ]
     },
@@ -6198,7 +7341,16 @@
         "PSI-39"
       ],
       "relevance_score": 68.0,
+      "moon_base_score": 75.0,
+      "moon_base_score_notes": [
+        "habitat O2 covers the 26.5–34% Moon-cabin band",
+        "pressure includes the 0.694 atm (10.2 psia) Moon-cabin anchor",
+        "quiescent (no-ventilation) burning is in scope",
+        "airflow 0 is assumed from a quiescent chamber description; CSV has no airflow column"
+      ],
       "moon_base_applicable": true,
+      "include_in_atmosphere_solver": true,
+      "solver_exclude_reason": null,
       "covers_elevated_o2": true,
       "covers_moon_cabin_o2": true,
       "covers_reduced_pressure": true,
@@ -6593,9 +7745,12 @@
         "max": null
       },
       "pressure_range_atm": {
-        "min": 0.0,
+        "min": 0.6925,
         "max": 3.0525
       },
+      "study_level_conditions": null,
+      "assumed_experiment_count": 274,
+      "invalid_experiment_count": 1,
       "experiment_count": 274,
       "reports_count": 0,
       "reports": [],
@@ -6627,7 +7782,7 @@
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent chamber environment",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": 4.3,
@@ -6657,7 +7812,16 @@
           "co2_mole_fraction": 0.0,
           "he_mole_fraction": 0.0,
           "extinction_diameter_mm": 0.89,
-          "burning_rate": 0.52
+          "burning_rate": 0.52,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-69-FLEX-2-R1",
@@ -6686,7 +7850,7 @@
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent chamber environment",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": 5.0,
@@ -6716,7 +7880,16 @@
           "co2_mole_fraction": 0.0,
           "he_mole_fraction": 0.0,
           "extinction_diameter_mm": 0.94,
-          "burning_rate": 0.6
+          "burning_rate": 0.6,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-69-FLEX-3-R1",
@@ -6745,7 +7918,7 @@
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent chamber environment",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": 3.2,
@@ -6775,7 +7948,16 @@
           "co2_mole_fraction": 0.0,
           "he_mole_fraction": 0.0,
           "extinction_diameter_mm": 0.92,
-          "burning_rate": 0.58
+          "burning_rate": 0.58,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-69-FLEX-4-R1",
@@ -6804,7 +7986,7 @@
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent chamber environment",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": 7.64,
@@ -6833,7 +8015,16 @@
           "co2_mole_fraction": 0.0,
           "he_mole_fraction": 0.0,
           "extinction_diameter_mm": null,
-          "burning_rate": 0.6
+          "burning_rate": 0.6,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-69-FLEX-5-R1",
@@ -6862,7 +8053,7 @@
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent chamber environment",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": 6.34,
@@ -6892,7 +8083,16 @@
           "co2_mole_fraction": 0.0,
           "he_mole_fraction": 0.0,
           "extinction_diameter_mm": 0.81,
-          "burning_rate": 0.48
+          "burning_rate": 0.48,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-69-FLEX-6-R1",
@@ -6921,7 +8121,7 @@
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent chamber environment",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": 9.6,
@@ -6951,7 +8151,16 @@
           "co2_mole_fraction": 0.0,
           "he_mole_fraction": 0.0,
           "extinction_diameter_mm": 1.53,
-          "burning_rate": 0.51
+          "burning_rate": 0.51,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-69-FLEX-7-R1",
@@ -6980,7 +8189,7 @@
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent chamber environment",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": 5.3,
@@ -7009,7 +8218,16 @@
           "co2_mole_fraction": 0.0,
           "he_mole_fraction": 0.0,
           "extinction_diameter_mm": null,
-          "burning_rate": 0.67
+          "burning_rate": 0.67,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-69-FLEX-8-R1",
@@ -7038,7 +8256,7 @@
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent chamber environment",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": 14.8,
@@ -7067,7 +8285,16 @@
           "co2_mole_fraction": 0.0,
           "he_mole_fraction": 0.0,
           "extinction_diameter_mm": null,
-          "burning_rate": 0.79
+          "burning_rate": 0.79,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-69-FLEX-9-R1",
@@ -7096,7 +8323,7 @@
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent chamber environment",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": null,
@@ -7121,7 +8348,16 @@
           "co2_mole_fraction": 0.0,
           "he_mole_fraction": 0.0,
           "extinction_diameter_mm": null,
-          "burning_rate": null
+          "burning_rate": null,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-69-FLEX-10-R1",
@@ -7150,7 +8386,7 @@
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent chamber environment",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": 13.6,
@@ -7179,7 +8415,16 @@
           "co2_mole_fraction": 0.7,
           "he_mole_fraction": 0.0,
           "extinction_diameter_mm": null,
-          "burning_rate": 0.37
+          "burning_rate": 0.37,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-69-FLEX-11-R1",
@@ -7208,7 +8453,7 @@
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent chamber environment",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": 16.5,
@@ -7237,7 +8482,16 @@
           "co2_mole_fraction": 0.7,
           "he_mole_fraction": 0.0,
           "extinction_diameter_mm": null,
-          "burning_rate": 0.4
+          "burning_rate": 0.4,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-69-FLEX-12-R1",
@@ -7266,7 +8520,7 @@
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent chamber environment",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": null,
@@ -7293,7 +8547,16 @@
           "co2_mole_fraction": 0.7,
           "he_mole_fraction": 0.0,
           "extinction_diameter_mm": null,
-          "burning_rate": null
+          "burning_rate": null,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-69-FLEX-13-R1",
@@ -7322,7 +8585,7 @@
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent chamber environment",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": 10.8,
@@ -7351,7 +8614,16 @@
           "co2_mole_fraction": 0.7,
           "he_mole_fraction": 0.0,
           "extinction_diameter_mm": null,
-          "burning_rate": 0.49
+          "burning_rate": 0.49,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-69-FLEX-14-R1",
@@ -7380,7 +8652,7 @@
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent chamber environment",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": 11.3,
@@ -7408,7 +8680,16 @@
           "co2_mole_fraction": 0.7,
           "he_mole_fraction": 0.0,
           "extinction_diameter_mm": null,
-          "burning_rate": null
+          "burning_rate": null,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-69-FLEX-15-R1",
@@ -7437,7 +8718,7 @@
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent chamber environment",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": 23.1,
@@ -7465,7 +8746,16 @@
           "co2_mole_fraction": 0.7,
           "he_mole_fraction": 0.0,
           "extinction_diameter_mm": null,
-          "burning_rate": null
+          "burning_rate": null,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed",
+          "condition_level": "experiment"
         }
       ]
     },
@@ -7483,7 +8773,13 @@
         "PSI-99"
       ],
       "relevance_score": 64.5,
+      "moon_base_score": 22.0,
+      "moon_base_score_notes": [
+        "crew-relevant solid materials"
+      ],
       "moon_base_applicable": true,
+      "include_in_atmosphere_solver": true,
+      "solver_exclude_reason": null,
       "covers_elevated_o2": false,
       "covers_moon_cabin_o2": false,
       "covers_reduced_pressure": false,
@@ -7566,6 +8862,9 @@
         "min": null,
         "max": null
       },
+      "study_level_conditions": null,
+      "assumed_experiment_count": 0,
+      "invalid_experiment_count": 0,
       "experiment_count": 2,
       "reports_count": 0,
       "reports": [],
@@ -7612,7 +8911,14 @@
             "Direction": "Concurrent ",
             "Camera 1": "S1C1",
             "Camera 2": "S1C2"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-100-S2-R1",
@@ -7656,7 +8962,14 @@
             "Direction": "Opposed",
             "Camera 1": "S2C1",
             "Camera 2": "S2C2"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         }
       ]
     },
@@ -7674,7 +8987,13 @@
         "PSI-101"
       ],
       "relevance_score": 58.0,
+      "moon_base_score": null,
+      "moon_base_score_notes": [
+        "excluded from atmosphere solver: DAFT/DAFT-2 is an aerosol-instrument feasibility test, not a combustion atmosphere dataset"
+      ],
       "moon_base_applicable": false,
+      "include_in_atmosphere_solver": false,
+      "solver_exclude_reason": "DAFT/DAFT-2 is an aerosol-instrument feasibility test, not a combustion atmosphere dataset",
       "covers_elevated_o2": false,
       "covers_moon_cabin_o2": false,
       "covers_reduced_pressure": false,
@@ -7754,6 +9073,9 @@
         "min": null,
         "max": null
       },
+      "study_level_conditions": null,
+      "assumed_experiment_count": 0,
+      "invalid_experiment_count": 0,
       "experiment_count": 2,
       "reports_count": 3,
       "reports": [
@@ -7827,7 +9149,15 @@
             "Sampled Location": "Sampled air near Express rack 4"
           },
           "measurement_type": "dust_aerosol",
-          "related_hardware_note": "instrument lineage shared with SAME / SAME-R smoke diagnostics"
+          "related_hardware_note": "instrument lineage shared with SAME / SAME-R smoke diagnostics",
+          "include_in_atmosphere_solver": false,
+          "solver_exclude_reason": "DAFT/DAFT-2 is an aerosol-instrument feasibility test, not a combustion atmosphere dataset",
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-47-DAFT-D2-R1",
@@ -7867,7 +9197,15 @@
             "Sampled Location": "Sampled separated Velcro and the air near Port rack 6 and in Node 1"
           },
           "measurement_type": "dust_aerosol",
-          "related_hardware_note": "instrument lineage shared with SAME / SAME-R smoke diagnostics"
+          "related_hardware_note": "instrument lineage shared with SAME / SAME-R smoke diagnostics",
+          "include_in_atmosphere_solver": false,
+          "solver_exclude_reason": "DAFT/DAFT-2 is an aerosol-instrument feasibility test, not a combustion atmosphere dataset",
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         }
       ]
     },
@@ -7886,7 +9224,15 @@
         "PSI-159"
       ],
       "relevance_score": 51.5,
+      "moon_base_score": 33.0,
+      "moon_base_score_notes": [
+        "pressure includes reduced-pressure points at or below 0.70 atm",
+        "quiescent (no-ventilation) burning is in scope",
+        "airflow 0 is assumed from a quiescent chamber description; CSV has no airflow column"
+      ],
       "moon_base_applicable": true,
+      "include_in_atmosphere_solver": true,
+      "solver_exclude_reason": null,
       "covers_elevated_o2": false,
       "covers_moon_cabin_o2": false,
       "covers_reduced_pressure": true,
@@ -8015,6 +9361,9 @@
         "min": 0.5,
         "max": 5.0
       },
+      "study_level_conditions": null,
+      "assumed_experiment_count": 79,
+      "invalid_experiment_count": 0,
       "experiment_count": 79,
       "reports_count": 1,
       "reports": [
@@ -8057,7 +9406,7 @@
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent chamber environment",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": null,
@@ -8077,7 +9426,16 @@
             "Helium": 0.0,
             "Fiber": "No",
             "Fuel": "C12H26"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-39-CFI-1207-R1",
@@ -8106,7 +9464,7 @@
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent chamber environment",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": null,
@@ -8126,7 +9484,16 @@
             "Helium": 0.0,
             "Fiber": "Yes",
             "Fuel": "C12H26"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-39-CFI-1208-R1",
@@ -8155,7 +9522,7 @@
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent chamber environment",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": null,
@@ -8175,7 +9542,16 @@
             "Helium": 0.0,
             "Fiber": "Yes",
             "Fuel": "C12H26"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-39-CFI-1209-R1",
@@ -8204,7 +9580,7 @@
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent chamber environment",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": null,
@@ -8224,7 +9600,16 @@
             "Helium": 0.0,
             "Fiber": "Yes",
             "Fuel": "C12H26"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-39-CFI-1210-R1",
@@ -8253,7 +9638,7 @@
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent chamber environment",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": null,
@@ -8273,7 +9658,16 @@
             "Helium": 0.0,
             "Fiber": "Yes",
             "Fuel": "C12H26"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-39-CFI-1211-R1",
@@ -8302,7 +9696,7 @@
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent chamber environment",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": null,
@@ -8322,7 +9716,16 @@
             "Helium": 0.0,
             "Fiber": "Yes",
             "Fuel": "C12H26"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-39-CFI-1213-R1",
@@ -8351,7 +9754,7 @@
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent chamber environment",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": null,
@@ -8371,7 +9774,16 @@
             "Helium": 0.0,
             "Fiber": "Yes",
             "Fuel": "C12H26"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-39-CFI-1215-R1",
@@ -8400,7 +9812,7 @@
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent chamber environment",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": null,
@@ -8420,7 +9832,16 @@
             "Helium": 0.0,
             "Fiber": "No",
             "Fuel": "C12H26"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-39-CFI-1216-R1",
@@ -8449,7 +9870,7 @@
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent chamber environment",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": null,
@@ -8469,7 +9890,16 @@
             "Helium": 0.0,
             "Fiber": "No",
             "Fuel": "C12H26"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-39-CFI-1217-R1",
@@ -8498,7 +9928,7 @@
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent chamber environment",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": null,
@@ -8518,7 +9948,16 @@
             "Helium": 0.0,
             "Fiber": "No",
             "Fuel": "C12H26"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-39-CFI-1218-R1",
@@ -8547,7 +9986,7 @@
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent chamber environment",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": null,
@@ -8567,7 +10006,16 @@
             "Helium": 0.0,
             "Fiber": "Yes",
             "Fuel": "C12H26"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-39-CFI-1219-R1",
@@ -8596,7 +10044,7 @@
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent chamber environment",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": null,
@@ -8616,7 +10064,16 @@
             "Helium": 0.0,
             "Fiber": "No",
             "Fuel": "C12H26"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-39-CFI-1220-R1",
@@ -8645,7 +10102,7 @@
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent chamber environment",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": null,
@@ -8664,7 +10121,16 @@
             "Nitrogen": 0.76,
             "Helium": 0.0,
             "Fuel": "C12H26"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-39-CFI-1221-R1",
@@ -8693,7 +10159,7 @@
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent chamber environment",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": null,
@@ -8713,7 +10179,16 @@
             "Helium": 0.0,
             "Fiber": "No",
             "Fuel": "C12H26"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-39-CFI-1222-R1",
@@ -8742,7 +10217,7 @@
           "flow_values": [
             0.0
           ],
-          "flow_velocity_source": "quiescent chamber environment",
+          "flow_velocity_source": "quiescent chamber environment (inferred; airflow not reported in CSV)",
           "flow_direction": "quiescent",
           "flow_is_assumed": true,
           "burn_time_s": null,
@@ -8762,7 +10237,16 @@
             "Helium": 0.0,
             "Fiber": "No",
             "Fuel": "C12H26"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [
+            "flow_velocity_cm_s"
+          ],
+          "invalid_fields": [],
+          "is_assumed": true,
+          "has_invalid_values": false,
+          "value_status": "assumed",
+          "condition_level": "experiment"
         }
       ]
     },
@@ -8781,7 +10265,14 @@
         "PSI-39"
       ],
       "relevance_score": 46.0,
+      "moon_base_score": 52.0,
+      "moon_base_score_notes": [
+        "habitat O2 covers the 26.5–34% Moon-cabin band",
+        "pressure includes reduced-pressure points at or below 0.70 atm"
+      ],
       "moon_base_applicable": true,
+      "include_in_atmosphere_solver": true,
+      "solver_exclude_reason": null,
       "covers_elevated_o2": true,
       "covers_moon_cabin_o2": true,
       "covers_reduced_pressure": true,
@@ -8863,8 +10354,8 @@
         "gas"
       ],
       "o2_range": {
-        "min": 12.0,
-        "max": 85.0
+        "min": 17.97,
+        "max": 39.97
       },
       "o2_range_habitat": {
         "min": 17.97,
@@ -8878,6 +10369,9 @@
         "min": 0.4889,
         "max": 3.2666
       },
+      "study_level_conditions": null,
+      "assumed_experiment_count": 0,
+      "invalid_experiment_count": 0,
       "experiment_count": 333,
       "reports_count": 1,
       "reports": [
@@ -8948,7 +10442,14 @@
           "flame_type": "normal",
           "o2_role": "chamber_or_reactant",
           "cool_flame": null,
-          "zst": 0.102651783
+          "zst": 0.102651783,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-159-CFIG-Norm-21088_B1-R1",
@@ -9005,7 +10506,14 @@
           "flame_type": "normal",
           "o2_role": "chamber_or_reactant",
           "cool_flame": null,
-          "zst": 0.101747543
+          "zst": 0.101747543,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-159-CFIG-Norm-21088_C1-R1",
@@ -9063,7 +10571,14 @@
           "flame_type": "normal",
           "o2_role": "chamber_or_reactant",
           "cool_flame": null,
-          "zst": 0.100968644
+          "zst": 0.100968644,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-159-CFIG-Norm-21088_D1-R1",
@@ -9121,7 +10636,14 @@
           "flame_type": "normal",
           "o2_role": "chamber_or_reactant",
           "cool_flame": null,
-          "zst": 0.100206801
+          "zst": 0.100206801,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-159-CFIG-Norm-21088_F1-R1",
@@ -9179,7 +10701,14 @@
           "flame_type": "normal",
           "o2_role": "chamber_or_reactant",
           "cool_flame": null,
-          "zst": 0.099652813
+          "zst": 0.099652813,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-159-CFIG-Norm-21088_G1-R1",
@@ -9236,7 +10765,14 @@
           "flame_type": "normal",
           "o2_role": "chamber_or_reactant",
           "cool_flame": null,
-          "zst": 0.175931996
+          "zst": 0.175931996,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-159-CFIG-Norm-21088_H1-R1",
@@ -9293,7 +10829,14 @@
           "flame_type": "normal",
           "o2_role": "chamber_or_reactant",
           "cool_flame": null,
-          "zst": 0.174581055
+          "zst": 0.174581055,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-159-CFIG-Norm-21088_J1-R1",
@@ -9350,7 +10893,14 @@
           "flame_type": "normal",
           "o2_role": "chamber_or_reactant",
           "cool_flame": null,
-          "zst": 0.292108087
+          "zst": 0.292108087,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-159-CFIG-Norm-21088_K1-R1",
@@ -9407,7 +10957,14 @@
           "flame_type": "normal",
           "o2_role": "chamber_or_reactant",
           "cool_flame": null,
-          "zst": 0.29009599
+          "zst": 0.29009599,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-159-CFIG-Norm-21088_H2-R1",
@@ -9464,7 +11021,14 @@
           "flame_type": "normal",
           "o2_role": "chamber_or_reactant",
           "cool_flame": null,
-          "zst": 0.170339735
+          "zst": 0.170339735,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-159-CFIG-Norm-21088_M4-R1",
@@ -9521,7 +11085,14 @@
           "flame_type": "normal",
           "o2_role": "chamber_or_reactant",
           "cool_flame": null,
-          "zst": 0.058881505
+          "zst": 0.058881505,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-159-CFIG-Norm-21088_L1-R1",
@@ -9578,7 +11149,14 @@
           "flame_type": "normal",
           "o2_role": "chamber_or_reactant",
           "cool_flame": null,
-          "zst": 0.058763347
+          "zst": 0.058763347,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-159-CFIG-Norm-21088_N1-R1",
@@ -9635,7 +11213,14 @@
           "flame_type": "normal",
           "o2_role": "chamber_or_reactant",
           "cool_flame": null,
-          "zst": 0.094270919
+          "zst": 0.094270919,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-159-CFIG-Norm-21088_P1-R1",
@@ -9692,7 +11277,14 @@
           "flame_type": "normal",
           "o2_role": "chamber_or_reactant",
           "cool_flame": null,
-          "zst": 0.09403323
+          "zst": 0.09403323,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-159-CFIG-Norm-21102A1-R1",
@@ -9750,7 +11342,14 @@
           "flame_type": "normal",
           "o2_role": "chamber_or_reactant",
           "cool_flame": null,
-          "zst": 0.226286935
+          "zst": 0.226286935,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         }
       ]
     },
@@ -9768,7 +11367,11 @@
         "PSI-159"
       ],
       "relevance_score": 36.0,
+      "moon_base_score": 0.0,
+      "moon_base_score_notes": [],
       "moon_base_applicable": false,
+      "include_in_atmosphere_solver": true,
+      "solver_exclude_reason": null,
       "covers_elevated_o2": false,
       "covers_moon_cabin_o2": false,
       "covers_reduced_pressure": false,
@@ -9992,6 +11595,9 @@
         "min": null,
         "max": null
       },
+      "study_level_conditions": null,
+      "assumed_experiment_count": 0,
+      "invalid_experiment_count": 0,
       "experiment_count": 21,
       "reports_count": 9,
       "reports": [
@@ -10131,7 +11737,14 @@
           },
           "fuel_concentration": "100%",
           "electric_field_polarity": "negative",
-          "partial_g_proxy": true
+          "partial_g_proxy": true,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-22-EFIELD-Day18078.0-Row1-R1",
@@ -10177,7 +11790,14 @@
           },
           "fuel_concentration": "70%",
           "electric_field_polarity": "negative",
-          "partial_g_proxy": true
+          "partial_g_proxy": true,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-22-EFIELD-Day18080.0-Row3-R1",
@@ -10223,7 +11843,14 @@
           },
           "fuel_concentration": "40%",
           "electric_field_polarity": "negative",
-          "partial_g_proxy": true
+          "partial_g_proxy": true,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-22-EFIELD-Day18087.0-Row4-R1",
@@ -10268,7 +11895,14 @@
           },
           "fuel_concentration": "80%",
           "electric_field_polarity": "negative",
-          "partial_g_proxy": true
+          "partial_g_proxy": true,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-22-EFIELD-Day18092.0-Row6-R1",
@@ -10313,7 +11947,14 @@
           },
           "fuel_concentration": "30%",
           "electric_field_polarity": "negative",
-          "partial_g_proxy": true
+          "partial_g_proxy": true,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-22-EFIELD-Day18095.0-Row7-R1",
@@ -10358,7 +11999,14 @@
           },
           "fuel_concentration": "30%",
           "electric_field_polarity": "positive",
-          "partial_g_proxy": true
+          "partial_g_proxy": true,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-22-EFIELD-Day18102.0-Row8-R1",
@@ -10403,7 +12051,14 @@
           },
           "fuel_concentration": "40%",
           "electric_field_polarity": "positive",
-          "partial_g_proxy": true
+          "partial_g_proxy": true,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-22-EFIELD-Day18106.0-Row9-R1",
@@ -10448,7 +12103,14 @@
           },
           "fuel_concentration": "40%",
           "electric_field_polarity": "positive",
-          "partial_g_proxy": true
+          "partial_g_proxy": true,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-22-EFIELD-Day18113.0-Row10-R1",
@@ -10493,7 +12155,14 @@
           },
           "fuel_concentration": "100%",
           "electric_field_polarity": "positive",
-          "partial_g_proxy": true
+          "partial_g_proxy": true,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-22-EFIELD-Day18130.0-Row11-R1",
@@ -10538,7 +12207,14 @@
           },
           "fuel_concentration": "70%",
           "electric_field_polarity": "positive",
-          "partial_g_proxy": true
+          "partial_g_proxy": true,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-22-EFIELD-Day18137.0-Row12-R1",
@@ -10583,7 +12259,14 @@
           },
           "fuel_concentration": "80%",
           "electric_field_polarity": "positive",
-          "partial_g_proxy": true
+          "partial_g_proxy": true,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-22-EFIELD-Day18269.0-Row14-R1",
@@ -10628,7 +12311,14 @@
           },
           "fuel_concentration": "40%",
           "electric_field_polarity": "negative",
-          "partial_g_proxy": true
+          "partial_g_proxy": true,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-22-EFIELD-Day18274.0-Row15-R1",
@@ -10673,7 +12363,14 @@
           },
           "fuel_concentration": "30%",
           "electric_field_polarity": "negative",
-          "partial_g_proxy": true
+          "partial_g_proxy": true,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-22-EFIELD-Day18282.0-Row16-R1",
@@ -10718,7 +12415,14 @@
           },
           "fuel_concentration": "70%",
           "electric_field_polarity": "negative",
-          "partial_g_proxy": true
+          "partial_g_proxy": true,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-22-EFIELD-Day18285.0-Row18-R1",
@@ -10763,7 +12467,14 @@
           },
           "fuel_concentration": "100%",
           "electric_field_polarity": "negative",
-          "partial_g_proxy": true
+          "partial_g_proxy": true,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         }
       ]
     },
@@ -10782,7 +12493,11 @@
         "PSI-25"
       ],
       "relevance_score": 32.5,
+      "moon_base_score": 8.0,
+      "moon_base_score_notes": [],
       "moon_base_applicable": false,
+      "include_in_atmosphere_solver": true,
+      "solver_exclude_reason": null,
       "covers_elevated_o2": false,
       "covers_moon_cabin_o2": false,
       "covers_reduced_pressure": false,
@@ -10901,6 +12616,9 @@
         "min": null,
         "max": null
       },
+      "study_level_conditions": null,
+      "assumed_experiment_count": 0,
+      "invalid_experiment_count": 8,
       "experiment_count": 435,
       "reports_count": 3,
       "reports": [
@@ -10986,7 +12704,14 @@
             "HC Fuel Rate (mg/s)": 1.971,
             "Air Rate (cm/s)": 36.39
           },
-          "fuel_rate_sccm": 103.8
+          "fuel_rate_sccm": 103.8,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-107-SPICE-GMT45-14_50_07-R1",
@@ -11031,7 +12756,14 @@
             "HC Fuel Rate (mg/s)": 0.968,
             "Air Rate (cm/s)": 40.15
           },
-          "fuel_rate_sccm": 51.0
+          "fuel_rate_sccm": 51.0,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-107-SPICE-GMT45-14_50_07-R2",
@@ -11076,7 +12808,14 @@
             "HC Fuel Rate (mg/s)": 0.98,
             "Air Rate (cm/s)": 40.15
           },
-          "fuel_rate_sccm": 51.6
+          "fuel_rate_sccm": 51.6,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-107-SPICE-GMT45-15_35_44-R1",
@@ -11121,7 +12860,14 @@
             "HC Fuel Rate (mg/s)": 2.62,
             "Air Rate (cm/s)": 57.08
           },
-          "fuel_rate_sccm": 138.0
+          "fuel_rate_sccm": 138.0,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-107-SPICE-GMT45-15_35_44-R2",
@@ -11166,7 +12912,14 @@
             "HC Fuel Rate (mg/s)": 2.608,
             "Air Rate (cm/s)": 57.08
           },
-          "fuel_rate_sccm": 137.4
+          "fuel_rate_sccm": 137.4,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-107-SPICE-GMT45-15_42_22-R1",
@@ -11211,7 +12964,14 @@
             "HC Fuel Rate (mg/s)": 1.31,
             "Air Rate (cm/s)": 58.02
           },
-          "fuel_rate_sccm": 69.0
+          "fuel_rate_sccm": 69.0,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-107-SPICE-GMT45-15_48_39-R1",
@@ -11256,7 +13016,14 @@
             "HC Fuel Rate (mg/s)": 1.207,
             "Air Rate (cm/s)": 17.59
           },
-          "fuel_rate_sccm": 63.6
+          "fuel_rate_sccm": 63.6,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-107-SPICE-GMT45-15_50_59-R1",
@@ -11301,7 +13068,14 @@
             "HC Fuel Rate (mg/s)": 0.661,
             "Air Rate (cm/s)": 16.65
           },
-          "fuel_rate_sccm": 34.8
+          "fuel_rate_sccm": 34.8,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-107-SPICE-GMT45-17_11_46-R1",
@@ -11346,7 +13120,14 @@
             "HC Fuel Rate (mg/s)": 4.158,
             "Air Rate (cm/s)": 33.57
           },
-          "fuel_rate_sccm": 219.0
+          "fuel_rate_sccm": 219.0,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-107-SPICE-GMT45-17_11_46-R2",
@@ -11391,7 +13172,14 @@
             "HC Fuel Rate (mg/s)": 4.203,
             "Air Rate (cm/s)": 33.57
           },
-          "fuel_rate_sccm": 221.4
+          "fuel_rate_sccm": 221.4,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-107-SPICE-GMT45-17_15_05-R1",
@@ -11436,7 +13224,14 @@
             "HC Fuel Rate (mg/s)": 2.073,
             "Air Rate (cm/s)": 34.51
           },
-          "fuel_rate_sccm": 109.2
+          "fuel_rate_sccm": 109.2,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-107-SPICE-GMT45-17_15_05-R2",
@@ -11481,7 +13276,14 @@
             "HC Fuel Rate (mg/s)": 2.073,
             "Air Rate (cm/s)": 35.45
           },
-          "fuel_rate_sccm": 109.2
+          "fuel_rate_sccm": 109.2,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-107-SPICE-GMT45-17_20_46-R1",
@@ -11526,7 +13328,14 @@
             "HC Fuel Rate (mg/s)": 4.397,
             "Air Rate (cm/s)": 58.02
           },
-          "fuel_rate_sccm": 231.6
+          "fuel_rate_sccm": 231.6,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-107-SPICE-GMT45-17_20_47-R1",
@@ -11571,7 +13380,14 @@
             "HC Fuel Rate (mg/s)": 4.397,
             "Air Rate (cm/s)": 58.96
           },
-          "fuel_rate_sccm": 231.6
+          "fuel_rate_sccm": 231.6,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-107-SPICE-GMT45-17_23_03-R1",
@@ -11616,7 +13432,14 @@
             "HC Fuel Rate (mg/s)": 2.176,
             "Air Rate (cm/s)": 57.08
           },
-          "fuel_rate_sccm": 114.6
+          "fuel_rate_sccm": 114.6,
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         }
       ]
     },
@@ -11635,7 +13458,11 @@
         "PSI-25"
       ],
       "relevance_score": 29.5,
+      "moon_base_score": 0.0,
+      "moon_base_score_notes": [],
       "moon_base_applicable": false,
+      "include_in_atmosphere_solver": true,
+      "solver_exclude_reason": null,
       "covers_elevated_o2": false,
       "covers_moon_cabin_o2": false,
       "covers_reduced_pressure": false,
@@ -11739,6 +13566,9 @@
         "min": null,
         "max": null
       },
+      "study_level_conditions": null,
+      "assumed_experiment_count": 0,
+      "invalid_experiment_count": 0,
       "experiment_count": 12,
       "reports_count": 0,
       "reports": [],
@@ -11776,7 +13606,14 @@
           "raw_details": {
             "Test Date": "2012-FEB-09",
             "Fuel Type": "100% CH4"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-106-SLICE-Row1-R1",
@@ -11811,7 +13648,14 @@
           "raw_details": {
             "Test Date": "2012-FEB-13 SLICE testing with ",
             "Fuel Type": "40% CH4 (balance N2) including 2 pyrometry calibration tests and 2 fan calibrations"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-106-SLICE-Row2-R1",
@@ -11846,7 +13690,14 @@
           "raw_details": {
             "Test Date": "2012-FEB-17",
             "Fuel Type": "70% CH4 (balance N2) including 1 pyrometry calibration test"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-106-SLICE-Row3-R1",
@@ -11881,7 +13732,14 @@
           "raw_details": {
             "Test Date": "2012-FEB-20 ",
             "Fuel Type": "20% C2H4 (balance N2)"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-106-SLICE-Row4-R1",
@@ -11916,7 +13774,14 @@
           "raw_details": {
             "Test Date": "2012-FEB-27 ",
             "Fuel Type": "100% CH4"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-106-SLICE-Row5-R1",
@@ -11951,7 +13816,14 @@
           "raw_details": {
             "Test Date": "2012-MAR-01",
             "Fuel Type": "40% CH4 (balance N2)"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-106-SLICE-Row6-R1",
@@ -11986,7 +13858,14 @@
           "raw_details": {
             "Test Date": "2012-MAR-05 SLICE testing with ",
             "Fuel Type": "70% CH4 (balance N2) where the fuel bottle was not emptied (in contrast to most days)"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-106-SLICE-Row7-R1",
@@ -12021,7 +13900,14 @@
           "raw_details": {
             "Test Date": "2012-MAR-09  ",
             "Fuel Type": "100% C2H6"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-106-SLICE-Row8-R1",
@@ -12056,7 +13942,14 @@
           "raw_details": {
             "Test Date": "2012-MAR-12 ",
             "Fuel Type": " 100% CH4"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-106-SLICE-Row9-R1",
@@ -12091,7 +13984,14 @@
           "raw_details": {
             "Test Date": "2012-MAR-15 ",
             "Fuel Type": " 20% C2H4 (balance N2)"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-106-SLICE-Row10-R1",
@@ -12126,7 +14026,14 @@
           "raw_details": {
             "Test Date": "2012-MAR-19 SLICE testing with ",
             "Fuel Type": "70% CH4 (balance N2) including 1 pyrometry calibration test and 2 fan calibrations"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         },
         {
           "experiment_id": "PSI-106-SLICE-Row11-R1",
@@ -12161,7 +14068,14 @@
           "raw_details": {
             "Test Date": "2012-MAR-23 Last day of testing: SPICE testing with 100% C3H8 and then 100%",
             "Fuel Type": "100% C2H4"
-          }
+          },
+          "include_in_atmosphere_solver": true,
+          "assumed_fields": [],
+          "invalid_fields": [],
+          "is_assumed": false,
+          "has_invalid_values": false,
+          "value_status": "reported",
+          "condition_level": "experiment"
         }
       ]
     }

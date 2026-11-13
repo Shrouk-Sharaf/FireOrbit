@@ -6,10 +6,12 @@ import pandas as pd
 from utils import (
     BASE_DIR,
     OUTPUT_DIR,
+    STUDY_LEVEL_CONDITIONS,
     classify_outcome,
     clean_val,
     dump_json,
     ensure_output_dir,
+    finalize_experiment_record,
     infer_geometry_from_material,
     jsonable,
     normalize_fuel_name,
@@ -136,7 +138,7 @@ def make_experiment_record(
         "raw_details": jsonable(raw_dict),
     }
     rec.update(extra)
-    return rec
+    return finalize_experiment_record(rec)
 
 
 def normalize_csv_files():
@@ -314,6 +316,7 @@ def normalize_csv_files():
             o2_tokens = parse_num_list(getv(r, "Oxygen Conc"))
             if not o2_tokens:
                 o2_tokens = [None]
+            study_p = STUDY_LEVEL_CONDITIONS["PSI-20"]
             for tok in o2_tokens:
                 val = tok
                 if val is not None and val > 100:
@@ -324,12 +327,18 @@ def normalize_csv_files():
                     clean_val(getv(r, "Fuel Bottle")), "solid-emulated (gas burner)",
                     f"porous burner {burner_size} mm",
                     val, "reported in experimental table under 'Oxygen Conc (percent)'", False,
-                    None, "not reported in source table (chamber pressures were varied per note)", False,
-                    0.0, "quiescent microgravity ambient per investigation protocol",
+                    None,
+                    study_p["pressure_source"],
+                    True,
+                    0.0, "quiescent chamber environment (inferred; airflow not reported in CSV)",
                     "quiescent", None,
                     f"{flames_ignited} flames ignited that day (day total, not per O2 condition)",
                     "burning rate emulation in quiescent ambient",
                     row_to_dict(r),
+                    pressure_values=list(study_p["pressure_atm_values"]),
+                    pressure_condition_level="study",
+                    pressure_status=study_p["pressure_status"],
+                    condition_level="mixed",
                     flow_is_assumed=True,
                     diluent="N2",
                     day_flames_ignited=parse_num(flames_ignited),
@@ -366,7 +375,7 @@ def normalize_csv_files():
                 p_atm,
                 f"converted from reported pressure of {p_mmhg} mmHg (1 atm = 760 mmHg)" if p_mmhg is not None else "not reported",
                 False,
-                0.0, "quiescent chamber environment", "quiescent",
+                0.0, "quiescent chamber environment (inferred; airflow not reported in CSV)", "quiescent",
                 parse_num(getv(r, "Burn time")), outcome,
                 "droplet combustion and extinction test",
                 row_to_dict(r),
@@ -406,7 +415,7 @@ def normalize_csv_files():
                 parse_num(p_str),
                 f"reported in experimental table under 'Pressure' as '{p_str}'" if p_str else "not reported",
                 False,
-                0.0, "quiescent chamber environment", "quiescent",
+                0.0, "quiescent chamber environment (inferred; airflow not reported in CSV)", "quiescent",
                 None, None,
                 "cool flames investigation with liquid droplets",
                 row_to_dict(r),
@@ -484,6 +493,11 @@ def normalize_csv_files():
                 row_to_dict(r),
                 flame_type="inverse",
                 o2_role="oxidizer_stream",
+                o2_cabin_comparable=False,
+                o2_report_note=(
+                    "CFI-G final report Table 2 confirms inverse-flame fluent bottles of 85% O2 with N2; "
+                    "this is oxidizer-stream oxygen, not cabin air, and must not be used as a habitat O2 match."
+                ),
                 zst=parse_num(getv(r, "Zst")),
             ))
 
@@ -626,10 +640,11 @@ def normalize_csv_files():
             fuel = clean_val(getv(r, "Sample (Fuel Type)", "Fuel Type"))
             if not fuel:
                 continue
+            study = STUDY_LEVEL_CONDITIONS["PSI-68"]
             o2_mols = parse_num_list(getv(r, "Oxygen Mole Fraction"))
-            o2_pcts = [round(x * 100.0, 2) if x <= 1.5 else round(x, 2) for x in o2_mols]
-            p_vals = parse_num_list(getv(r, "Ambient Pressure"))
-            flow_vals = parse_num_list(getv(r, "Flow Velocity"))
+            o2_pcts = [round(x * 100.0, 2) if x <= 1.5 else round(x, 2) for x in o2_mols] or list(study["o2_pct_values"])
+            p_vals = parse_num_list(getv(r, "Ambient Pressure")) or list(study["pressure_atm_values"])
+            flow_vals = parse_num_list(getv(r, "Flow Velocity")) or list(study["flow_values"])
             gas_mix = clean_val(getv(r, "Ambient Gas Mixture"))
             drop_diam = clean_val(getv(r, "Initial Droplet Diameter"))
             all_experiments.append(make_experiment_record(
@@ -637,13 +652,13 @@ def normalize_csv_files():
                 fuel, "liquid",
                 f"droplet (d0 range: {drop_diam} mm, gas: {gas_mix})",
                 None,
-                f"parameter matrix O2 mole fractions {clean_val(getv(r, 'Oxygen Mole Fraction'))} converted to percent",
+                study["o2_source"],
                 False,
                 None,
-                f"parameter matrix pressures (atm): {clean_val(getv(r, 'Ambient Pressure'))}",
+                study["pressure_source"],
                 False,
                 None,
-                f"parameter matrix flow (cm/s): {clean_val(getv(r, 'Flow Velocity'))}",
+                study["flow_source"],
                 "forced flow",
                 None, None,
                 "droplet combustion parameter test matrix (not one executed test per cell)",
@@ -653,6 +668,11 @@ def normalize_csv_files():
                 flow_values=flow_vals,
                 diluent=gas_mix,
                 is_parameter_matrix=True,
+                condition_level="study",
+                o2_condition_level="study",
+                pressure_condition_level="study",
+                pressure_status=study["pressure_status"],
+                o2_status=study["o2_status"],
             ))
 
     # 17. DAFT
@@ -681,6 +701,10 @@ def normalize_csv_files():
             ))
 
     print(f"\nTotal normalized experimental records: {len(all_experiments)}")
+    assumed_n = sum(1 for e in all_experiments if e.get("is_assumed"))
+    invalid_n = sum(1 for e in all_experiments if e.get("has_invalid_values"))
+    excluded_n = sum(1 for e in all_experiments if not e.get("include_in_atmosphere_solver"))
+    print(f"Assumed rows: {assumed_n}; invalid-value rows: {invalid_n}; excluded from solver: {excluded_n}")
     seen_ids = set()
     duplicate_ids = []
     for exp in all_experiments:
