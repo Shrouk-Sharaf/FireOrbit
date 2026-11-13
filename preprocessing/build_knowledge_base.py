@@ -370,6 +370,24 @@ def main():
         }
         master_investigations.append(record)
 
+    # Load RAG chunks if available to index chunk counts
+    rag_chunks_file = processed_dir / "rag_chunks.json"
+    rag_chunks = []
+    chunk_counts_by_psi = {}
+    if rag_chunks_file.exists():
+        try:
+            with rag_chunks_file.open(encoding="utf-8") as f:
+                rag_chunks = json.load(f)
+            for c in rag_chunks:
+                p_id = (c.get("metadata") or {}).get("psi_id")
+                if p_id:
+                    chunk_counts_by_psi[p_id] = chunk_counts_by_psi.get(p_id, 0) + 1
+        except Exception as e:
+            print(f"Warning: Could not read rag_chunks.json: {e}")
+
+    for inv in master_investigations:
+        inv["chunk_count"] = chunk_counts_by_psi.get(inv["psi_id"], 0)
+
     master_investigations.sort(key=lambda x: x["relevance_score"], reverse=True)
     moon_ranked = sorted(
         [inv for inv in master_investigations if inv.get("include_in_atmosphere_solver")],
@@ -396,6 +414,7 @@ def main():
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "total_investigations": len(master_investigations),
         "total_normalized_datapoints": len(experiments),
+        "total_rag_chunks": len(rag_chunks),
         "global_documents": global_docs,
         "knowledge_gaps": knowledge_gaps,
         "moon_base_ranking": [
@@ -425,6 +444,7 @@ def main():
     cur = conn.cursor()
     cur.execute("DROP TABLE IF EXISTS investigations")
     cur.execute("DROP TABLE IF EXISTS experiments")
+    cur.execute("DROP TABLE IF EXISTS document_chunks")
     cur.execute("""
     CREATE TABLE investigations (
         psi_id TEXT PRIMARY KEY,
@@ -448,6 +468,7 @@ def main():
         pressure_min_atm REAL,
         pressure_max_atm REAL,
         experiment_count INTEGER,
+        chunk_count INTEGER,
         objective TEXT,
         research_impacts TEXT
     )
@@ -488,9 +509,27 @@ def main():
         flame_type TEXT
     )
     """)
+    cur.execute("""
+    CREATE TABLE document_chunks (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        chunk_index INTEGER,
+        source TEXT,
+        filename TEXT,
+        psi_id TEXT,
+        investigation_folder TEXT,
+        source_type TEXT,
+        section TEXT,
+        page_start INTEGER,
+        page_end INTEGER,
+        char_start INTEGER,
+        char_end INTEGER,
+        has_table INTEGER,
+        text TEXT
+    )
+    """)
     for inv in master_investigations:
         cur.execute(
-            """INSERT INTO investigations VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+            """INSERT INTO investigations VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
             (
                 inv["psi_id"], inv["acronym"], inv["title"], inv["pillar"],
                 inv.get("subresearch_area"), inv["hardware"], inv["hardware_group"],
@@ -502,7 +541,8 @@ def main():
                 int(inv["earth_application"]),
                 inv["o2_range"]["min"], inv["o2_range"]["max"],
                 inv["pressure_range_atm"]["min"], inv["pressure_range_atm"]["max"],
-                inv["experiment_count"], inv["objective"], inv["research_impacts"],
+                inv["experiment_count"], inv.get("chunk_count", 0),
+                inv["objective"], inv["research_impacts"],
             ),
         )
     for exp in experiments:
@@ -529,6 +569,24 @@ def main():
                 exp.get("condition_level"), exp.get("burn_time_s"), exp.get("outcome"),
                 exp.get("outcome_category"), exp.get("experiment_context"), exp.get("gravity_level"),
                 exp.get("diluent"), exp.get("flame_type"),
+            ),
+        )
+
+    for chunk in rag_chunks:
+        meta = chunk.get("metadata") or {}
+        text = chunk.get("text") or ""
+        has_table = int("| --- |" in text)
+        cur.execute(
+            """INSERT INTO document_chunks (
+                chunk_index, source, filename, psi_id, investigation_folder,
+                source_type, section, page_start, page_end, char_start, char_end,
+                has_table, text
+            ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)""",
+            (
+                meta.get("chunk_index"), meta.get("source"), meta.get("filename"),
+                meta.get("psi_id"), meta.get("investigation_folder"), meta.get("source_type"),
+                meta.get("section"), meta.get("page_start"), meta.get("page_end"),
+                meta.get("char_start"), meta.get("char_end"), has_table, text,
             ),
         )
     conn.commit()
