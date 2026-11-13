@@ -1,2 +1,8 @@
+# FireOrbit Python dependencies
+# Install from the repo root:
+#   python -m pip install -r requirements.txt
+
 pandas>=2.0
 PyMuPDF>=1.23
+chromadb
+sentence-transformers
