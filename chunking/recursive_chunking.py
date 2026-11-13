@@ -11,6 +11,10 @@ Report and investigation chunks shorter than --min-chunk-chars (default 150)
 are dropped: they are almost always page numbers, running headers/footers,
 appendix dividers or bare figure captions that add noise to retrieval.
 Experiment records are never filtered.
+
+Exact duplicate report/investigation chunks (same text ignoring case and
+whitespace, e.g. repeated boilerplate) are also removed; the first occurrence
+is kept. Disable with --keep-duplicates.
 """
 
 import argparse
@@ -195,6 +199,28 @@ def split_document(
         )
         for index, chunk_text in enumerate(kept, start=1)
     ]
+
+
+def remove_duplicate_chunks(
+    chunks: list[dict[str, Any]], stats: Counter
+) -> list[dict[str, Any]]:
+    """Drop exact duplicate texts (ignoring case/whitespace), keeping the first.
+
+    Experiment records are skipped: each one is a distinct record.
+    """
+    seen: set[str] = set()
+    unique: list[dict[str, Any]] = []
+    for chunk in chunks:
+        if chunk["metadata"].get("document_type") == "experiment_record":
+            unique.append(chunk)
+            continue
+        key = re.sub(r"\s+", " ", chunk["text"]).strip().lower()
+        if key in seen:
+            stats["dropped_duplicate"] += 1
+            continue
+        seen.add(key)
+        unique.append(chunk)
+    return unique
 
 
 def chunks_from_reports(
@@ -397,6 +423,8 @@ def main() -> None:
                         help="Drop report/investigation chunks shorter than this many "
                              "characters (page numbers, headers, bare captions); "
                              "default: 150. Use 0 to keep everything.")
+    parser.add_argument("--keep-duplicates", action="store_true",
+                        help="Do not remove exact duplicate report/investigation chunks.")
     args = parser.parse_args()
 
     if args.chunk_size < 1 or args.overlap < 0 or args.overlap >= args.chunk_size:
@@ -412,6 +440,9 @@ def main() -> None:
                                              args.min_chunk_chars, stats))
     chunks.extend(chunks_from_experiments(args.data_dir))
 
+    if not args.keep_duplicates:
+        chunks = remove_duplicate_chunks(chunks, stats)
+
     args.output.parent.mkdir(parents=True, exist_ok=True)
     with args.output.open("w", encoding="utf-8") as handle:
         json.dump(chunks, handle, ensure_ascii=False, indent=2)
@@ -420,6 +451,7 @@ def main() -> None:
     print(f"Created {len(chunks)} chunks: {args.output}")
     print(f"Text chunking: {args.chunk_size} characters, overlap {args.overlap} characters")
     print(f"Dropped {stats['dropped_short']} short chunks (< {args.min_chunk_chars} characters)")
+    print(f"Dropped {stats['dropped_duplicate']} exact duplicate chunks")
     print("Experiment rows are kept intact as one record per chunk.")
 
 

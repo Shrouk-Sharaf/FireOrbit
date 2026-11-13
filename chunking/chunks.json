@@ -3030,21 +3030,6 @@
     }
   },
   {
-    "chunk_id": "101 SAME-R/SAMER_Final 0602 2014.pdf::page-78::chunk-0004",
-    "text": "he diameter of average mass \nwhich is a necessary condition for a log-normal distribution (See Fig. 1).  The second indication is that the geometric \nstandard deviations are all physically reasonable (i.e. greater than 1 (see Eq. 3) and less than approximately 3.5 \nwhich is the practical limit on the magnitude of aerosol geometric standard deviation).  The aging results show a \nsubstantial increase in the observed diameters.  As expected the increase in the count mean diameter is greater than \nthe corresponding increase in the diameter of average mass.  This can be understood since coagulation consists of \nparticle collisions joining two particles.  For a polydisperse aerosol, these collisions usually involve the collision of \none of the smallest (high mobility) particles with the largest (high cross-section) particles. This collision has little \neffect on the size of the large particle but it removes the smaller particles from the size distribution.  This has a",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "101 SAME-R/SAMER_Final 0602 2014.pdf::page-78",
-      "chunk_index": 4,
-      "document_type": "report",
-      "filename": "SAMER_Final 0602 2014.pdf",
-      "relative_path": "101 SAME-R/SAMER_Final 0602 2014.pdf",
-      "psi_id": "PSI-101",
-      "source_type": "investigation_report",
-      "page": 78
-    }
-  },
-  {
     "chunk_id": "101 SAME-R/SAMER_Final 0602 2014.pdf::page-78::chunk-0005",
     "text": "es. This collision has little \neffect on the size of the large particle but it removes the smaller particles from the size distribution.  This has a \nlarger effect on the count mean diameter since it is linear in diameter while the diameter of average mass varies with \nthe cube root of the diameter. Theoretical predictions suggest that this process will produce a near lognormal \ndistribution and that the standard deviation will tend toward a self-preserving distribution with a value of 1.32.14   \n \n \n \n \nGeometric Mean \nDiameter (Dg) \n(µm)  \nCount Mean \nDiameter \n(M1/M0)  \n(µm) \nDiameter of Average \nMass \n(M3/M0) \n(µm)   \nσg \nKapton \nUnaged \n0.042\n0.056\n0.101 \n2.154\nAged 720 s \n0.089\n0.109\n0.161 \n1.872\nLampwick \nUnaged \n0.090\n0.128\n0.258 \n2.312\nAged 720 s \n0.229\n0.276\n0.398 \n1.834\nSilicone \nUnaged \n0.128\n0.196\n0.465 \n2.530\nAged 720 s \n0.269\n0.355\n0.619 \n2.108\nTeflon \nUnaged \n0.081\n0.101\n0.170 \n2.198\nAged 720 s \n0.070\n0.105\n0.232 \n2.442\nPyrell \nUnaged \n0.149\n0.204\n0.384 \n2.211",
     "metadata": {
@@ -13095,51 +13080,6 @@
     }
   },
   {
-    "chunk_id": "159 ACME-CFI-G/PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf::page-36::chunk-0002",
-    "text": "are that testing aboard the ISS can demonstrate the following \nfor the first time, contributing to an improved understanding of cool flame kinetics. \n1. Steady-state cool diffusion flames on spherical porous burners. \n2. Cool diffusion flames burning propane, n-butane, and n-pentane. \n3. Cool diffusion flames for a wide range of Zst, Tad, and pressures. \n4. Inverse cool diffusion flames. \n5. Cool diffusion flames for which a decrease in fluent flow rate will cause extinction, \nwhereas an increase will cause a transition to a hot diffusion flame, with oscillation \npossible between hot and cool flames. \nExperimental Objective \nA. Determine the conditions for which cool diffusion flames occur for propane, n-butane, \nand n-pentane; normal and inverse flames; and a broad range of Zst, Tad, and fluent \nflow rate. \nwhere Zst and Tad are respectively the stochiometric mixture fraction and adiabatic flame \ntemperature.",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "159 ACME-CFI-G/PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf::page-36",
-      "chunk_index": 2,
-      "document_type": "report",
-      "filename": "PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf",
-      "relative_path": "159 ACME-CFI-G/PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf",
-      "psi_id": "PSI-159",
-      "source_type": "investigation_report",
-      "page": 36
-    }
-  },
-  {
-    "chunk_id": "159 ACME-CFI-G/PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf::page-36::chunk-0003",
-    "text": "range of Zst, Tad, and fluent \nflow rate. \nwhere Zst and Tad are respectively the stochiometric mixture fraction and adiabatic flame \ntemperature. \n \nHowever, it was later determined that the CIR facility could not support testing with pentane \nbecause of the fuel’s low vapor pressure so the test matrix was revised to instead include testing \nwith ethane in addition to the propane and n-butane.  \n \nThe additional research objectives are as follows, where CFD stands for Computational Fluid \nDynamics. \nB. Support the flight tests with advanced CFD simulations. \nC. Identify or develop a chemical kinetics mechanism that yields good agreement \nbetween the CFD predictions and the ISS measurements. \nD. Disseminate the results as widely as possible. \n \nThe experiment is carried out using the same spherical burner configuration as ACME’s Flame \nDesign and s-Flame (Structure and Response of Spherical Diffusion Flames) experiments.  The",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "159 ACME-CFI-G/PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf::page-36",
-      "chunk_index": 3,
-      "document_type": "report",
-      "filename": "PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf",
-      "relative_path": "159 ACME-CFI-G/PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf",
-      "psi_id": "PSI-159",
-      "source_type": "investigation_report",
-      "page": 36
-    }
-  },
-  {
-    "chunk_id": "159 ACME-CFI-G/PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf::page-36::chunk-0004",
-    "text": "the same spherical burner configuration as ACME’s Flame \nDesign and s-Flame (Structure and Response of Spherical Diffusion Flames) experiments.  The \ninstrumentation is the same as that used for Flame Design except that an alternate radiometer \narray was developed for CFI-G.  Furthermore, the CFI-G tests were conducted using the",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "159 ACME-CFI-G/PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf::page-36",
-      "chunk_index": 4,
-      "document_type": "report",
-      "filename": "PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf",
-      "relative_path": "159 ACME-CFI-G/PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf",
-      "psi_id": "PSI-159",
-      "source_type": "investigation_report",
-      "page": 36
-    }
-  },
-  {
     "chunk_id": "159 ACME-CFI-G/PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf::page-37::chunk-0001",
     "text": "ACME/CFI-G Final Report (2022) \n \n21 November 2022 \n37 \n \n \nformaldehyde filter on the CFI intensified camera rather than the typically used CH* filter.  In this \nregard, the CFI camera was developed for the Cool Flames Investigation (CFI) which preceded \nACME and studied non-premixed cool flames in the combustion of liquid droplets.   \n \nMicrogravity studies of flames allow for a range of simplifications and provide various advantages \nover normal-gravity studies.  For example, the natural flicker of flames, which is a buoyancy-\ndriven (i.e., gravity-driven) instability, is eliminated yielding quasi-steady flames in microgravity.  \nCharacteristic length scales are increased in microgravity flames facilitating analysis of the flame \nstructure.  Momentum-dominated flames, which are important for most practical combustion \nsystems, can be studied at low velocities to simplify analysis.  Microgravity flames tend to have a",
     "metadata": {
@@ -13155,42 +13095,12 @@
     }
   },
   {
-    "chunk_id": "159 ACME-CFI-G/PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf::page-37::chunk-0002",
-    "text": "ich are important for most practical combustion \nsystems, can be studied at low velocities to simplify analysis.  Microgravity flames tend to have a \nmuch stronger sensitivity to their atmosphere and exhibit a much broader range of \ncharacteristics than normal-gravity flames because of the near absence of buoyant entrainment.  \nThe long residence times in microgravity flames can lead to strong soot production, but many \nmicrogravity flames are soot free.  The absence of buoyancy makes microgravity flames \nadvantageous for studies of limit and stability behavior where chemical kinetics are important.  \nFor example, chemi-ion species, electronically-excited chemiluminescent species, are at very low \nconcentration in typical flames, making the reduced buoyancy environment valuable for \nevaluating the minor species chemistry.  With these advantages, microgravity testing can lead to \nnew understanding of the complex nature of combustion – regardless of the gravitational",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "159 ACME-CFI-G/PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf::page-37",
-      "chunk_index": 2,
-      "document_type": "report",
-      "filename": "PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf",
-      "relative_path": "159 ACME-CFI-G/PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf",
-      "psi_id": "PSI-159",
-      "source_type": "investigation_report",
-      "page": 37
-    }
-  },
-  {
     "chunk_id": "159 ACME-CFI-G/PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf::page-37::chunk-0003",
     "text": "y.  With these advantages, microgravity testing can lead to \nnew understanding of the complex nature of combustion – regardless of the gravitational \nenvironment of the combustion application. \n \n \nVI.  Methods/Research Operations \nB. Discussion of Method/Protocol \nThe CFI-G investigation and other ACME experiments are configured, but not conducted, \nby the ISS crew.  The crew’s role is to set up the hardware, gas bottles, etc. for each set \nof tests.  The most common changes include the gas bottles on the Combustion Integrated \nRack (CIR) and the mass flow controllers on the modular ACME chamber insert. \n \nAll testing is commanded from the ground, specifically from the Glenn ISS Payload \nOperations Center (GIPOC).  The science portion of the tests were all conducted in a \nnominally automated mode using pre-programmed scripts.  No CFI-G tests were \nconducted in a ‘manual’ mode, where changes are made to a control parameter in",
     "metadata": {
       "source_file": "extracted_pdf_reports.json",
       "source_id": "159 ACME-CFI-G/PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf::page-37",
       "chunk_index": 3,
-      "document_type": "report",
-      "filename": "PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf",
-      "relative_path": "159 ACME-CFI-G/PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf",
-      "psi_id": "PSI-159",
-      "source_type": "investigation_report",
-      "page": 37
-    }
-  },
-  {
-    "chunk_id": "159 ACME-CFI-G/PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf::page-37::chunk-0004",
-    "text": "ly automated mode using pre-programmed scripts.  No CFI-G tests were \nconducted in a ‘manual’ mode, where changes are made to a control parameter in \nresponse to the analog video downlink and the numerical data available in the telemetry \nstream.  Thus far, that has been the case for all ACME tests, with the mundane exception \nof ‘manually’ halting the test after the flame has extinguished or perhaps if a temperature \nhas reached a critical value. \n \nTesting is not conducted when thrusters fire or spacecraft dock or undock from ISS to \nensure an acceptable acceleration environment. \n \nData is downlinked between each set of tests, i.e., day of testing, to allow for preliminary \nanalysis and requisite planning for subsequent testing.",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "159 ACME-CFI-G/PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf::page-37",
-      "chunk_index": 4,
       "document_type": "report",
       "filename": "PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf",
       "relative_path": "159 ACME-CFI-G/PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf",
@@ -13236,21 +13146,6 @@
       "source_file": "extracted_pdf_reports.json",
       "source_id": "159 ACME-CFI-G/PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf::page-39",
       "chunk_index": 1,
-      "document_type": "report",
-      "filename": "PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf",
-      "relative_path": "159 ACME-CFI-G/PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf",
-      "psi_id": "PSI-159",
-      "source_type": "investigation_report",
-      "page": 39
-    }
-  },
-  {
-    "chunk_id": "159 ACME-CFI-G/PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf::page-39::chunk-0002",
-    "text": "a \n12 \n21153 \n6 \n2 \n~40% O2, 7.35 psia \n~40% O2, 29.4 psia \ng30% C2H6 \nwith N2 \n14 \n21162 \n11 \n~40% O2, 14.7 psia \n~21% O2, 14.7 psia \n12 \n21174 \n23 \n~40% O2, 7.35 psia \n~40% O2, 29.4 psia \n30% n-C4H10 \nwith N2 \n16 \n1Test Day includes the year as the first two digits followed by the 3-digit day of the year. \n2Atmosphere, diluted by nitrogen in all cases, is only nominal where the pressure \nincreases and O2% drops with vitiation.  \n3Flames ignited is the number of sustained or momentary hot flames ignited on that day \n(neglecting the day change on ISS).",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "159 ACME-CFI-G/PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf::page-39",
-      "chunk_index": 2,
       "document_type": "report",
       "filename": "PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf",
       "relative_path": "159 ACME-CFI-G/PSI-159_Reports_FinalRpt_ACME.CFI-G.pdf",
@@ -17340,21 +17235,6 @@
     }
   },
   {
-    "chunk_id": "20 ACME BRE/BRE_final_report_20220201.pdf::page-42::chunk-0003",
-    "text": "nt) \nEMI \nelectromagnetic interference \nEMS \nExperiment Mounting Structure \nERD \nEngineering Requirements Document \nESA \nEuropean Space Agency \nFiji \nFiji Is Just ImageJ (a version of ImageJ preloaded with many plug-in features) \nFlame Design \nFlame Design (an ACME experiment) \nFOMA \nFuel and Oxidizer Management Assembly (CIR’s gas management subsystem) \nFOV \nfield of view \nfps \nframes per second \nGC \nGas Chromatograph (see GCIP) \nGCIP \nGas Chromatograph Instrumentation Package (for measuring CIR chamber contents) \nGigE \nGigabit Ethernet (an interface standard for high performance cameras) \nGIPOC \nGlenn ISS Payload Operations Center (also known as the TSC) \nGMT \nGreenwich Mean Time (where most references in this report are the day) \nH2 \nhydrogen",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "20 ACME BRE/BRE_final_report_20220201.pdf::page-42",
-      "chunk_index": 3,
-      "document_type": "report",
-      "filename": "BRE_final_report_20220201.pdf",
-      "relative_path": "20 ACME BRE/BRE_final_report_20220201.pdf",
-      "psi_id": "PSI-20",
-      "source_type": "investigation_report",
-      "page": 42
-    }
-  },
-  {
     "chunk_id": "20 ACME BRE/BRE_final_report_20220201.pdf::page-43::chunk-0001",
     "text": "ACME/BRE Final Report (2022) \n \n1 Feb. 2022 \n43 \n \nHiBMs \nHigh Bit-depth Multi-spectral camera (developed for the CIR facility) \nHOBJ \nHalcon object (binary uncompressed format; used for the DataCam)  \nHV \nhigh voltage \nHVPS \nHigh-Voltage Power Supply \nICDERS \nInternational Colloquium on the Dynamics of Explosions and Reactive Systems  \nID \ninner diameter (e.g., of burner tube) \nImageJ \nImage Processing and Analysis in Java (open-source image processing software)  \nIPSU \nImage Processing and Storage Unit (CIR device for recording images on ISS) \nIPSU-G  \nIPSU for GigE cameras (including the DataCam and CFI intensified camera) \nISRD \nIntegrated Science Requirements Document (for a set of experiments) \nISS \nInternational Space Station \nJAXA \nJapan Aerospace Exploration Agency \nkPa \nkilopascal \nkV \nkilovolt \nLLL-UV \nLow Light Level Ultraviolet camera ((developed for the CIR facility) \nLSP \nLaminar Soot Processes (a shuttle study conducted in the Combustion Module) \nMDCA",
     "metadata": {
@@ -19875,21 +19755,6 @@
     }
   },
   {
-    "chunk_id": "20 ACME BRE/BRE_final_report_20220201.pdf::page-108::chunk-0003",
-    "text": "riment is conducted in the Combustion Integrated Rack \n(CIR) on the International Space Station, as part of the Advanced Combustion via Microgravity \nExperiments (ACME) project.  BRE is focused on spacecraft fire prevention.  More specifically, \nBRE’s goals are to improve our fundamental understanding of materials flammability, such as \nextinction behavior and the conditions needed for sustained combustion, and to assess the \nrelevance of existing flammability test methods for low and partial-gravity environments.  A flat \nporous burner fed with gaseous fuel simulates the burning of solid and liquid fuels, where \nmeasurements are made of the thermal feedback (i.e., to the burner) upon which the \nvaporization of condensed-phase fuels is dependent.  A small number of gaseous fuels (including \nmixtures with inert gases) are used to simulate the burning of fuels such as paper, plastic, and",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "20 ACME BRE/BRE_final_report_20220201.pdf::page-108",
-      "chunk_index": 3,
-      "document_type": "report",
-      "filename": "BRE_final_report_20220201.pdf",
-      "relative_path": "20 ACME BRE/BRE_final_report_20220201.pdf",
-      "psi_id": "PSI-20",
-      "source_type": "investigation_report",
-      "page": 108
-    }
-  },
-  {
     "chunk_id": "20 ACME BRE/BRE_final_report_20220201.pdf::page-109::chunk-0001",
     "text": "ACME/BRE Final Report (2022) \n \n1 Feb. 2022 \n109 \n \nalcohol by matching properties including the heats of combustion and gasification, the surface \ntemperature, and smoke point.   The experiment’s results can establish fuel properties that \ndirectly relate to fire hazards in spacecraft, and if effective in microgravity could provide an \nefficient, safe, and comprehensive technique for assessing flammability and selecting fire-\nresistant spacecraft materials. \n \nBRE’s specific experimental objectives are as follows, where it must be emphasized that NASA \ndoes not currently plan to carry out the desired tests for objective B. \nJ. Observe burning behavior in long-duration microgravity for CH4/N2 and C2H4/N2 \nmixtures on porous circular burners of 25 and 50 mm diameter.  Consider O2/N2 \nambients with various pressures and ambient O2 concentrations and pressures.  NASA-\nconsidered atmosphere for human space missions will be examined: 14.7 psia, 21 %",
     "metadata": {
@@ -19911,36 +19776,6 @@
       "source_file": "extracted_pdf_reports.json",
       "source_id": "20 ACME BRE/BRE_final_report_20220201.pdf::page-109",
       "chunk_index": 2,
-      "document_type": "report",
-      "filename": "BRE_final_report_20220201.pdf",
-      "relative_path": "20 ACME BRE/BRE_final_report_20220201.pdf",
-      "psi_id": "PSI-20",
-      "source_type": "investigation_report",
-      "page": 109
-    }
-  },
-  {
-    "chunk_id": "20 ACME BRE/BRE_final_report_20220201.pdf::page-109::chunk-0003",
-    "text": "ed yielding quasi-steady flames in microgravity.  Length \nscales are increased in microgravity flames facilitating analysis of the flame structure.  \nMomentum-dominated flames, which are important for most practical combustion, can be \nstudied at low velocities to simplify analysis.  Microgravity flames tend to have a much stronger \nsensitivity to their atmosphere and exhibit a much broader range of characteristics than normal-\ngravity flames because of the near absence of buoyant entrainment.  The long residence times in \nmicrogravity flames can lead to strong soot production, but many microgravity flames are soot \nfree.  The absence of buoyancy makes microgravity flames advantageous for studies of limit and \nstability behavior where chemical kinetics are important.  With these advantages, microgravity \ntesting can lead to new understanding of the complex nature of combustion – regardless of the \ngravitational environment of the combustion application.",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "20 ACME BRE/BRE_final_report_20220201.pdf::page-109",
-      "chunk_index": 3,
-      "document_type": "report",
-      "filename": "BRE_final_report_20220201.pdf",
-      "relative_path": "20 ACME BRE/BRE_final_report_20220201.pdf",
-      "psi_id": "PSI-20",
-      "source_type": "investigation_report",
-      "page": 109
-    }
-  },
-  {
-    "chunk_id": "20 ACME BRE/BRE_final_report_20220201.pdf::page-109::chunk-0004",
-    "text": "can lead to new understanding of the complex nature of combustion – regardless of the \ngravitational environment of the combustion application. \n \n \nII.  Methods/Research Operations \n  \nA. Discussion of Method/Protocol \nBRE and other ACME experiments are configured, but not conducted, by the ISS crew.  \nThe crew’s role is to set up the hardware, gas bottles, etc. for each set of tests.  The most \ncommon changes include the gas bottles on the Combustion Integrated Rack (CIR) and \nthe mass flow controllers on the modular ACME chamber insert.",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "20 ACME BRE/BRE_final_report_20220201.pdf::page-109",
-      "chunk_index": 4,
       "document_type": "report",
       "filename": "BRE_final_report_20220201.pdf",
       "relative_path": "20 ACME BRE/BRE_final_report_20220201.pdf",
@@ -22551,21 +22386,6 @@
       "source_file": "extracted_pdf_reports.json",
       "source_id": "20 ACME BRE/BRE_final_report_20220201.pdf::page-174",
       "chunk_index": 1,
-      "document_type": "report",
-      "filename": "BRE_final_report_20220201.pdf",
-      "relative_path": "20 ACME BRE/BRE_final_report_20220201.pdf",
-      "psi_id": "PSI-20",
-      "source_type": "investigation_report",
-      "page": 174
-    }
-  },
-  {
-    "chunk_id": "20 ACME BRE/BRE_final_report_20220201.pdf::page-174::chunk-0002",
-    "text": "nation package, which was sometimes left off \nThe raw DataCam images are in a Halcon Iconic Object (hobj) format, while the images from the CFI, and \nHiBMs cameras are provided in a Tagged Image File (tif) format.  In contrast, the analog video was \nrecorded on the ground in a Transport Stream (ts) format. \n \nThe key non-imaging data from a test is a comma-delimited file that is described in detail in the Software \nInterface Design Description (ACME-DOC-010 Rev. D). \n \nThe raw data is currently archived at NASA and work is underway to make it available publicly through \nNASA’s Physical Science Informatics System (PSI).",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "20 ACME BRE/BRE_final_report_20220201.pdf::page-174",
-      "chunk_index": 2,
       "document_type": "report",
       "filename": "BRE_final_report_20220201.pdf",
       "relative_path": "20 ACME BRE/BRE_final_report_20220201.pdf",
@@ -26820,21 +26640,6 @@
     }
   },
   {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-44::chunk-0002",
-    "text": "of electric fields on soot formation can be dramatic.  \nIt appears that the ion driven wind alters the local convection and strongly influences the \nresidence time of the soot precursors within the hot flame.  The experiment contributes to our \ncritical understanding of combustion processes in the presence of electric fields. \n \nMore specifically, E-FIELD Flames has the following experimental objectives: \nA. Determine the relationship between electric field voltage and chemi-ion current as \nfunctions of total fuel (methane and ethylene) flow rate and the amount of inert \n(nitrogen) in the fuel. \nB. Obtain the time response of the flame chemiluminescence, luminosity, and the ion \ncurrent to large step changes in voltage, as functions of total fuel (methane and ethylene) \nflow rate and amount of inert (nitrogen) added to the fuel stream. \nC. Evaluate and manipulate sooting behavior (i.e., soot volume fraction and location of",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-44",
-      "chunk_index": 2,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 44
-    }
-  },
-  {
     "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-44::chunk-0003",
     "text": "te and amount of inert (nitrogen) added to the fuel stream. \nC. Evaluate and manipulate sooting behavior (i.e., soot volume fraction and location of \nluminous soot) in relation to the electric field voltage and chemi-ion current as functions \nof total fuel (methane and ethylene) flow rate and amount of inert (nitrogen) added to \nthe fuel stream. \nD. Use the variation of the chemi-ion current as a function of applied voltage to characterize \nthe combustion behavior of near-limit lifted flames and use the associated ion-driven \nwind to stabilize or reattach these flames. \n \nThe effect of the electric field on the flame is studied through tests conducted with a range of \nflame and electric field conditions.  The fuel, fuel jet velocity, air flow, electric-field voltage and \npolarity are the primary parameters of the E-FIELD Flames experiment.  Tests are conducted with \nmethane and ethylene, including nitrogen dilutions of each, which provide a broad range of soot-",
     "metadata": {
@@ -26925,21 +26730,6 @@
     }
   },
   {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-45::chunk-0004",
-    "text": "commanding \nduring a test was typically limited to halting the test when it was observed in the analog \nops video that the flame had extinguished. \n \nTesting is not conducted when thrusters fire or spacecraft dock or undock from ISS to \nensure an acceptable acceleration environment. \n \nData is downlinked between each set of tests, i.e., day of testing, to allow for preliminary \nanalysis and requisite planning for subsequent testing.",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-45",
-      "chunk_index": 4,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 45
-    }
-  },
-  {
     "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-46::chunk-0001",
     "text": "ACME/E-FIELD Flames Final Report (2019) \n \n10 April 2021 \n46 \n \nIII.  Results \nA. Baselined Activities Completed – Pre-flight, In-flight, Post-Flight \nA total of 142 flames were ignited for the E-FIELD Flames experiment during Increments \n55 and 56.  The first round of testing occurred from March to May 2018, which was \nfollowed by a second round, which began in September 2018 and was still underway at \nthe beginning of Increment 57.  The first round of tests resulted in 120 ignited flames \nconducted with the same coflow burner used by the Coflow Laminar Diffusion Flame (CLD \nFlame) experiment, where CLD Flame’s second round occurred between the two rounds \nof the E-FIELD Flames experiment.  The ‘interruption’ in the E-FIELD Flames testing was \nintentionally planned years in advance to enable the PI team to review the initial results \nin detail and with that knowledge plan the second round of tests to maximize its scientific \noutcome.",
     "metadata": {
@@ -27000,102 +26790,12 @@
     }
   },
   {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-47::chunk-0002",
-    "text": "ive \n40% CH4 \n40% \n11 \n18274 \n10 \n1 \n30% C2H4 \n30% \n11 \n1Test Day includes the year as the first two digits followed by the 3-digit day of the year. \n2Mesh Polarity refers to the polarity of the high-voltage power supply and the copper \nelectrode mesh relative to the burner. \n3Fuel conc. (as diluted with nitrogen on a volume basis) was varied between tests, but \ntypically matched the bottle.  The list only accounts for the flames which ignited. \n4Flames ignited is the number ignited on that day (neglecting the day change on ISS). \n \nPre-flight and post-flight activities are generally not addressed in this report. \n \nB. List of Preflight, In-flight, Postflight Anomalies \n1. Mission anomalies  \nThe primary hard drive for the CIR’s IPSU-G Image Processing and Storage Unit - for \nGigabit Ethernet (GigE) cameras – failed to boot on April 27, 2018 (18117).  For ACME \nexperiments, the IPSU-G is used for two key cameras, the ACME color digital ‘data’",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-47",
-      "chunk_index": 2,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 47
-    }
-  },
-  {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-47::chunk-0003",
-    "text": "E) cameras – failed to boot on April 27, 2018 (18117).  For ACME \nexperiments, the IPSU-G is used for two key cameras, the ACME color digital ‘data’ \ncamera (i.e., DataCam) and the Cool Flames Investigation (CFI) intensified camera, \nwhich is used for CLD Flame with a narrow bandpass filter to image CH* \nchemiluminesence.  Use of the IPSU-G was recovered by astronaut Scott Tingle on \nMay 7 (18127) by the removal of that primary drive.  The removed drive was \nreinstalled on Aug. 14 (18226) by astronaut Ricky Arnold during the second round of \nCLD Flame testing.  Although the hard drive was installed in the secondary position, \nthe IPSU-G surprisingly again became unusable.  Therefore, it was removed on Aug. \n22 (18234) by astronaut Alex Gerst, returning it to use, albeit without the intended \nstorage capacity.",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-47",
-      "chunk_index": 3,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 47
-    }
-  },
-  {
     "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-48::chunk-0001",
     "text": "ACME/E-FIELD Flames Final Report (2019) \n \n10 April 2021 \n48 \n \nThe CIR’s IPSU-1 Image Processing and Storage Unit, which is used with the High Bit-\nDepth Multispectral (HiBMs) camera and the collimated illumination package, was \nonly intermittently operable in mid-Sept. 2018 and was not operable at the start of E-\nFIELD Flames’ second round.  Those capabilities were not seen as critical for E-FIELD \nFlames, where the illumination is significantly blocked by the mounting bracket for \nthe mesh electrode.  Therefore, the tests on Sept. 26 (18269) and Oct. 1 (18274) were \nconducted without HiBMs imaging or the CIR illumination.  It was later determined to \nbe an issue with a cable connection, which was corrected by astronaut Alex Gerst on \nOct. 22 (18295) when he carried out other ACME tasks. \n \n2. Any other difficulties in obtaining scientific data   \nE-FIELD Flames tests sometimes automatically abort (due to the controlling software",
     "metadata": {
       "source_file": "extracted_pdf_reports.json",
       "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-48",
       "chunk_index": 1,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 48
-    }
-  },
-  {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-48::chunk-0002",
-    "text": "ks. \n \n2. Any other difficulties in obtaining scientific data   \nE-FIELD Flames tests sometimes automatically abort (due to the controlling software \nscript), where that is typically prior to gas flow and the activation of the igniter.  As a \nresult, there is little lost other than the time in the failed test attempt.   The aborts \nnormally occur because of communication issues with IPSU-1.  These are infrequent, \nbut there are some days when tests abort repeatedly.  \n \nTests are of course also unsuccessful when the flame fails to ignite.  The first test of \nthe day has sometimes failed to ignite, presumably because the fuel line has not been \nsufficiently primed.  Ignition is sometimes unsuccessful because the settings for the \nautomatic flame detection are such that detection threshold is reached because of \nthe igniter glow rather than a flame.  As a result of the detection, the hot-wire igniter",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-48",
-      "chunk_index": 2,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 48
-    }
-  },
-  {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-48::chunk-0003",
-    "text": "n are such that detection threshold is reached because of \nthe igniter glow rather than a flame.  As a result of the detection, the hot-wire igniter \nis deactivated and retracted, which is of course an issue if the flame has yet to ignite.  \nThis is typically avoided by detecting ignition with measurement of the flame’s OH* \nchemiluminescence with a Photomultiplier Tube (PMT) module.  The OH* \nchemiluminescence, in the ultraviolet at 310 nm, is a good indicator of an ignited \nflame rather than the glowing igniter, which emits primarily in the infrared and visible \nspectrum.  However, the combination of igniter settings and PMT gains can lead to \nfalse ignition detection. \n \nACME’s Mass Flow Controllers (MFCs) used to control the flow of fuel, nitrogen, and \nsynthetic air (i.e., 21% oxygen with a balance of nitrogen, on a volume basis) have \nunfortunately not always performed adequately.  The fuel and especially nitrogen",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-48",
-      "chunk_index": 3,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 48
-    }
-  },
-  {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-48::chunk-0004",
-    "text": "e., 21% oxygen with a balance of nitrogen, on a volume basis) have \nunfortunately not always performed adequately.  The fuel and especially nitrogen \nflows sometimes oscillate. Furthermore, the MFC used for the ‘air’ coflow behaves as \nif it is sticking in a few places, where the flow rate won’t linearly ramp when \ncommanded (as required for the CLD Flame experiment).  It tends to stick in some \nplaces and then abruptly overshoot where that has sometimes been seen to \nextinguish the flame.  As a result, mass flow controllers are tested - without flames - \nafter they are first installed.  Adjustments are often then made to (1) the settings that \ncontrol when the valves open and (2) the Proportional-Integral-Derivative (PID) \nsettings.  This activity has involved significant testing, separate from flame tests, and \nhas taken place during CLD Flame operations on 17333, 17334, 17347, 17354, 18008, \n18022, 18038, 18046, 18143, and 18241.  In this regard, there are an assortment of",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-48",
-      "chunk_index": 4,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 48
-    }
-  },
-  {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-48::chunk-0005",
-    "text": "uring CLD Flame operations on 17333, 17334, 17347, 17354, 18008, \n18022, 18038, 18046, 18143, and 18241.  In this regard, there are an assortment of \nMFCs with different flow ranges for each of the three gases.  While the MFC tuning",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-48",
-      "chunk_index": 5,
       "document_type": "report",
       "filename": "E-FIELD Flames Final Report.pdf",
       "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
@@ -27180,102 +26880,12 @@
     }
   },
   {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-50::chunk-0002",
-    "text": "ssing, \nthey are a degradation of the image quality. \n \nIt is possible that the tests are subtly affected by the acceleration environment, but there \nis not obvious indication of this and it has thus far not been evaluated with available \nmeasurements from the Space Acceleration Measurement System (SAMS).  In this regard, \nnote that the Combustion Integrated Rack (CIR), in which the experiment is conducted, is \nequipped with a Passive Rack Isolation System (PaRIS).  \n \nRegardless of the shortcomings discussed above, a great wealth of experimental data has \nbeen secured and E-FIELD Flames is considered to be highly successful. \n \nD. Status of Data Analysis \nData from the E-FIELD Flames experiments includes video recordings from the operations \ncamera for general flame behavior, the ACME data camera for high resolution images at \nvarious exposures and frame rates as dictated by the flame luminosity, intensified camera",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-50",
-      "chunk_index": 2,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 50
-    }
-  },
-  {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-50::chunk-0003",
-    "text": "avior, the ACME data camera for high resolution images at \nvarious exposures and frame rates as dictated by the flame luminosity, intensified camera \nimages and non-imaging data at 100 Hz.  The non-imaging data is extracted using Matlab \nscripts (modified from those developed by CLD Flame researchers) to show trends of ion \ncurrent and flame luminosity as a function of the applied field, and the flame parameters \n(fuel, flowrate, burner type).  Image data is processed using the OMA software (also \ndeveloped and used by CLD Flame researchers).   \n \nThe overall data volume is large with a storage limit of 127,000 MB per test day, the data \nhas been downloaded to the hard drive with a backup system at UC Irvine.  At this stage, \nwith operations ongoing, the analysis is comparative and qualitative, just to show the \nmajor differences in behavior in microgravity and normal-gravity (1-g) flames. \n \nE. Preliminary Research Findings",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-50",
-      "chunk_index": 3,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 50
-    }
-  },
-  {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-50::chunk-0004",
-    "text": "nd qualitative, just to show the \nmajor differences in behavior in microgravity and normal-gravity (1-g) flames. \n \nE. Preliminary Research Findings \nResults from the early E-FIELD Flame experiments have demonstrated clear differences \nbetween normal-gravity and microgravity flame behaviors.  A few examples include the \ndistinct maximum of ion current for co-flow burner flames in microgravity, where the 1-g \nflames more smoothly reach a saturation condition.  The results also show that the \nelectric body force can produce flame oscillations similar to those driven by buoyancy in \nnormal gravity, and microgravity flame shapes with an electric field can mimic normal-",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-50",
-      "chunk_index": 4,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 50
-    }
-  },
-  {
     "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-51::chunk-0001",
     "text": "ACME/E-FIELD Flames Final Report (2019) \n \n10 April 2021 \n51 \n \ngravity flames without electric fields.  Burner type plays a role in the flame/field \ninteraction, and in particular, reversing the field polarity for the jet flame does not \nproduce an inverted result over the entire voltage range tested.  Results also demonstrate \nthe interactions between electric fields and soot are more complex in microgravity.  At \nthe same time, the preliminary findings suggest that some of the key expectations \ngenerally hold (e.g., ion current scales approximately with flow rate for a fixed fuel and \nburner). \n \n100% methane for positive field strength with and without coflowing air \nThis section only includes representative findings as the ISS experiments covered a wide \nrange of conditions and outcomes.  Color camera images, intensified camera images, total \nflame luminosity, and ion current, along with all test parameters and flow monitoring,",
     "metadata": {
       "source_file": "extracted_pdf_reports.json",
       "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-51",
       "chunk_index": 1,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 51
-    }
-  },
-  {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-51::chunk-0002",
-    "text": "omes.  Color camera images, intensified camera images, total \nflame luminosity, and ion current, along with all test parameters and flow monitoring, \nwere recorded in all cases.  Figure 1 gives example flame images from the first tests \nconducted with methane as fuel.  Two fuel flow rates are shown, with the voltage \nindicated as nominal field strength (kV/cm).  Since the physical spacing from the burner \nto the mesh is 37 mm, 2 kV/cm represents 7000 V across the flame.  \n \n           0.06                        0.71                   1.0 kV/cm                   1.49                        2.00 \n \n           0.06                        0.71                   1.0 kV/cm                   1.63                        2.00 \n \nFigure 1. Typical flame appearance as a function of the field strength and fuel velocity \nwith a 3.1 cm/s coflow. (a) 15 cm/s methane. (b) 19 cm/s methane. \n \nThe key measurement for the E-FIELD Flames experiments is the ion current as a function",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-51",
-      "chunk_index": 2,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 51
-    }
-  },
-  {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-51::chunk-0003",
-    "text": ".1 cm/s coflow. (a) 15 cm/s methane. (b) 19 cm/s methane. \n \nThe key measurement for the E-FIELD Flames experiments is the ion current as a function \nof applied voltage, i.e., the voltage-current or V-I curve.  This curve provides information \non the flames ability to produce chemi-ions based on its saturation ion current, and it \nprovides a measure of combustion performance in that ion production is a function of \ncarbon influx into the flame and the vigorousness of the combustion process.  More \ncompact, higher temperature flames produce more chemi-ions than do larger more \ndiffuse reaction zones of lower overall temperature for the same fuel flow.  The first effect \n(i.e., the relationship between carbon influx and peak ion current) can be seen in Figure \n2, where the flow of 15 cm/s methane produces slightly above 2 microamps of ion current \nat the peak (1.5 kV/cm) and the flow of 19 cm/s methane has a peak of 2.75 microamps.",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-51",
-      "chunk_index": 3,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 51
-    }
-  },
-  {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-51::chunk-0004",
-    "text": "s methane produces slightly above 2 microamps of ion current \nat the peak (1.5 kV/cm) and the flow of 19 cm/s methane has a peak of 2.75 microamps.  \nWhile the ratio is not exact, the peak ion current is nearly proportional to the flow",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-51",
-      "chunk_index": 4,
       "document_type": "report",
       "filename": "E-FIELD Flames Final Report.pdf",
       "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
@@ -27300,57 +26910,12 @@
     }
   },
   {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-52::chunk-0002",
-    "text": "s the same V-I curve result in microgravity for the case \nwhere there is no coflowing air, and Figure 4 shows the flame images.  These figures again \nshow a reasonably linear scaling of peak ion current with fuel flow velocity, but they \ndemonstrate a very pronounced peak ion current with a rapid drop to a global saturation \nion current plateau.  Since these are diffusion flames, essentially all of the fuel is being \nburned independent of the flame’s shape and the applied electric field, but it seems clear \nthat the electric field is affecting the chemi-ion production capability of the flame.  As is \napparent from the flame images, the flame is most compact at the voltage consistent with \nthe peak ion current.  With increasing voltage, the flame becomes less compact and the \nion current decreases.  We presume that the flame remains at saturation throughout this \nperiod (that is, the flame is producing as many ions as it can, and those ions are being",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-52",
-      "chunk_index": 2,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 52
-    }
-  },
-  {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-52::chunk-0003",
-    "text": "esume that the flame remains at saturation throughout this \nperiod (that is, the flame is producing as many ions as it can, and those ions are being \nremoved from the reaction zone as soon as they are created) so the decrease in ion \ncurrent results from a change in combustion intensity.  We can explore this hypothesis \nfurther using the PMT data collected in the experiments.",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-52",
-      "chunk_index": 3,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 52
-    }
-  },
-  {
     "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-53::chunk-0001",
     "text": "ACME/E-FIELD Flames Final Report (2019) \n \n10 April 2021 \n53 \n \n \nFigure 3. Ion current as a function of field strength and fuel velocity with no coflow. (a) \n15 cm/s methane. (b) 19 cm/s methane. \n \n            0.14                       0.71                   1.0 kV/cm                   1.49                        2.17 \n \n            0.14                       0.71                   1.0 kV/cm                   1.51                        2.60 \n \nFigure 4. Flame appearance as a function of field strength and fuel velocity with no coflow.  \n(a) 15 cm/s methane. (b) 19 cm/s methane. \n \nIn all of the curves, the jagged features are spikes following a voltage step change that \nare mostly associated with the transient capacitance of the system when rapid steps are \nrequested.  These overshoots notwithstanding, the V-I curves follow smooth and \nreproducible trajectories. \n \nFor comparison, the equivalent V-I curves for 1-g flames with the same burner",
     "metadata": {
       "source_file": "extracted_pdf_reports.json",
       "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-53",
       "chunk_index": 1,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 53
-    }
-  },
-  {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-53::chunk-0002",
-    "text": "nding, the V-I curves follow smooth and \nreproducible trajectories. \n \nFor comparison, the equivalent V-I curves for 1-g flames with the same burner \nconfiguration with no coflow are shown in Figure 5.  The results are too recent to allow a \ndetailed analysis and discussion of the differences, but some significant observations from \nthese results and the comparison follow.",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-53",
-      "chunk_index": 2,
       "document_type": "report",
       "filename": "E-FIELD Flames Final Report.pdf",
       "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
@@ -27375,57 +26940,12 @@
     }
   },
   {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-54::chunk-0002",
-    "text": "t the saturation condition, with a final saturation plateau \nobserved at voltages substantially above the voltage at peak ion current.  That is, the \nmicrogravity final saturation is not the maximum ion current observed.  This \ndifference is more dramatic when there is no coflow, which suggests that entrainment \nplays an important role whether caused by buoyancy or a forced coflow.  \n \n(3) The peak ion current is higher for microgravity than comparison 1-g flames.  The \nreason is not obvious at this point but may result from a more focused upward flow \nfrom the electric body force and ion-driven wind as compared to the combined effects \nof the ion wind and buoyancy. \n \n(4) The peak ion current is approximately proportional to fuel flow velocity, which, as \ndescribed in prior studies, reflects the relationship between ion production and the \ncarbon flux into the system.  The peak ion current also increases with the coflow which",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-54",
-      "chunk_index": 2,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 54
-    }
-  },
-  {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-54::chunk-0003",
-    "text": "s, reflects the relationship between ion production and the \ncarbon flux into the system.  The peak ion current also increases with the coflow which \nsuggests that healthier oxidizer transport helps increase the ion production.",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-54",
-      "chunk_index": 3,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 54
-    }
-  },
-  {
     "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-55::chunk-0001",
     "text": "ACME/E-FIELD Flames Final Report (2019) \n \n10 April 2021 \n55 \n \n30% ethylene with coflowing air at 3.1cm/s \nThe results from ethylene flames with coflow are shown in Figures 6 and 7, positive field \nand negative field respectively.  At 15 cm/s, the ion current reaches a peak around 2.7 \nmicroamps which is similar to the 19 cm/s 100% methane coflow air case but with only \n0.4 of the volumetric carbon content.  The results for 15 cm/s also presents a rapid \nparabolic behavior after reaching the saturation peak.  In the negative field case, the peak \nion current decreases to 0.56 of the positive field case at the same flow rate 19 cm/s (or \n0.4 for 15 cm/s).  Another aspect is that the ion current peaks sooner for the higher flow \nrate/carbon content in the negative field configuration as compared to the positive field \nexperiments.  These phenomena, particularly for the positive field strength have not yet",
     "metadata": {
       "source_file": "extracted_pdf_reports.json",
       "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-55",
       "chunk_index": 1,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 55
-    }
-  },
-  {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-55::chunk-0002",
-    "text": "tive field configuration as compared to the positive field \nexperiments.  These phenomena, particularly for the positive field strength have not yet \nbeen measured in the laboratory at 1-g.  The difference in behavior appears to be related \nto the removal of the buoyancy force so that the momentum flow coupled with the ion \ndriven flow tends to resettle under the electric field body force. Detailed analysis is \nunderway.  \n \n \nFigure 6. Ion current to electric field strength per unit distance for positive field of 100% \nethylene with coflow air. The ion current peaks around 3.5 microamps at 19 cm/s and 2.7 \nmicroamps for 15 cm/s.",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-55",
-      "chunk_index": 2,
       "document_type": "report",
       "filename": "E-FIELD Flames Final Report.pdf",
       "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
@@ -27471,21 +26991,6 @@
       "source_file": "extracted_pdf_reports.json",
       "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-57",
       "chunk_index": 1,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 57
-    }
-  },
-  {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-57::chunk-0002",
-    "text": "are, and the value of combustion \nresearch can be found at: \nhttps://spaceflightsystems.grc.nasa.gov/sopo/ihho/psrp/fcf/fcf-\ninvestigations/acme/. \n \nMeanwhile, E-FIELD Flames videos can be found at: \nhttps://spaceflightsystems.grc.nasa.gov/sopo/ihho/psrp/fcf/fcf-\ninvestigations/acme/e-field-flames/ \n \nVideos related to E-FIELD Flames and other microgravity combustion research can also \nbe seen on Facebook at www.facebook.com/space.flames. \n  \nContact Dennis Stocker (dennis.p.stocker@nasa.gov) for access to those videos or for \nadditional videos. \n \n \nIV. Additional Comments from science team \nNone.",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-57",
-      "chunk_index": 2,
       "document_type": "report",
       "filename": "E-FIELD Flames Final Report.pdf",
       "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
@@ -27690,51 +27195,6 @@
     }
   },
   {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-61::chunk-0002",
-    "text": "round occurred between the two rounds of the E-FIELD Flames \nexperiment.  The ‘interruption’ in the E-FIELD Flames testing was intentionally planned \nyears in advance to enable the PI team to review the initial results in detail and with that \nknowledge plan the second round of tests to maximize its scientific outcome. \n \nE-FIELD Flames does not have living subjects like a life science experiment, but the tests \nare independently conducted with two different gaseous fuels, methane and ethylene.  \nBoth are simple hydrocarbon gases for which the chemistry is well understood.  Methane \n(CH4) is the primary component of natural gas and tends to produce low levels of soot \ngiven the absence of carbon-carbon bonds.  Meanwhile, ethylene (C2H4), is highly sooting \nbecause of its carbon double bond.  For both fuels, tests were conducted with pure fuel \nand fuel mixed with nitrogen over a broad range of dilutions.  For limited cases, the fuel",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-61",
-      "chunk_index": 2,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 61
-    }
-  },
-  {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-61::chunk-0003",
-    "text": "nd.  For both fuels, tests were conducted with pure fuel \nand fuel mixed with nitrogen over a broad range of dilutions.  For limited cases, the fuel \nand nitrogen was premixed on the ground prior to launch.  ACME bottles were launched \nwith methane concentrations of 30%, 40%, 45%, and 100% with a balance of nitrogen (on \na volume basis).  Similarly, bottles were launched with ethylene concentrations of 30%, \n50%, and 100%, again with a balance of nitrogen (on a volume basis).  But the ACME \nhardware also allows for simultaneous flow of fuel and nitrogen to the burner, allowing \nfor on-orbit fuel dilution and testing at a continuum of fuel concentrations.  In all cases, \nthe coflow was 21% oxygen with a balance of nitrogen (on a volume basis).  \n \nNo samples (e.g., of soot) were collected for E-FIELD Flames; all of the ISS results were \nelectronically transmitted to the ground.  That is furthermore the case for all currently \nplanned ACME experiments.",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-61",
-      "chunk_index": 3,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 61
-    }
-  },
-  {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-61::chunk-0004",
-    "text": "all of the ISS results were \nelectronically transmitted to the ground.  That is furthermore the case for all currently \nplanned ACME experiments. \n \nA summary log of the E-FIELD Flames ignited for E-FIELD Flames during Increments 55-57, \nincluding a limited overview of the test conditions, is found on the next page in Table 1.",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-61",
-      "chunk_index": 4,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 61
-    }
-  },
-  {
     "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-62::chunk-0001",
     "text": "ACME/E-FIELD Flames Final Report (2019) \n \n10 April 2021 \n62 \n \nTable 1. \nE-FIELD Flames log of flames ignited in Increments 55-57  \n(where the investigation was completed prior to Increment 58) \nTest \nDay1 \nYear \nMonth Date \nMesh \nPolarity2 \nFuel bottle \nFuel conc.3 \nFlames \nignited4 \nFirst round of tests, with the coflow burner, in March to May 2018 (Increment 55) \n18073 \n2018 \n3 \n14 \nnegative \n100% CH4 \n100% \n10 \n18078 \n19 \n70%, 100% \n10 \n18080 \n21 \n40% CH4 \n40% \n8 \n18087 \n28 \n100% C2H4 \n80%, 100% \n10 \n18092 \n4 \n2 \n30% C2H4 \n30%  \n11 \n18095 \n5 \npositive \n30% \n10 \n18102 \n12 \n40% CH4 \n40% \n8 \n18106 \n16 \n40% \n13 \n18113 \n23 \n100% CH4 \n100% \n15 \n18130 \n5 \n10 \n70% \n13 \n18137 \n17 \n100% C2H4 \n80%, 100% \n12 \nSecond round of tests, with the gas-jet burner, in Sept.-Nov. 2018 (Increments 56-57) \n18269 \n2018 \n9 \n26 \nnegative \n40% CH4 \n40% \n11 \n18274 \n10 \n1 \n30% C2H4 \n30% \n11 \n18282 \n9 \n100% CH4 \n70%, 100% \n13 \n18285 \n12 \n100% C2H4 \n100% \n10 \n18290 \n17 \n80% \n11 \n18298 \n25 \npositive \n40% CH4",
     "metadata": {
@@ -27795,102 +27255,12 @@
     }
   },
   {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-63::chunk-0002",
-    "text": "ypically prior to gas flow and the activation of the \nigniter.  As a result, there was little lost other than the time in the failed test attempt.   \nThe aborts normally occurred because of communication issues with IPSU-1.  These \nare infrequent, but there are some days when tests aborted repeatedly.  \n \nTests are of course also unsuccessful when the flame fails to ignite.  The first test of \nthe day has sometimes failed to ignite, presumably because the fuel line has not been \nsufficiently primed.  Ignition was sometimes unsuccessful because the settings for the \nautomatic flame detection are such that detection threshold is reached because of \nthe igniter glow rather than a flame.  As a result of the detection, the hot-wire igniter \nis deactivated and retracted, which is of course an issue if the flame has yet to ignite.  \nThis is typically avoided by detecting ignition with measurement of the flame’s OH* \nchemiluminescence with a Photomultiplier Tube (PMT) module.  The OH*",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-63",
-      "chunk_index": 2,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 63
-    }
-  },
-  {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-63::chunk-0003",
-    "text": "is typically avoided by detecting ignition with measurement of the flame’s OH* \nchemiluminescence with a Photomultiplier Tube (PMT) module.  The OH* \nchemiluminescence, in the ultraviolet at 310 nm, is a good indicator of an ignited \nflame rather than the glowing igniter, which emits primarily in the infrared and visible \nspectrum.  However, the combination of igniter settings and PMT gains can lead to \nfalse ignition detection. \n \nACME’s Mass Flow Controllers (MFCs) used to control the flow of fuel, nitrogen, and \nsynthetic air (i.e., 21% oxygen with a balance of nitrogen, on a volume basis) have \nunfortunately not always performed adequately.  The fuel and especially nitrogen \nflows sometimes oscillate. Furthermore, the MFC used for the ‘air’ coflow behaves as \nif it is sticking in a few places, where the flow rate won’t linearly ramp when \ncommanded (as required for the CLD Flame experiment).  It tends to stick in some",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-63",
-      "chunk_index": 3,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 63
-    }
-  },
-  {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-63::chunk-0004",
-    "text": "king in a few places, where the flow rate won’t linearly ramp when \ncommanded (as required for the CLD Flame experiment).  It tends to stick in some \nplaces and then abruptly overshoot where that has sometimes been seen to \nextinguish the flame.  As a result, mass flow controllers are tested - without flames - \nafter they are first installed.  Adjustments are often then made to (1) the settings that \ncontrol when the valves open and (2) the Proportional-Integral-Derivative (PID) \nsettings.  This ACME activity has involved significant testing, separate from flame \ntests, and has taken place on 17333, 17334, 17347, 17354, 18008, 18022, 18038, \n18046, 18143, 18241, 19059, and 19112.  In this regard, there are an assortment of \nMFCs with different flow ranges for each of the three gases.  While the MFC \nadjustments have been beneficial, they have not eliminated all gas flow problems.  It \nwas seen that nitrogen oscillations tend to damp with time, so a nitrogen pre-flow",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-63",
-      "chunk_index": 4,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 63
-    }
-  },
-  {
     "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-64::chunk-0001",
     "text": "ACME/E-FIELD Flames Final Report (2019) \n \n10 April 2021 \n64 \n \nwas implemented so that the oscillations would typically end before the flame \nmeasurements.  That approach was partially successful and was introduced during E-\nFIELD Flames’ first round.  Later, a procedure of re-zeroing the MFCs prior to each test \nwas also implemented during E-FIELD Flames’ second round.  A replacement MFC for \nthe ‘air’ coflow is being prepared for spaceflight, where a limited third round of CLD \nFlame testing is being planned to accomplish its extinction limit objective.  \n \nC. Completeness/Quality of Data \nThe number of flames ignited significantly exceeds the planned tests which were (1) \nspecified as required in the ACME Integrated Science Requirements Document (ISRD), \nusing the gas-jet burner, and (2) later expanded to include tests with the coflow burner \nto partially make up for science loss resulting from the slow response time of the high-",
     "metadata": {
       "source_file": "extracted_pdf_reports.json",
       "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-64",
       "chunk_index": 1,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 64
-    }
-  },
-  {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-64::chunk-0002",
-    "text": "(2) later expanded to include tests with the coflow burner \nto partially make up for science loss resulting from the slow response time of the high-\nvoltage power supply.  Following the revision, a total of 74 E-FIELD Flames tests were \nidentified as required.  In contrast, 219 flames were ignited in the experiment, so nearly \nthree times as many flames were ignited than required.  \n \nIt should be understood that a complete set of image data is not available for all tests.  As \ndiscussed in section III.B, the IPSU-1 was not working at the beginning of the second round \nof testing, preventing use of both the HiBMs camera and the CIR’s collimated illumination \npackage.  Those are not critical for E-FIELD Flames, so tests continued without their use. \n \nFurthermore, recorded image data is sometimes deleted without downlinking.  This is \ndone because of operational constraints which limit the amount of data that can be",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-64",
-      "chunk_index": 2,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 64
-    }
-  },
-  {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-64::chunk-0003",
-    "text": "ed image data is sometimes deleted without downlinking.  This is \ndone because of operational constraints which limit the amount of data that can be \nmanaged per test day.  Given the constraint, the decision is sometimes made to sacrifice \nsome image data (e.g., from the HiBMs camera) to allow additional tests to be conducted.  \nThis is intentionally done in order to maximize the scientific return of each day of testing \nwithin the project constraints. \n \nData quality is of course dependent on the experimental hardware.  But neglecting that \nlimitation on data quality, the cameras are sensitive to radiation where pixels gradually \nbecome ‘hot’ over time.  While these bright spots are addressed in image post-processing, \nthey are a degradation of the image quality. \n \nIt is possible that the tests are subtly affected by the acceleration environment, but there \nis not obvious indication of this and it has thus far not been evaluated with available",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-64",
-      "chunk_index": 3,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 64
-    }
-  },
-  {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-64::chunk-0004",
-    "text": "subtly affected by the acceleration environment, but there \nis not obvious indication of this and it has thus far not been evaluated with available \nmeasurements from the Space Acceleration Measurement System (SAMS).  In this regard, \nnote that the Combustion Integrated Rack (CIR), in which the experiment is conducted, is \nequipped with a Passive Rack Isolation System (PaRIS).  \n \nRegardless of the shortcomings discussed above, a great wealth of experimental data has \nbeen secured and E-FIELD Flames is considered to be highly successful.",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-64",
-      "chunk_index": 4,
       "document_type": "report",
       "filename": "E-FIELD Flames Final Report.pdf",
       "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
@@ -27945,21 +27315,6 @@
     }
   },
   {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-65::chunk-0004",
-    "text": "ge state are complicated since in the regions of high \nfield strength, particularly near the fuel tube where the field lines converge, soot can emit \nor collect free charges.  Hence, the soot transport is driven directly by the field and by the \nion-driven wind (and thermophoresis) which means it can travel differentially to the bulk \nflow.  These various transport elements can push the soot through the flame to burnout, \nhold it in stasis in the flame for additional growth, or drive it to the burner where it \naccumulates.  More work is needed to sort through these elements. \n \nPositive electric field for 100% methane fuel with jet burner  \nThe preliminary findings for the gas-jet burner in this section highlight the representative \ninformation of electric fields applied to a small hydrocarbon flame in the 0-g condition.  \nThe ISS tests covered a wide range of conditions which allowed the flame to settle as its",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-65",
-      "chunk_index": 4,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 65
-    }
-  },
-  {
     "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-66::chunk-0001",
     "text": "ACME/E-FIELD Flames Final Report (2019) \n \n10 April 2021 \n66 \n \nimage was captured with the color camera and the intensified camera.  The total flame \nluminosity and the ion current were also recorded in all cases.  Figure 1 shows example \nflame images representative of the jet tests conducted with methane as fuel.  The voltage \nis indicated as the nominal field strength (kV/cm).  Since the physical spacing from the \nburner to the mesh is 35 mm, 1.16 kV/cm represents nominal potential of around 4000 V \nacross the flame.  It is important to note that with the sharp-edged jet burner, there is an \nelectric field concentration near the burner tip, so the field in that region will be stronger \nthan is indicated by the nominal field strength and stronger than would be seen for the \ncoflow burner where the coflow portion of the burner acts as a planar electrode to \nmitigate the field concentration at the jet burner’s tip.",
     "metadata": {
@@ -27975,72 +27330,12 @@
     }
   },
   {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-66::chunk-0002",
-    "text": "e \ncoflow burner where the coflow portion of the burner acts as a planar electrode to \nmitigate the field concentration at the jet burner’s tip. \n \n \nFigure 1. Flame images observed from the data camera at 19 cm/s methane jet with \npositive field applied. (Unit: kV/cm) \n \nThe very first image of each condition, e.g., at 0.05 kV/cm, demonstrates the initial \nvoltage stage before the voltage sweep test commences.  The jet flames are relatively \nmore stable initially and less stable under high voltage than the previously reported \nflames using a coflow burner with no coflow [Chien et al., Ion Current and Flame Changes \nwith Electric Fields in Microgravity, WSSCI Pasadena 2019].  As the positive field is applied \nto the jet, the flame becomes both narrower and shorter.  An immediate change is the \nappearance of bright soot at the flame tip.  With an increase of electric field strength, the \nsoot region diminishes as the flame shrinks.",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-66",
-      "chunk_index": 2,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 66
-    }
-  },
-  {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-66::chunk-0003",
-    "text": "s the \nappearance of bright soot at the flame tip.  With an increase of electric field strength, the \nsoot region diminishes as the flame shrinks. \n \nThe voltage was increased 350 volts per step and held at each voltage for two seconds. \nThe ion current data rate was 125 Hz and the monitored current fluctuation at the same \nvoltage step is shown in the graph.  The ion current to electric field strength (i.e., i-v) graph \nis plotted for 24 and 19 cm/s flow velocity in Figure 2, where the current initially increases \nparabolically with the applied voltage.  The ion current corresponds to the flame \nappearance in that the current increases and reaches a peak at the most compact flame, \ne.g., at a field strength of 1.36 kV/cm for a 19 cm/s burner flow (as seen in Figure 2b).  At",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-66",
-      "chunk_index": 3,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 66
-    }
-  },
-  {
     "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-67::chunk-0001",
     "text": "ACME/E-FIELD Flames Final Report (2019) \n \n10 April 2021 \n67 \n \nthat maximum, the soot is almost gone (as seen in Figure 1).  The flame base starts rising \nslightly around the current peak and lifts higher, with one side of the reaction wing \nattached to the tube, as the electric field increases further.  The flame is not always lifted \nat the same edge of the burner tube; therefore, the attached reaction wing sometimes \nrotates along the tube edge with approximately the same lift angle under the same \nelectric field strength.  Otherwise, the lifted edge flame remains relatively stable.  With \nfurther increases in the electric field strength, the flame starts fluctuating and a distinct \ndancing phenomenon can be seen from the i-v curve where the ion current oscillates \nstrongly at the same field strength.  The fluctuation crosses more than 3.5 A (between \n~1.2 to 5 A) and reaches 5.0 A for the 24 cm/s case.  Similarly, this oscillation at the",
     "metadata": {
       "source_file": "extracted_pdf_reports.json",
       "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-67",
       "chunk_index": 1,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 67
-    }
-  },
-  {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-67::chunk-0002",
-    "text": "ngth.  The fluctuation crosses more than 3.5 A (between \n~1.2 to 5 A) and reaches 5.0 A for the 24 cm/s case.  Similarly, this oscillation at the \nsame voltage is observed for 19 cm/s with the ion current spanning around 2.5 A (~1.4 \nto 4 A) and reaching 4.0 A; corresponding flame images are shown as 1.86 and 2.16 \nkV/cm in Figure 1.  These very high peak values may represent an incipient corona or \ndischarge event.  The combustion extinguishes with the oscillations at 1.95 kV/cm for 24 \ncm/s and 2.16 kV/cm for 19 cm/s.  \n \nThe flame geometries and soot distribution under the electric field influence clearly differ \nwhen comparing the gas-jet burner results with those from the earlier coflow burner tests \nwithout a coflow (i.e., with the same jet flow for each), where the annulus of the coflow \nburner acted as a planar electrode.  But the maximum amount of ions produced within \nthe flame (as evidenced by the ion current reaching the plateau) is similar for the case",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-67",
-      "chunk_index": 2,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 67
-    }
-  },
-  {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-67::chunk-0003",
-    "text": "electrode.  But the maximum amount of ions produced within \nthe flame (as evidenced by the ion current reaching the plateau) is similar for the case \nwhere the fuel flow velocity matches at 19 cm/s.  The current also peaks around the same \nfield strength per unit distance.  Moreover, the oscillation behavior only exists in the jet \nburner experiment and furthermore influences the ion current monitoring due to the \nunstable flame behavior responding to the high field strength.",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-67",
-      "chunk_index": 3,
       "document_type": "report",
       "filename": "E-FIELD Flames Final Report.pdf",
       "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
@@ -28080,21 +27375,6 @@
     }
   },
   {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-69::chunk-0002",
-    "text": "ngth, and it disappears at 0.84 kV/cm (as seen in Figure \n3) along the parabolic decay line after passing the ion current peak.  The flame width and \nheight also expand after the most compact flame (at the peak current).  This trend is \ndemonstrated in the second-row of images in Figure 4.  Notice that there are several \nsparkler-like particles, presumably of soot, at 1.24 and 2.04 kV/cm.  Further evaluation of \nthis sparking is underway.",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-69",
-      "chunk_index": 2,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 69
-    }
-  },
-  {
     "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-70::chunk-0001",
     "text": "ACME/E-FIELD Flames Final Report (2019) \n \n10 April 2021 \n70 \n \n \nFigure 4. Ion current as a function of the field strength and fuel velocity. (a) 24 cm/s \nmethane. (b) 19 cm/s methane. \n \nPositive electric field for 70% methane fuel with jet burner \nThe flame behavior with a lower hydrocarbon content of 70% methane diluted with \nnitrogen, shown in Figure 5, has a distinct reduction of soot at the flame tip in comparison \nto the cases with 100% methane (seen in Figure 1).  The flame reaction wing starts lifting \naway from the burner edge when 1.06 kV/cm is applied, which is earlier than occurs in \nthe 100% case, and the flame fluctuation also continues with increasing positive field \nstrength.  \n \n \n(a) \n \n(b)",
     "metadata": {
@@ -28125,21 +27405,6 @@
     }
   },
   {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-71::chunk-0002",
-    "text": "kV/cm with the positive field strength increase.  Further analysis \nis needed to understand the field strength to current behavior as a function of \nhydrocarbon content, and also with the influence from burner geometries in the \nmicrogravity environment. \nFigure 6. Ion current as a function of the field strength and fuel velocity at 19 cm/s \nmethane.",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-71",
-      "chunk_index": 2,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 71
-    }
-  },
-  {
     "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-72::chunk-0001",
     "text": "ACME/E-FIELD Flames Final Report (2019) \n \n10 April 2021 \n72 \n \n \nIn all of the i-v curves, the ion current data points at each field strength stretch across \n~0.1 A for each step, which are the jagged features from the spikes following a voltage \nstep change that are mostly associated with the transient capacitance of the system when \na rapid voltage step is requested.  These overshoots notwithstanding, the i-v curves follow \nsmooth and reproducible trajectories. The wide range of the ion current after the \nsaturation plateau is due instead to the flame oscillation.  \n \nThis report shows the initial results of the E-FIELD Flames experiment using the gas-jet \nburner in the International Space Station (ISS).  The positive field allows the soot to \nconcentrate and compresses the flame into a high current density thermal source.  The \nflames demonstrate an unpredicted oscillation before extinguishing with increasing field",
     "metadata": {
@@ -28155,87 +27420,12 @@
     }
   },
   {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-72::chunk-0002",
-    "text": "the flame into a high current density thermal source.  The \nflames demonstrate an unpredicted oscillation before extinguishing with increasing field \nstrength.  This oscillating phenomenon was not observed during the tests with the coflow \nburner from the first round, with the exception of a case that introduced the airflow at \n30 cm/s which increased the surface reaction while the flame tended to balance between \nelectric field effects, ions, and charged soot. The negative field allows the flame to \nmaintain its spherical characteristic in microgravity. The yellow soot appears for both of \nthe electric field directions within the flame around the tip and disappears with increasing \nfield strength after reaching the current peak.  The role of soot in the i-v behavior of these \nflames requires further investigation. \n \nEarly E-FIELD Flame results from the ISS testing were presented in following oral and \nposter presentations:",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-72",
-      "chunk_index": 2,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 72
-    }
-  },
-  {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-72::chunk-0003",
-    "text": "ames requires further investigation. \n \nEarly E-FIELD Flame results from the ISS testing were presented in following oral and \nposter presentations: \n1. Derek Dunn-Rankin and Yu-Chien (Alice) Chien, “Electrical Field Effects on Laminar \nDiffusion Flames,” 11th Multi-Agency Coordinating Committee for Combustion \nResearch (MACCCR) Annual Fuel and Combustion Research Review, Livermore, \nCA, 9-11 April 2018. (oral presentation) \n2. Chien, Y.-C., Tinajero, J., Stocker, D., Hegde, U. and Dunn-Rankin, D. “Electric Field \nEffects on Flames in Microgravity on the International Space Station,” Central \nStates Section Combustion Institute Spring Technical Meeting, St. Paul, MN, 20-22 \nApril 2018. (conference paper and oral presentation) \n3. Chien, Y.-C., Tinajero, J., Stocker, D., Hegde, U. and Dunn-Rankin, D. “Small \nDiffusion Flames under the influences of Electric-Field: Microgravity and Gravity,” \n37th International Symposium on Combustion, Dublin, Ireland, 29 July to 3 Aug.",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-72",
-      "chunk_index": 3,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 72
-    }
-  },
-  {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-72::chunk-0004",
-    "text": "s under the influences of Electric-Field: Microgravity and Gravity,” \n37th International Symposium on Combustion, Dublin, Ireland, 29 July to 3 Aug. \n2018.  (Work-in-Progress poster) \n4. Yu-Chien (Alice) Chien, Jesse Tinajero, Dennis Stocker, Uday Hegde, Derek Dunn-\nRankin, “Microgravity Experiments of Electric Field Effects on Laminar \nEthylene/Air Diffusion Flames,” 34th Annual Meeting of the American Society for \nGravitational and Space Research (ASGSR) Meeting, Rockville, MD, 31 Oct. to 3 \nNov. 2018. (oral presentation) \n5. Chien, Y.-C., Tinajero, J., Stocker, D., Hegde, U. and Dunn-Rankin, D. “Ion Current \nand Flame Changes with Electric Fields in Microgravity,” 11th U.S. National \nCombustion Meeting, Pasadena, CA, 24-27 March 2019. (conference paper and \noral presentation)",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-72",
-      "chunk_index": 4,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 72
-    }
-  },
-  {
     "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-73::chunk-0001",
     "text": "ACME/E-FIELD Flames Final Report (2019) \n \n10 April 2021 \n73 \n \n \nUpcoming presentations of ISS results include the following: \n6. Chien, Y.-C., Stocker, D., Hegde, U. and Dunn-Rankin, D. “Microgravity \nExperiments with Methane Jet Flames under Electric Field Influence on-board the \nInternational Space Station (ISS),” 12th Asia-Pacific Conference on Combustion \nMeeting 2019, 1-5 July, Fukuoka, Japan. (final conference paper submitted) \n7. Chien, Y.-C., Stocker, D., Hegde, U. and Dunn-Rankin, D. “Microgravity \nExperiments Examining Electric Field Effects on Laminar Methane Gas-Jet \nDiffusion Flames,” 35th Annual Meeting of the American Society for Gravitational \nand Space Research (ASGSR) 20-23 Nov. 2019, Denver, Colorado.  (abstract \nsubmitted) \n \nF. Communication Imagery \n1. Still Imagery \nPhotos are available online at www.flickr.com/photos/space-flames.  Although the \nFacebook page at www.facebook.com/space.flames is meant to provide updates on",
     "metadata": {
       "source_file": "extracted_pdf_reports.json",
       "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-73",
       "chunk_index": 1,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 73
-    }
-  },
-  {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-73::chunk-0002",
-    "text": "available online at www.flickr.com/photos/space-flames.  Although the \nFacebook page at www.facebook.com/space.flames is meant to provide updates on \nACME and related combustion research, it is good source for recent photos, e.g., of \nflames, that may not be available on the Flickr site.  Additional photographs may be \nrequested from the Project Scientist, Dennis Stocker (dennis.p.stocker@nasa.gov).  \n \n2. Video \n‘The Power of Studying Combustion on the ISS,’ which was developed with input from \nthe ACME Project Scientist, is available at https://science.nasa.gov/science-\nnews/news-articles/the-power-of-studying-combustion-on-the-iss. \n \nVideos describing the ACME project, its hardware, and the value of combustion \nresearch can be found at: \nhttps://spaceflightsystems.grc.nasa.gov/sopo/ihho/psrp/fcf/fcf-\ninvestigations/acme/. \n \nMeanwhile, E-FIELD Flames videos can be found at: \nhttps://spaceflightsystems.grc.nasa.gov/sopo/ihho/psrp/fcf/fcf-\ninvestigations/acme/e-field-flames/",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-73",
-      "chunk_index": 2,
-      "document_type": "report",
-      "filename": "E-FIELD Flames Final Report.pdf",
-      "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
-      "psi_id": "PSI-22",
-      "source_type": "investigation_report",
-      "page": 73
-    }
-  },
-  {
-    "chunk_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-73::chunk-0003",
-    "text": "while, E-FIELD Flames videos can be found at: \nhttps://spaceflightsystems.grc.nasa.gov/sopo/ihho/psrp/fcf/fcf-\ninvestigations/acme/e-field-flames/ \n \nVideos related to E-FIELD Flames and other microgravity combustion research can also \nbe seen on Facebook at www.facebook.com/space.flames. \n  \nContact Dennis Stocker (dennis.p.stocker@nasa.gov) for access to those videos or for \nadditional videos. \n \n \nIV. Additional Comments from science team \nNone.",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf::page-73",
-      "chunk_index": 3,
       "document_type": "report",
       "filename": "E-FIELD Flames Final Report.pdf",
       "relative_path": "22 ACME E-FIELD Flames/Reports/E-FIELD Flames Final Report.pdf",
@@ -42120,21 +41310,6 @@
     }
   },
   {
-    "chunk_id": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc::page-1::chunk-0019",
-    "text": "regulator and pressure relief valves used to control and direct ISS GN2 for use in filling the Sample Bags with aerosol.\n\u0007\n\u0007DAFT Impactor\n\u0007DAFT-0401\n\u0007Another custom made device composed of fittings and filters, this device was used to extract the sample aerosol from the Sample Bags and eliminate most of the larger particles.\n\u0007\n\u0007DAFT Sample Bag\n\u0007DAFT-0501-01 thru -15\n\u000715 liter COTS Mylar bags with tubing fittings.\n\u0007\n\u0007DAFT Dust Holder\n\u0007DAFT-0516-01 thru -15\n\u0007Each consists of two self sealing QD’s that encapsulate the ARD\n\u0007\n\u0007P-Track Alcohol Wick -02\n\u0007DAFT-0601-2\n\u0007Same as -01\n\u0007\n\u0007P-Track -02\n\u0007DAFT-0102\n\u0007An unmodified COTS unit.\nLaunched on ULF1.1\n\u0007\n\u0007Dust Trak\n\u0007DAFT-0201\n\u0007Another COTS TSI device, giving readings based on Mie scattering. Launched on 16P, \u000b\n\u0007\n\u0007Dust Trak Batteries\n\u0007DAFT-0709\n\u00074 - C\n\u0007\n\u0007\nSessions Table \nSession Name\n\u0007FO #s\n\u0007HW #\n\u0007Actual Day\n\u0007Parameters/Samples\n\u0007\n\u0007D1\n\u0007001, 004, 005\n\u0007DAFT-0201, DAFT-0101\n\u0007GMT 54, 2005\n\u0007Sampled air near Express rack 4\n\u0007\n\u0007D2\n\u0007001, 004, 005",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc::page-1",
-      "chunk_index": 19,
-      "document_type": "report",
-      "filename": "DAFT final report 6 24 08 as submitted.doc",
-      "relative_path": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc",
-      "psi_id": "PSI-47",
-      "source_type": "investigation_report",
-      "page": 1
-    }
-  },
-  {
     "chunk_id": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc::page-1::chunk-0020",
     "text": "\u0007HW #\n\u0007Actual Day\n\u0007Parameters/Samples\n\u0007\n\u0007D1\n\u0007001, 004, 005\n\u0007DAFT-0201, DAFT-0101\n\u0007GMT 54, 2005\n\u0007Sampled air near Express rack 4\n\u0007\n\u0007D2\n\u0007001, 004, 005\n\u0007DAFT-0201, DAFT-0101\n\u0007GMT 63, 2005\n\u0007Sampled separated Velcro and the air near Port rack 6 and in Node 1\n\u0007\n\u0007D3\n\u0007001\n\u0007DAFT-0201, -0101, -0301, -0401, 0501-01, 0516-01\n\u0007GMT 229, 2006\n\u0007Test aborted due to damage to DAFT-0401\n\u0007\n\u0007D4\n\u0007N/A\n\u0007none\n\u0007GMT 230, 2006\n\u0007Testing deferred due to anomaly found in D3\n\u0007\n\u0007D5\n\u0007001, 002, 003, 004, 005\n\u0007DAFT-0201, -0101, -0301, -0401, 0501-01, 0516-01, Grey Tape\n\u0007\n\u0007Sample Bags 1,2,& 3\n\u0007\n\u0007\n\tDAFT-1 & DAFT -2, Session 1, GMT 54, 2005",
     "metadata": {
@@ -42225,57 +41400,12 @@
     }
   },
   {
-    "chunk_id": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc::page-1::chunk-0026",
-    "text": "nd noted that it was permanently deformed. The DAFT Fill Assembly is a series of linear tubing connections with ‘appendages’ connected to it by tees. The foam that encased it (minicell) is approximately three times longer than it is wide, and it is about 2 inches thick. From the video, it was clear that the foam was deformed from flat by about one inch along the shorter axis, in line with the thickness. The foam is a ‘donut’ like cutout, with no strength in the direction of the deformation.",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc::page-1",
-      "chunk_index": 26,
-      "document_type": "report",
-      "filename": "DAFT final report 6 24 08 as submitted.doc",
-      "relative_path": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc",
-      "psi_id": "PSI-47",
-      "source_type": "investigation_report",
-      "page": 1
-    }
-  },
-  {
-    "chunk_id": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc::page-1::chunk-0027",
-    "text": "one inch along the shorter axis, in line with the thickness. The foam is a ‘donut’ like cutout, with no strength in the direction of the deformation.\nAt that point, the nominal test plan was aborted. Jeff was asked to restow the Fill Assembly, and to revert to the procedure that was used for DAFT-1 &-2, taking a cabin air sample, which he did. Later, when he attempted to download the data from the devices, another anomaly occurred. When he had attached the P-Trak and attempted the data transfer, the message: “Error Communicating” popped up. The transfer was attempted one more time with the P-Trak and also once with the DustTrak. Backing up in the procedure and attempting to select a com port revealed that the EXPRESS Laptop being used did not have a “Com Port 1” within its list of available choices, which was a problem, since the DAFT Software was configured to use that port.\nDAFT-3, GMT 230, 2006",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc::page-1",
-      "chunk_index": 27,
-      "document_type": "report",
-      "filename": "DAFT final report 6 24 08 as submitted.doc",
-      "relative_path": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc",
-      "psi_id": "PSI-47",
-      "source_type": "investigation_report",
-      "page": 1
-    }
-  },
-  {
     "chunk_id": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc::page-1::chunk-0028",
     "text": "Com Port 1” within its list of available choices, which was a problem, since the DAFT Software was configured to use that port.\nDAFT-3, GMT 230, 2006\nAs a result of the discovery of the broken part on the previous day, a special Safety telecon was convened to determine if the experiment could be performed, and if so, what level of repair or modification would be required to provide the necessary protection for the crew. That telecon involved members of the PSRP, the ISS Cadre, DAFT Project Management and Safety, POIC Safety, the Crew Office and MER Safety.  Although crew operations were scheduled for this time, none were conducted due to the ongoing anomaly discussion.\nThe DAFT engineering team provided several options for repair. They are briefly described as follows:\nOption 1: Cover the opening to the tubing system with a finger tip, or alternately, with gray tape, and perform the experiment nominally.",
     "metadata": {
       "source_file": "extracted_pdf_reports.json",
       "source_id": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc::page-1",
       "chunk_index": 28,
-      "document_type": "report",
-      "filename": "DAFT final report 6 24 08 as submitted.doc",
-      "relative_path": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc",
-      "psi_id": "PSI-47",
-      "source_type": "investigation_report",
-      "page": 1
-    }
-  },
-  {
-    "chunk_id": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc::page-1::chunk-0029",
-    "text": "as follows:\nOption 1: Cover the opening to the tubing system with a finger tip, or alternately, with gray tape, and perform the experiment nominally.\nOption 2: Remove the fitting that supports the Gage subassembly, remove the high pressure relief valve from that subassembly and replace it in that location; and use the remaining fitting to reinstall the low pressure relief valves, without the HEPA filter.\nOption 3: Disassemble the DAFT Impactor and remove the HEPA filter. Use that HEPA filter to replace the broken one on the Fill Assembly and scavenge the parts from the Impactor that are necessary to deliver the sample to the devices.\nAfter a significant discussion regarding the implications and ramifications of each potential fix, it was determined that Option 1, using gray tape to cover the opening, would be the most desirable and did not pose an undue Safety risk to the crew.",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc::page-1",
-      "chunk_index": 29,
       "document_type": "report",
       "filename": "DAFT final report 6 24 08 as submitted.doc",
       "relative_path": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc",
@@ -42330,51 +41460,6 @@
     }
   },
   {
-    "chunk_id": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc::page-1::chunk-0033",
-    "text": "he number of requested toggles of the fill valve (per the Execution Notes), once the DAFT Dust Holder was installed onto the Fill Assembly, was four.\nBoth of the instrument’s count values went to zero when the HEPA filter was installed on the DAFT Impactor inlet, which is nominal.\nOnce the devices were attached, while performing DAFT Sample Extract, Jeff gave a reading from each instrument at 30 second intervals for the entire time that sampling was occurring. The data was recorded manually by the DAFT ground team. That data has been transcribed to an Excel file and is included in Appendix C, labeled as ‘Bag #1’.\nThe operations proceeded nominally from this point forward, although the P-Trak reportedly started beeping sometime before Bag #2 was extracted. It is unknown if this was an actual low alcohol warning, or merely an artifact of drawing the Sample Low enough to cause a vacuum within the P-Trak.",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc::page-1",
-      "chunk_index": 33,
-      "document_type": "report",
-      "filename": "DAFT final report 6 24 08 as submitted.doc",
-      "relative_path": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc",
-      "psi_id": "PSI-47",
-      "source_type": "investigation_report",
-      "page": 1
-    }
-  },
-  {
-    "chunk_id": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc::page-1::chunk-0034",
-    "text": "It is unknown if this was an actual low alcohol warning, or merely an artifact of drawing the Sample Low enough to cause a vacuum within the P-Trak.\nThe HEPA filter was installed on the inlet of the DAFT Impactor before each test point and the devices were re-zeroed. Six toggles were used to introduce dust into Sample Bag #2. Eight toggles were used for Sample Bag #3. Jeff continued to provide call downs of the instrument readings every 30 seconds for all of the test points, and they were recorded in a similar fashion. The units were not turned off in between test points, and no removal or reinstallation of the P-Trak Alcohol Wick was performed until the end of the session. All of the used Sample Bags and Dust Holders were placed in the trash at the end of the test period. The DAFT hardware was all restowed at the end of the testing, since the scheduled Data Download would not be performed for several hours.",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc::page-1",
-      "chunk_index": 34,
-      "document_type": "report",
-      "filename": "DAFT final report 6 24 08 as submitted.doc",
-      "relative_path": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc",
-      "psi_id": "PSI-47",
-      "source_type": "investigation_report",
-      "page": 1
-    }
-  },
-  {
-    "chunk_id": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc::page-1::chunk-0035",
-    "text": "est period. The DAFT hardware was all restowed at the end of the testing, since the scheduled Data Download would not be performed for several hours.\nWhen Jeff attached the P-Trak to the ELC to download the data, it was clear that the fix implemented by the EXPRESS team had worked, the device recognized the Com Port, and reported that there were four test points ready for downloading. This did not seem to be right, since it was the opinion of the ground team that the four test points from the previous testing (last year) should still have been stored, and the test numbers should have incremented starting at number 5. The devices were both queried for test points 5, 6 and 7, and no data was found. The DATA Download procedure was then performed nominally, transferring test points 1 – 4 and those four files were placed on the ELC for downlink as a part of their housekeeping data.",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc::page-1",
-      "chunk_index": 35,
-      "document_type": "report",
-      "filename": "DAFT final report 6 24 08 as submitted.doc",
-      "relative_path": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc",
-      "psi_id": "PSI-47",
-      "source_type": "investigation_report",
-      "page": 1
-    }
-  },
-  {
     "chunk_id": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc::page-1::chunk-0036",
     "text": "en performed nominally, transferring test points 1 – 4 and those four files were placed on the ELC for downlink as a part of their housekeeping data.\nUnfortunately, the only data received electronically once it was transferred from EXPRESS to the GRC TSC was the data obtained from the DAFT-1 and -2 over a year ago.\n\nIII.\tResults\n\nA.\tList of Pre-, In-, Postflight Anomalies\nThe in flight anomalies are listed below and are detailed in the Sessions section.\nDAFT-3, Session 1, GMT 229, 2006 \nDamage to fill assembly observed\nError Communicating with P-Trak\nDAFT-3, Session 1, GMT 233, 2006\n\tFailure to open Alcohol Wick S/N 02\n\tFailure of DustTrak to enter into Log Mode 2\n\nCompleteness/Quality of Data\n\nThe data taken from DAFT-1 and -2 can be seen in Section III C. Figures 1 through 4.",
     "metadata": {
@@ -42396,36 +41481,6 @@
       "source_file": "extracted_pdf_reports.json",
       "source_id": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc::page-1",
       "chunk_index": 37,
-      "document_type": "report",
-      "filename": "DAFT final report 6 24 08 as submitted.doc",
-      "relative_path": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc",
-      "psi_id": "PSI-47",
-      "source_type": "investigation_report",
-      "page": 1
-    }
-  },
-  {
-    "chunk_id": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc::page-1::chunk-0038",
-    "text": "t the unit was functioning normally. DustTrak also responded well to the Velcro dust, but did not reach readings above 10% of its overall capability.\nTest points #3 and #4 were not appreciably different from Test point #1 for either device.",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc::page-1",
-      "chunk_index": 38,
-      "document_type": "report",
-      "filename": "DAFT final report 6 24 08 as submitted.doc",
-      "relative_path": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc",
-      "psi_id": "PSI-47",
-      "source_type": "investigation_report",
-      "page": 1
-    }
-  },
-  {
-    "chunk_id": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc::page-1::chunk-0039",
-    "text": "d not reach readings above 10% of its overall capability.\nTest points #3 and #4 were not appreciably different from Test point #1 for either device. \nFigure 6 contains a chart developed from the ground testing that was performed in May of 2003, using the crew training hardware in a flight like manner. It can be seen from that graph that although there is a wide variation in the amount of aerosol that is released from the various samples, the relationship between the DustTrak and P-Trak readings correlates very closely over a large number of test runs.  Demonstrating that the overall composition of the various aerosols created on the ground, regardless of concentration, is very similar with regard to the relationship between the number and the sizes of the particles entrained. Overall, in the 1-g testing scenario, the particulate levels drop together with time, consistent with gravitational rainout of the particles in the sample bag.",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc::page-1",
-      "chunk_index": 39,
       "document_type": "report",
       "filename": "DAFT final report 6 24 08 as submitted.doc",
       "relative_path": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc",
@@ -42480,21 +41535,6 @@
     }
   },
   {
-    "chunk_id": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc::page-1::chunk-0043",
-    "text": "al density of water) is 2.5 E-12 grams, with a range from 2 – 3 E-12. The calculated average diameter is 1.65 micron, ranging from 1.56 – 1.7 micron.\nThe sample material, Arizona Road Dust (Fine) is a standardized, homogenous material; but since it contains a wide distribution of sizes, it is a mixture. The amount of the material that is enclosed in each Dust Holder is small (0.25 gram). From ground testing, it is estimated that only about 10% of the material contained within the Dust Holder is introduced into the aerosol, due to the irregular interior surfaces within it, the surface adhesion of the dust and other factors. Therefore, the net amount of sample delivered to the Sample Bags is about 25 milligrams. Since this amount is so small and is coming from a mixture, some variation in the average particle size between samples is expected.\n\nC.\tTables, Graphs, Figures Index\n\u0001\nFigure 1: DAFT P-Trak data from Test Point #1\n\n\n\n\u0001\n\nFigure 2: DAFT DustTrak data from Test Point #1",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc::page-1",
-      "chunk_index": 43,
-      "document_type": "report",
-      "filename": "DAFT final report 6 24 08 as submitted.doc",
-      "relative_path": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc",
-      "psi_id": "PSI-47",
-      "source_type": "investigation_report",
-      "page": 1
-    }
-  },
-  {
     "chunk_id": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc::page-1::chunk-0044",
     "text": "expected.\n\nC.\tTables, Graphs, Figures Index\n\u0001\nFigure 1: DAFT P-Trak data from Test Point #1\n\n\n\n\u0001\n\nFigure 2: DAFT DustTrak data from Test Point #1\n\n\n\n\n\u0001\nFigure 3: DAFT P-Trak data from Test Point #2\n\n\u0001\n\n\nFigure 4: DAFT DustTrak data from Test Point #2\n\n\u0001\n\n\nFigure 5: Tabular data from DAFT-3 and -4\n\u0001\n\nFigure 6: DAFT Ground Test data\n\n\u0001\nFigure 7: Graphed data voiced down from DAFT-3 and -4\n\u0001\nFigure 8: Graphed data from DAFT-3 and -4 downloaded from the instruments after they were returned\n\n\nD. Photographs\n\nOn-orbit Photographs\n\nIncrement 10:\n\u0001\u0015\n\u0001\u0015\n\u0001\u0015\n\u0001\u0015\n\u0001\u0015\n\u0001\u0015\n\u0001\u0015\n\n\u0001\u0015\n\nIncrement 13:\n\u0001\n\u0001\n\u0001\n\nHardware Photographs\n\u0001\nP-Trak, Alcohol Wick (w/Container) and Batteries (Engineering Hardware)\n\n\n\u0001\nDustTrak and Batteries (Engineering Hardware)\n\n\u0001\u0015\n\u0001\u0015\nDAFT Accessories Kit Items\n\n\u0001\u0015\n\u0001\u0015\nDAFT Hoses\n\u0001\u0015\nDAFT Fill Assembly\n\n\n\u0001\u0015\nDAFT Impactor\n\n\nE. Status of Data Analysis\n\nAs detailed in the session log above, the data analysis is complete. \n\nF.  Final Investigation results",
     "metadata": {
@@ -42525,36 +41565,6 @@
     }
   },
   {
-    "chunk_id": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc::page-1::chunk-0046",
-    "text": "ardware and a small block of time came open. DAFT was allowed the opportunity to schedule 3 test points, with very little chance for another session.\nIsopropyl Alcohol: As mentioned in the Results section, Jeff Williams was unable to open the DAFT Alcohol Wick container -02. This limited the amount of alcohol available to support the operation of the P-Trak. Leroy Chiao used this alcohol wick when he performed DAFT-1 and -2 and both of those units were loaded with alcohol over 3 years ago, so the amount that is remaining is highly questionable.",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc::page-1",
-      "chunk_index": 46,
-      "document_type": "report",
-      "filename": "DAFT final report 6 24 08 as submitted.doc",
-      "relative_path": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc",
-      "psi_id": "PSI-47",
-      "source_type": "investigation_report",
-      "page": 1
-    }
-  },
-  {
-    "chunk_id": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc::page-1::chunk-0047",
-    "text": "e performed DAFT-1 and -2 and both of those units were loaded with alcohol over 3 years ago, so the amount that is remaining is highly questionable. \nSample Build Up: Testing in the lab has shown that under some circumstances, especially when a significant amount of the larger ARD particles is sent to the devices, a buildup of particles can occur within the optics chamber of the P-Trak. Clearly, the data shows that the sample aerosol contained a greater proportion of larger particles than is experienced on Earth. It also shows that as the run time on the P-Trak is increasing, especially during Bag #3, the count/mass ratio is declining. Although it is not certain that this build up is occurring, the symptoms of that condition are consistent with the data.",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc::page-1",
-      "chunk_index": 47,
-      "document_type": "report",
-      "filename": "DAFT final report 6 24 08 as submitted.doc",
-      "relative_path": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc",
-      "psi_id": "PSI-47",
-      "source_type": "investigation_report",
-      "page": 1
-    }
-  },
-  {
     "chunk_id": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc::page-1::chunk-0048",
     "text": "unt/mass ratio is declining. Although it is not certain that this build up is occurring, the symptoms of that condition are consistent with the data.\nThe lack of the electronic data collection initially limited the ability of the project team to perform a more detailed analysis of the data.  However when the Ptrak and Dusttrak were returned, the data sets were intact in their memory.  The stored data reproduced the read downs very closely giving confidence to the earlier conclusions.\nBased on the limited availability of the crew, it did not seem reasonable to think that time and procedures could be made available for Jeff or the follow-on Increment 14 crew to troubleshoot the devices.",
     "metadata": {
@@ -42576,21 +41586,6 @@
       "source_file": "extracted_pdf_reports.json",
       "source_id": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc::page-1",
       "chunk_index": 49,
-      "document_type": "report",
-      "filename": "DAFT final report 6 24 08 as submitted.doc",
-      "relative_path": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc",
-      "psi_id": "PSI-47",
-      "source_type": "investigation_report",
-      "page": 1
-    }
-  },
-  {
-    "chunk_id": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc::page-1::chunk-0050",
-    "text": "k. Unfortunately, an aerosol of this type is difficult to manufacture, and the project did not have time or resources to attempt such a development.)\nThe data shows that the devices were able to operate in microgravity for an extended period of time with no apparent failure. One of the major concerns was that the P-Trak would accumulate alcohol in the optics chamber and obscure them, causing the unit to either read ‘0’ or display and error code. This did not happen. The units gave readings from zero well up into the middle of their operational ranges, and then back; in short, they performed as expected.\nDAFT-1 and -2 showed that the units were ‘apparently working’ and that the air aboard the ISS is almost unbelievably clean. The readings from the devices during that part of the overall experiment though, never crossed the 20% of the operational range threshold, leaving the results somewhat suspect.",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc::page-1",
-      "chunk_index": 50,
       "document_type": "report",
       "filename": "DAFT final report 6 24 08 as submitted.doc",
       "relative_path": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc",
@@ -42636,21 +41631,6 @@
       "source_file": "extracted_pdf_reports.json",
       "source_id": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc::page-1",
       "chunk_index": 53,
-      "document_type": "report",
-      "filename": "DAFT final report 6 24 08 as submitted.doc",
-      "relative_path": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc",
-      "psi_id": "PSI-47",
-      "source_type": "investigation_report",
-      "page": 1
-    }
-  },
-  {
-    "chunk_id": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc::page-1::chunk-0054",
-    "text": "has confidence that the P-Traks as designed and manufactured for SAME will perform as accurately and effectively on-orbit as they have in the labs.\n\n\nG.\tConclusion\nThe DAFT experiment adequately demonstrated the reliability of the modified Ptrak as operated in low-gravity. This retired a significant risk that was being carried by the SAME project.  It should be added at this point that SAME flew successfully in Increment 15 with flawless operation of the PTraks over the entire test matrix.\n\nEarth Benefits / Spin-off Applications \n\nThere are no tangible Earth benefits from this experiment.\n\nIV Bibliography\n\nDetection of Smoke from Microgravity Fires, David Urban, DeVon Griffin, Gary Ruff, Thomas Cleary, Jiann Yang, George Mulholland , Zeng-guang Yuan, 2005 International Conference on Environmental Systems, Rome Italy, Paper # 2005-01-2930 July 2005, SAE Transactions, pp 375-384.",
-    "metadata": {
-      "source_file": "extracted_pdf_reports.json",
-      "source_id": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc::page-1",
-      "chunk_index": 54,
       "document_type": "report",
       "filename": "DAFT final report 6 24 08 as submitted.doc",
       "relative_path": "47 DAFT _ DAFT-2/DAFT final report 6 24 08 as submitted.doc",
