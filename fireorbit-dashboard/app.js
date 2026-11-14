@@ -1,4 +1,4 @@
-/* FireOrbit dashboard — vanilla JS, no dependencies. Data comes from data.js */
+/* FireOrbit dashboard — vanilla JS, no dependencies. Data comes from the FastAPI backend via api.js (data.js is the offline fallback) */
 (function () {
   'use strict';
   const D = window.FIREORBIT_DATA;
@@ -349,7 +349,7 @@
   function initApi() {
     const el = $('#llmurl'); const saved = lsGet('fireorbit.api');
     el.value = saved === null ? DEFAULT_API : saved;
-    el.addEventListener('change', () => { lsSet('fireorbit.api', el.value.trim()); checkApi(); });
+    el.addEventListener('change', () => { lsSet('fireorbit.api', el.value.trim()); location.reload(); });
     checkApi();
   }
   async function checkApi() {
@@ -371,15 +371,16 @@
     return s.psi_id && BYID[s.psi_id] ? `<a href="#" onclick="FO.open('${s.psi_id}');return false">${t}</a>` : `<span>${t}</span>`;
   }
   async function askBackend(q) {
-    const base = apiBase(); if (!base) return '';
+    const base = apiBase(); if (!base) return { html: '', hits: null };
     try {
       const r = await fetch(base + '/api/chat', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ question: q }) });
       const j = await r.json().catch(() => ({}));
       if (!r.ok) throw new Error(typeof j.detail === 'string' ? j.detail : 'HTTP ' + r.status);
-      if (j.answer) return `<div class="answer">${fmtAnswer(j.answer)}<div class="cite"><b>Sources:</b> ${(j.sources || []).map(srcChip).join(' · ')}</div></div>`;
-      return `<div class="answer">Backend connected, but AI answers are off (no GEMINI_API_KEY). Showing retrieved passages instead.</div>`;
+      const hits = (j.sources || []).filter(s => s.content).map(s => ({ d: { id: s.psi_id || s.label || '', text: s.content, src: s.file || s.label || 'source', pg: s.page } }));
+      if (j.answer) return { html: `<div class="answer">${fmtAnswer(j.answer)}<div class="cite"><b>Sources:</b> ${(j.sources || []).map(srcChip).join(' · ')}</div></div>`, hits };
+      return { html: `<div class="answer">Backend connected, but AI answers are off (no GEMINI_API_KEY). Showing retrieved passages instead.</div>`, hits };
     } catch (e) {
-      return `<div class="answer">Backend unavailable (${esc(e.message)}). Showing local results.</div>`;
+      return { html: `<div class="answer">Backend unavailable (${esc(e.message)}). Showing local results.</div>`, hits: null };
     }
   }
   async function runAsk() {
@@ -396,8 +397,9 @@
     if (/moon|lunar|habitat|rover|cabin/.test(ql) && /(rank|best|relevant|most|which|priorit)/.test(ql)) {
       html += `<div class="answer"><b>Closest to planned Moon-cabin conditions</b> (≥30% O₂, ≤10.2 psi):<ol>${D.ranking.slice(0, 5).map(r => `<li><b>${esc(r.acronym)}</b> — score ${r.moon_base_score}. ${esc(r.notes.slice(0, 2).join('; '))}</li>`).join('')}</ol><div class="cite"><b>Source:</b> FireOrbit Moon-base scoring (knowledge_base.json). No investigation provides partial-gravity data.</div></div>`;
     }
-    const hits = search(q, 4), passages = hits.map(h => h.d);
-    html = (await askBackend(q)) + html;
+    let hits = search(q, 4);
+    const bk = await askBackend(q); html = bk.html + html;
+    if (bk.hits && bk.hits.length) hits = bk.hits;
     if (hits.length) {
       html += `<div class="card"><h3>Most relevant passages</h3>${hits.map(h => { const i = BYID[h.d.id]; return `<div class="answer"><div>${esc(h.d.text.slice(0, 650))}${h.d.text.length > 650 ? '…' : ''}</div><div class="cite"><b>${i ? `<a href="#" onclick="FO.open('${i.id}');return false">${esc(i.acr)}</a>` : esc(h.d.id)}</b> · ${esc(h.d.src)}${h.d.pg ? ' · p.' + h.d.pg : ''}</div></div>`; }).join('')}</div>`;
     } else if (!html) html = '<div class="card">No matching passages. Try other keywords (materials, “smoke”, “extinguish”, a study name).</div>';

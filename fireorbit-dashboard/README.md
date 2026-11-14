@@ -1,10 +1,31 @@
 # FireOrbit dashboard (frontend)
 
-Static, dependency-free site. Open `index.html` in a browser (keep the 4 files together), or serve with `python3 -m http.server`.
+Static, dependency-free site (vanilla JS). **All data is loaded from the FastAPI backend** (`backend/`).
+If the backend is not running, it falls back to the offline snapshot in `data.js`; a badge in the header shows which one is in use (`● Live API` / `● Offline snapshot`).
 
-- `index.html`, `styles.css`, `app.js` — UI
-- `data.js` — compact bundle built from `data_processed/` (16 investigations, 1,589 test records, 465 report passages)
+## Run
 
-Tabs: Overview · Rank (use-case weighted) · Explore data (filters, charts, CSV export) · Compare · Ask FireOrbit · Gaps & Earth.
+```bash
+# 1) backend (from the repo root)
+uvicorn backend.main:app --reload
 
-"Ask FireOrbit" does in-browser keyword retrieval with citations. To use an LLM, run a backend and paste its URL in the page; it receives POST `{question, passages}` and must return `{answer}`.
+# 2) dashboard (from this folder)
+python -m http.server 5500
+```
+
+Open http://localhost:5500
+
+Optional: put `GEMINI_API_KEY=...` in a `.env` file in the repo root to get written AI answers in the **Ask FireOrbit** tab (without it, the tab shows the retrieved passages).
+
+## Files
+
+- `index.html`, `styles.css` — page and styles
+- `api.js` — loads investigations, experiments, Moon-base ranking and gaps from the backend and converts them to the shape `app.js` uses; falls back to `data.js` if the backend is unreachable
+- `app.js` — UI (tabs: Overview · Rank · Explore data · Compare · Ask FireOrbit · Gaps & Earth)
+- `data.js` — offline snapshot built from `data_processed/` (fallback only)
+
+## Backend endpoints used
+
+`GET /health`, `GET /api/investigations`, `GET /api/investigations/{psi_id}`, `GET /api/experiments` (paged), `GET /api/moon-base`, `GET /api/gaps`, `POST /api/chat`.
+
+The backend URL defaults to `http://localhost:8000`. Change it in **Ask FireOrbit → Backend settings** (the page reloads); clear it to use the offline snapshot only.
