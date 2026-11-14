@@ -5,6 +5,7 @@ Run from the repository root:
 
 Env vars (optional): EVAL_MODE=hybrid|dense|bm25   EVAL_MODEL=<same model as build_index.py>
                      EVAL_ROUTE=1|0  (query routing on/off, default on)
+                     EVAL_MIN_SCORE=0.72  (no-answer gate; 0 disables)
 """
 import os
 import sys
@@ -22,7 +23,8 @@ _retriever = Retriever(
 
 
 def search(question, k):
-    hits = _retriever.search(question, top_k=k, route=os.environ.get("EVAL_ROUTE", "1") == "1")
+    hits = _retriever.search(question, top_k=k, route=os.environ.get("EVAL_ROUTE", "1") == "1",
+                              **({"min_score": float(os.environ["EVAL_MIN_SCORE"])} if "EVAL_MIN_SCORE" in os.environ else {}))
     out = []
     for h in hits:
         # Ranking stays as the retriever returns it. The "score" is only used to decide

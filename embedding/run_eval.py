@@ -14,6 +14,7 @@ def main():
     mod, fn = a.search_fn.split(":"); search = getattr(importlib.import_module(mod), fn)
     ev = json.load(open(a.eval, encoding="utf-8"))
     cat = collections.defaultdict(lambda: {"n": 0, "hit": 0, "rr": 0.0, "prec": 0.0, "rej": 0})
+    clean = {"n": 0, "hit": 0, "rr": 0.0}  # headline numbers, ambiguous questions excluded
     rows = []
     for q in ev["questions"]:
         res = search(q["question"], a.k)[: a.k]; ids = [r["chunk_id"] for r in res]
@@ -23,7 +24,10 @@ def main():
             rows.append({"id": q["id"], "ok": ok, "top_score": res[0]["score"] if res else None}); continue
         rel = set(q["relevant_chunk_ids"]); rank = next((i + 1 for i, x in enumerate(ids) if x in rel), None)
         c["hit"] += rank is not None; c["rr"] += 1 / rank if rank else 0; c["prec"] += sum(x in rel for x in ids) / a.k
-        rows.append({"id": q["id"], "ok": rank is not None, "rank": rank, "top": ids[:3]})
+        rows.append({"id": q["id"], "ok": rank is not None, "rank": rank, "top": ids[:3],
+                     "top_score": res[0]["score"] if res else None, "ambiguous": q.get("ambiguous", False)})
+        if not q.get("ambiguous"):
+            clean["n"] += 1; clean["hit"] += rank is not None; clean["rr"] += 1 / rank if rank else 0
         if a.verbose and rank is None: print("MISS", q["id"], q["question"], "->", ids[:3])
     tot = {"n": 0, "hit": 0, "rr": 0.0, "prec": 0.0}
     print(f"{'category':14}{'n':>4}{'Hit@k':>8}{'MRR':>8}{'P@k':>8}")
@@ -32,6 +36,13 @@ def main():
         print(f"{k:14}{c['n']:>4}{c['hit']/c['n']:>8.2f}{c['rr']/c['n']:>8.2f}{c['prec']/c['n']:>8.2f}")
         for t in tot: tot[t] += c[t]
     print(f"{'ALL answerable':14}{tot['n']:>4}{tot['hit']/tot['n']:>8.2f}{tot['rr']/tot['n']:>8.2f}{tot['prec']/tot['n']:>8.2f}")
+    if clean["n"] != tot["n"]:
+        print(f"{'excl. ambiguous':14}{clean['n']:>4}{clean['hit']/clean['n']:>8.2f}{clean['rr']/clean['n']:>8.2f}")
+    ans = sorted(r["top_score"] for r in rows if r.get("top_score") is not None and r["ok"])
+    una = sorted(r["top_score"] for r in rows if r.get("top_score") is not None and not r["ok"] and "rank" not in r)
+    if ans and una:
+        print(f"top_score of correct answerable: min={ans[0]:.3f} median={ans[len(ans)//2]:.3f} | "
+              f"unanswerable: min={una[0]:.3f} max={una[-1]:.3f}")
     json.dump(rows, open(a.out, "w"), indent=1)
 
 if __name__ == "__main__": main()

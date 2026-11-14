@@ -4,6 +4,7 @@ Usage from the repository root:
     python indexing/retrieval.py "which test reached 85% oxygen"
     python indexing/retrieval.py "methanol experiments that ended in extinction" --top-k 8
     python indexing/retrieval.py "..." --no-route        # disable automatic filters
+    python indexing/retrieval.py "..." --min-score 0     # disable the no-answer gate
     python indexing/retrieval.py "..." --mode dense|bm25|hybrid --json
 
 Query routing (rule-based) turns parts of the question into metadata filters:
@@ -13,6 +14,9 @@ Query routing (rule-based) turns parts of the question into metadata filters:
     "objective/purpose/goal"                  -> document_type=investigation_metadata
     the word "report"                         -> document_type=report
     "PSI-98"                                  -> psi_id filter
+    investigation names (SPICE, BASS-II, SAMER, CFI-G ...) -> psi_id filter (taken from the index metadata;
+                                                short names like SAME/BASS must be written in capitals)
+    "what is X / about X" + an investigation name -> document_type=investigation_metadata
 Explicit --doc-type / --psi-id always win. Use the SAME --model that build_index.py used."""
 
 import argparse
@@ -27,6 +31,11 @@ from build_index import COLLECTION, DEFAULT_DB_DIR, prefixes
 
 RRF_K = 60
 CANDIDATE_MULT = 4
+# "No answer" gate. Applied only to questions that did NOT turn into a structured filter
+# (o2_pct / fuel / outcome): for those, an empty filter result is the "no answer" signal.
+# Calibrated on the eval set with BAAI/bge-small-en-v1.5: unanswerable questions scored <= 0.705,
+# answerable report/investigation questions >= 0.739. Re-calibrate if you change the model.
+MIN_DENSE_SCORE = 0.72
 
 CMP_WORDS = {
     "$gt": ["above", "over", "more than", "greater than", "exceeding", "higher than", "higher", "greater"],
@@ -57,7 +66,55 @@ def tokenize(text: str) -> list[str]:
     return re.findall(r"[a-z0-9]+", text.lower())
 
 
-def route_query(query: str, fuels: list[str]) -> dict[str, Any]:
+INFO_INTENT = re.compile(r"\bwhat (?:is|was|are|were)\b|\babout\b|\boverview\b", re.I)
+
+
+def build_aliases(metas: list[dict]) -> dict[str, set[str]]:
+    """alias -> {psi_id}, derived from the `acronym` metadata of experiment records."""
+    pairs: set[tuple[str, str]] = set()
+    for m in metas:
+        acr, psi = m.get("acronym"), m.get("psi_id")
+        if not acr or not psi:
+            continue
+        for part in re.split(r"\s*/\s*", acr):
+            part = part.strip()
+            forms = {re.sub(r"^ACME\s+", "", part)}
+            for f in list(forms):
+                forms.add(f.split(" ")[0])        # "E-FIELD Flames" -> "E-FIELD"
+                forms.add(f.replace("-", ""))     # "SAME-R" -> "SAMER"
+            base = re.match(r"^(.+?)-(?:I|II|III|IV|2)$", part)  # SAFFIRE-III -> SAFFIRE
+            if base:
+                forms.add(base.group(1))
+            for f in forms:
+                if len(f) >= 3:
+                    pairs.add((f, psi))
+    aliases: dict[str, set[str]] = {}
+    for f, psi in pairs:
+        aliases.setdefault(f, set()).add(psi)
+    return aliases
+
+
+def find_investigations(query: str, aliases: dict[str, set[str]]) -> list[str]:
+    """psi_ids for investigation names in the query. Longest match wins on overlap
+    (so CFI-G is not also read as CFI). Short names are matched case-sensitively
+    (SAME, BASS, FLEX ...) so ordinary words are not mistaken for investigations."""
+    found = []
+    for alias, psis in aliases.items():
+        flags = re.I if (len(alias) >= 7 or re.search(r"[-0-9]", alias)) else 0
+        for m in re.finditer(rf"(?<![A-Za-z0-9]){re.escape(alias)}(?![A-Za-z0-9])", query, flags):
+            found.append((m.start(), m.end(), psis))
+    found.sort(key=lambda x: x[0] - x[1])  # longest first
+    taken: list[tuple[int, int]] = []
+    out: list[str] = []
+    for a, b, psis in found:
+        if any(a < tb and ta < b for ta, tb in taken):
+            continue
+        taken.append((a, b))
+        out += [p for p in sorted(psis) if p not in out]
+    return out
+
+
+def route_query(query: str, fuels: list[str], aliases: dict[str, set[str]] | None = None) -> dict[str, Any]:
     """Return {"clauses": [...chroma where clauses...], "notes": {...}}."""
     q = query.lower()
     notes: dict[str, Any] = {}
@@ -72,6 +129,8 @@ def route_query(query: str, fuels: list[str]) -> dict[str, Any]:
     outcome = next((name for name, pat in OUTCOMES if pat.search(query)), None)
     has_record_words = bool(RECORD_WORDS.search(query))
 
+    invs = find_investigations(query, aliases or {})
+
     doc_type = None
     if OBJECTIVE_WORDS.search(query):
         doc_type = "investigation_metadata"
@@ -79,6 +138,8 @@ def route_query(query: str, fuels: list[str]) -> dict[str, Any]:
         doc_type = "report"
     elif o2 is not None or ((fuel_hits or outcome) and has_record_words):
         doc_type = "experiment_record"
+    elif invs and not has_record_words and INFO_INTENT.search(query):
+        doc_type = "investigation_metadata"
 
     clauses: list[dict] = []
     if doc_type:
@@ -93,6 +154,8 @@ def route_query(query: str, fuels: list[str]) -> dict[str, Any]:
     psi = PSI_RE.search(query)
     if psi:
         clauses.append({"psi_id": psi.group(0).upper()}); notes["psi_id"] = psi.group(0).upper()
+    elif invs:
+        clauses.append({"psi_id": invs[0] if len(invs) == 1 else {"$in": invs}}); notes["psi_id"] = invs
     return {"clauses": clauses, "notes": notes}
 
 
@@ -144,6 +207,7 @@ class Retriever:
         self.fuels = sorted({m["fuel"] for m in self.metas if m.get("fuel") and re.fullmatch(r"[a-z][a-z \-]+", m["fuel"])},
                             key=len, reverse=True)
         self.has_numeric_meta = any("o2_pct" in m for m in self.metas)
+        self.aliases = build_aliases(self.metas)
         self.bm25 = None
         if mode != "dense":
             from rank_bm25 import BM25Okapi
@@ -172,11 +236,12 @@ class Retriever:
         return out
 
     def search(self, query: str, top_k: int = 5, doc_type: str | None = None,
-               psi_id: str | None = None, route: bool = True) -> list[dict[str, Any]]:
+               psi_id: str | None = None, route: bool = True,
+               min_score: float | None = MIN_DENSE_SCORE) -> list[dict[str, Any]]:
         clauses: list[dict] = []
         self.last_route = {}
         if route:
-            r = route_query(query, self.fuels)
+            r = route_query(query, self.fuels, self.aliases)
             clauses = [c for c in r["clauses"]
                        if not (doc_type and "document_type" in c) and not (psi_id and "psi_id" in c)]
             if not self.has_numeric_meta:  # index built before enrich_metadata.py: skip structured filters
@@ -189,8 +254,11 @@ class Retriever:
         where = build_where(clauses)
         n = top_k * CANDIDATE_MULT
 
+        structured = bool(set(self.last_route) & {"o2_pct", "fuel", "outcome"})
+        gate = None if (structured or not min_score) else min_score
+
         if self.mode == "dense":
-            return self._dense(query, top_k, where)
+            return self._gate(self._dense(query, top_k, where), gate)
         if self.mode == "bm25":
             return self._keyword(query, top_k, where)
 
@@ -200,7 +268,15 @@ class Retriever:
                 entry = merged.setdefault(hit["chunk_id"], {**hit, "rrf_score": 0.0})
                 entry.update({k: v for k, v in hit.items() if k.endswith("_score")})
                 entry["rrf_score"] += 1.0 / (RRF_K + rank)
-        return sorted(merged.values(), key=lambda h: h["rrf_score"], reverse=True)[:top_k]
+        hits = sorted(merged.values(), key=lambda h: h["rrf_score"], reverse=True)[:top_k]
+        return self._gate(hits, gate)
+
+    def _gate(self, hits: list[dict[str, Any]], min_score: float | None) -> list[dict[str, Any]]:
+        """Return [] when the top hit's dense similarity is below min_score (no answer)."""
+        if min_score and hits and "dense_score" in hits[0] and hits[0]["dense_score"] < min_score:
+            self.last_route["no_answer"] = f"best dense score {hits[0]['dense_score']:.3f} < {min_score}"
+            return []
+        return hits
 
 
 def main() -> None:
@@ -213,18 +289,21 @@ def main() -> None:
     parser.add_argument("--doc-type", choices=["report", "experiment_record", "investigation_metadata"])
     parser.add_argument("--psi-id", help="Only search one investigation, e.g. PSI-98.")
     parser.add_argument("--no-route", action="store_true", help="Disable automatic query-to-filter routing.")
+    parser.add_argument("--min-score", type=float, default=MIN_DENSE_SCORE,
+                        help="No-answer gate on the top dense score (0 disables). Default %(default)s.")
     parser.add_argument("--json", action="store_true", help="Print results as JSON.")
     args = parser.parse_args()
 
     retriever = Retriever(args.db_dir, args.model, args.mode)
-    hits = retriever.search(args.query, args.top_k, args.doc_type, args.psi_id, route=not args.no_route)
+    hits = retriever.search(args.query, args.top_k, args.doc_type, args.psi_id, route=not args.no_route,
+                            min_score=args.min_score)
 
     if args.json:
         print(json.dumps({"route": retriever.last_route, "hits": hits}, ensure_ascii=False, indent=2))
         return
     print(f"route: {retriever.last_route or 'none'}")
     if not hits:
-        print("No results.")
+        print("No results." + (f" ({retriever.last_route['no_answer']})" if "no_answer" in retriever.last_route else ""))
     for rank, hit in enumerate(hits, start=1):
         meta = hit["metadata"]
         scores = "  ".join(f"{k}={v:.3f}" for k, v in hit.items() if k.endswith("_score"))

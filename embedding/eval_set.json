@@ -770,12 +770,13 @@
         "experiment-PSI-99-Note_3_This_is_the_length_of_fuel_with_significant_visible_damage.-R1::chunk-0001",
         "experiment-PSI-99-Note_4_The_flames_remain_anchored_at_the_base_of_the_sample_which_has_a_very_slow_regression_rate_0.01_to_0.04_mm_s_-R1::chunk-0001"
       ],
-      "note": ""
+      "note": "ambiguous: both investigation/report and records are reasonable answers",
+      "ambiguous": true
     },
     {
       "id": "q15",
       "category": "structured",
-      "question": "heptane tests in the SPICE or BASS experiments",
+      "question": "heptane tests in the FLEX experiments",
       "answerable": true,
       "expected_document_type": "experiment_record",
       "expected_psi_ids": [],
@@ -901,7 +902,7 @@
         "experiment-PSI-69-FLEX-95-R1::chunk-0001",
         "experiment-PSI-69-FLEX-96-R1::chunk-0001"
       ],
-      "note": ""
+      "note": "was 'SPICE or BASS', but no heptane records exist there (all are PSI-68/69 FLEX)"
     },
     {
       "id": "q16",
@@ -1443,7 +1444,8 @@
         "101 SAME-R/SAMER_Final 0602 2014.pdf::page-88::chunk-0003",
         "101 SAME-R/SAMER_Final 0602 2014.pdf::page-89::chunk-0001"
       ],
-      "note": ""
+      "note": "ambiguous: both investigation/report and records are reasonable answers",
+      "ambiguous": true
     },
     {
       "id": "q30",

@@ -58,7 +58,7 @@ def main():
     add("structured", "SIBAL fabric burn tests", E(lambda d, m: fuel(d) == "sibal"), "experiment_record")
     add("structured", "tests that resulted in a sustained burn", E(lambda d, m: out(d) == "sustained_burn"), "experiment_record")
     add("structured", "SAFFIRE fire experiments records", E(lambda d, m: "saffire" in (m.get("acronym") or "").lower()), "experiment_record", ["PSI-98", "PSI-99", "PSI-100"])
-    add("structured", "heptane tests in the SPICE or BASS experiments", E(lambda d, m: fuel(d) == "heptane"), "experiment_record")
+    add("structured", "heptane tests in the FLEX experiments", E(lambda d, m: fuel(d) == "heptane"), "experiment_record")
     add("structured", "ethylene flame experiments", E(lambda d, m: fuel(d) == "ethylene"), "experiment_record")
 
     # ---- investigation metadata (objective/title)
@@ -101,6 +101,10 @@ def main():
         Q.append({"id": f"q{len(Q)+1:02d}", "category": "unanswerable", "question": q, "answerable": False,
                   "expected_document_type": None, "expected_psi_ids": [], "label_quality": "exact",
                   "n_relevant": 0, "relevant_chunk_ids": [], "note": n})
+    for q in Q:
+        if q["question"] in ("SAFFIRE fire experiments records", "smoke detector performance in the reflight SAMER tests"):
+            q["ambiguous"] = True
+            q["note"] = (q["note"] + " " if q["note"] else "") + "ambiguous: both investigation/report and records are reasonable answers"
     json.dump({"version": 2, "n_chunks": len(cs), "questions": Q}, open(a.out, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
     print(f"wrote {len(Q)} questions -> {a.out}")
     for q in Q: print(q["id"], q["category"], q["n_relevant"], q["question"][:70])
