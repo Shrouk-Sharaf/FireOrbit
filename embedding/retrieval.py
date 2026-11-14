@@ -27,7 +27,10 @@ from typing import Any
 
 import chromadb
 
-from build_index import COLLECTION, DEFAULT_DB_DIR, prefixes
+try:
+    from .build_index import COLLECTION, DEFAULT_DB_DIR, prefixes
+except ImportError:
+    from build_index import COLLECTION, DEFAULT_DB_DIR, prefixes
 
 RRF_K = 60
 CANDIDATE_MULT = 4
@@ -67,6 +70,24 @@ def tokenize(text: str) -> list[str]:
 
 
 INFO_INTENT = re.compile(r"\bwhat (?:is|was|are|were)\b|\babout\b|\boverview\b", re.I)
+
+CONVERSATIONAL_RE = re.compile(
+    r"^\s*(?:hi|hello|hey|howdy|hola|greetings|good\s+(?:morning|afternoon|evening|night|day)|"
+    r"how\s+are\s+you(?:(?:\s+doing|\s+today))?|"
+    r"how(?:'s|\s+is)\s+it\s+going|"
+    r"what(?:'s|\s+is)\s+up|"
+    r"who\s+are\s+you|"
+    r"what\s+(?:are\s+you|can\s+you\s+do|do\s+you\s+do)|"
+    r"what\s+is\s+your\s+name|"
+    r"thank\s+you|thanks|thx|"
+    r"bye|goodbye|see\s+ya|see\s+you|"
+    r"help)[\s\.\?!]*$",
+    re.I,
+)
+
+
+def is_conversational_or_irrelevant(query: str) -> bool:
+    return bool(CONVERSATIONAL_RE.match(query.strip()))
 
 
 def build_aliases(metas: list[dict]) -> dict[str, set[str]]:
@@ -262,6 +283,9 @@ class Retriever:
     def search(self, query: str, top_k: int = 5, doc_type: str | None = None,
                psi_id: str | None = None, route: bool = True,
                min_score: float | None = MIN_DENSE_SCORE) -> list[dict[str, Any]]:
+        if is_conversational_or_irrelevant(query):
+            self.last_route = {"intent": "conversational", "no_answer": "conversational or greeting query"}
+            return []
         clauses: list[dict] = []
         self.last_route = {}
         if route:
