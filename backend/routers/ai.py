@@ -98,7 +98,7 @@ def keyword_search(q: str, top_k: int, psi_id: Optional[str] = None, include_gen
         if not include_general and not meta_psi:
             continue
         s = sum((tf[t] / ln) * math.log(1 + n / df[t]) for t in terms if t in tf)
-        if s > 0.4:
+        if s > 0:
             scored.append((s, c))
     scored.sort(key=lambda x: -x[0])
     return [{"chunk_id": c.get("chunk_id", ""), "text": c["text"],
