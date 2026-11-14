@@ -1,11 +1,11 @@
 """Retrieve relevant FireOrbit chunks from the ChromaDB index (hybrid + query routing).
 
 Usage from the repository root:
-    python indexing/retrieval.py "which test reached 85% oxygen"
-    python indexing/retrieval.py "methanol experiments that ended in extinction" --top-k 8
-    python indexing/retrieval.py "..." --no-route        # disable automatic filters
-    python indexing/retrieval.py "..." --min-score 0     # disable the no-answer gate
-    python indexing/retrieval.py "..." --mode dense|bm25|hybrid --json
+    python embedding/retrieval.py "which test reached 85% oxygen"
+    python embedding/retrieval.py "methanol experiments that ended in extinction" --top-k 8
+    python embedding/retrieval.py "..." --no-route        # disable automatic filters
+    python embedding/retrieval.py "..." --min-score 0     # disable the no-answer gate
+    python embedding/retrieval.py "..." --mode dense|bm25|hybrid --json
 
 Query routing (rule-based) turns parts of the question into metadata filters:
     "85% oxygen", "oxygen above 60 percent"  -> o2_pct filter  (needs enrich_metadata.py + rebuilt index)

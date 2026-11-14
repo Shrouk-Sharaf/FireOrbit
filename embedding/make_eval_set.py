@@ -1,5 +1,5 @@
 """Build eval_set.json from chunks.json with ground truth computed from the data.
-Usage: python eval/make_eval_set.py --chunks chunking/chunks.json --out eval/eval_set.json"""
+Usage: python embedding/make_eval_set.py --chunks chunking/chunks.json --out embedding/eval_set.json"""
 import argparse, json, re
 
 def parse_record(text):
@@ -20,7 +20,7 @@ def is_reference(t):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--chunks", default="chunking/chunks.json"); ap.add_argument("--out", default="eval/eval_set.json")
+    ap.add_argument("--chunks", default="chunking/chunks.json"); ap.add_argument("--out", default="embedding/eval_set.json")
     a = ap.parse_args()
     cs = json.load(open(a.chunks, encoding="utf-8"))
     M = lambda c: c["metadata"]

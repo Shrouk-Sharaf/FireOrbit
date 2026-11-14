@@ -4,11 +4,11 @@ Setup:
     pip install chromadb sentence-transformers
 
 Build the index (from the repository root):
-    python indexing/build_index.py
+    python embedding/build_index.py
 
 Test a query:
-    python indexing/build_index.py --query "What happens to flame spread at low oxygen?"
-    python indexing/build_index.py --query "burn time of cotton" --doc-type experiment_record
+    python embedding/build_index.py --query "What happens to flame spread at low oxygen?"
+    python embedding/build_index.py --query "burn time of cotton" --doc-type experiment_record
 """
 
 import argparse
