@@ -188,6 +188,30 @@ def matches(meta: dict, where: dict | None) -> bool:
             return False
     return True
 
+def summarize_matches(metas: list[dict], top: int = 8) -> dict[str, Any]:
+    """Breakdown of ALL records that matched a structured filter, computed from the metadata
+    (not by the LLM): counts per investigation, fuel and outcome. Long tails are folded into 'other'."""
+
+    def count(keyfn) -> dict[str, int]:
+        counts: dict[str, int] = {}
+        for m in metas:
+            value = keyfn(m)
+            if value:
+                counts[value] = counts.get(value, 0) + 1
+        items = sorted(counts.items(), key=lambda kv: -kv[1])
+        out = dict(items[:top])
+        if len(items) > top:
+            out["other"] = sum(n for _, n in items[top:])
+        return out
+
+    summary = {
+        "investigation": count(lambda m: f"{m['psi_id']} ({m['acronym']})" if m.get("psi_id") and m.get("acronym")
+                               else m.get("psi_id")),
+        "fuel": count(lambda m: m.get("fuel")),
+        "outcome": count(lambda m: m.get("outcome")),
+    }
+    return {k: v for k, v in summary.items() if v}
+
 
 class Retriever:
     def __init__(self, db_dir: Path = DEFAULT_DB_DIR,
@@ -254,8 +278,14 @@ class Retriever:
         where = build_where(clauses)
         n = top_k * CANDIDATE_MULT
 
-        structured = bool(set(self.last_route) & {"o2_pct", "fuel", "outcome"})
+        structured = any(set(c) & {"o2_pct", "fuel", "outcome"} for c in clauses)
         gate = None if (structured or not min_score) else min_score
+        if structured:
+            # Everything that matches the filter (top_k only shows a few of them). The LLM layer uses
+            # the total and the breakdown to answer about the whole set instead of the few shown.
+            matched = [m for m in self.metas if matches(m, where)]
+            self.last_route["total_matches"] = len(matched)
+            self.last_route["match_summary"] = summarize_matches(matched)
 
         if self.mode == "dense":
             return self._gate(self._dense(query, top_k, where), gate)
