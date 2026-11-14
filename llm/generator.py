@@ -33,9 +33,6 @@ def generate_answer(
     client = client or GeminiClient()
     chunks = [c for c in map(normalize_chunk, retrieved_chunks) if c["text"]]
 
-    if not chunks:  # nothing to ground on: don't call the model
-        return insufficient_response(client.model, NO_CONTEXT_MESSAGE)
-
     raw = client.generate(build_prompt(question, chunks, total_matches, match_summary), SYSTEM_PROMPT)
     result = format_response(raw, chunks, client.model)
     if total_matches is not None:

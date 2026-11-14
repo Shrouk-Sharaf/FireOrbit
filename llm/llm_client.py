@@ -5,7 +5,7 @@ import os
 from dataclasses import dataclass, field
 from typing import Optional
 
-DEFAULT_MODEL = "gemini-3.8-flash"
+DEFAULT_MODEL = "gemini-3.5-flash-lite"
 
 
 class LLMError(RuntimeError):

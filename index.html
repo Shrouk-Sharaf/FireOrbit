@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FireOrbit — Spacecraft Fire Safety Dashboard</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="logo">🔥</span><div><h1>FireOrbit</h1><p>NASA PSI combustion insights for crewed exploration</p></div></div>
+  <nav id="nav">
+    <button data-tab="overview" class="active">Overview</button>
+    <button data-tab="rank">Rank</button>
+    <button data-tab="explore">Explore data</button>
+    <button data-tab="compare">Compare</button>
+    <button data-tab="ask">Ask FireOrbit</button>
+    <button data-tab="gaps">Gaps &amp; Earth</button>
+  </nav>
+</header>
+
+<main>
+  <section id="tab-overview" class="tab active"><p class="sub">Loading FireOrbit data from the backend…</p></section>
+  <section id="tab-rank" class="tab"></section>
+  <section id="tab-explore" class="tab"></section>
+  <section id="tab-compare" class="tab"></section>
+  <section id="tab-ask" class="tab"></section>
+  <section id="tab-gaps" class="tab"></section>
+</main>
+
+<aside id="drawer" class="drawer" aria-hidden="true"></aside>
+<div id="scrim" class="scrim"></div>
+
+<footer>Data: NASA Physical Science Informatics (PSI). Scores are derived from the FireOrbit preprocessing pipeline; assumed values are flagged. Not a substitute for NASA flammability certification.</footer>
+
+<script src="data.js"></script>
+<script src="api.js"></script>
+<script>
+  // app.js starts only after api.js has loaded the data (live API, or data.js as offline fallback)
+  FIREORBIT_READY.then(function () {
+    var s = document.createElement("script"); s.src = "app.js"; document.body.appendChild(s);
+  });
+</script>
+</body>
+</html>

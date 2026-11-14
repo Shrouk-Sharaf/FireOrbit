@@ -69,8 +69,11 @@ def format_response(raw_answer: str, chunks: List[Dict[str, Any]], model: str) -
 
     cited = _cited_indices(answer, len(chunks))
     if not cited:
-        # Do not claim sources the model did not actually use: flag the answer instead.
-        return {"answer": answer, "sources": [], "model": model, "warning": NO_CITATION_WARNING}
+        # Do not claim sources the model did not actually use: flag the answer instead if chunks existed.
+        res = {"answer": answer, "sources": [], "model": model}
+        if chunks:
+            res["warning"] = NO_CITATION_WARNING
+        return res
     return {"answer": answer, "sources": build_sources(cited, chunks), "model": model}
 
 
