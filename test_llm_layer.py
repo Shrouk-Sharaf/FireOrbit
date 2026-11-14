@@ -1,6 +1,6 @@
 """Tests for the LLM layer. Gemini is mocked, so no API key or network is needed.
 
-Run from the repository root:  python -m pytest tests/test_llm_layer.py
+Run from the repository root:  python -m pytest test_llm_layer.py
 """
 import json
 import sys
@@ -8,7 +8,7 @@ from pathlib import Path
 
 import pytest
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 
 from llm import generate_answer  # noqa: E402
@@ -166,7 +166,7 @@ def test_empty_question_rejected():
 
 def test_config_defaults_and_env_override(monkeypatch):
     monkeypatch.delenv("GEMINI_MODEL", raising=False)
-    assert LLMConfig.from_env().model == DEFAULT_MODEL == "gemini-3.8-flash"
+    assert LLMConfig.from_env().model == DEFAULT_MODEL == "gemini-3.5-flash-lite"
     monkeypatch.setenv("GEMINI_MODEL", "custom-model")
     assert LLMConfig.from_env().model == "custom-model"
 

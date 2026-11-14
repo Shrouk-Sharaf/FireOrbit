@@ -1,10 +1,10 @@
 """End-to-end check: run eval questions through retrieval + LLM and write answers for manual review.
 
-  python eval/run_answers.py                       # all questions (one LLM call per answerable question)
-  python eval/run_answers.py --only q01,q17,q38    # just these
-  python eval/run_answers.py --dry-run             # no LLM calls: only checks that retrieval feeds the prompt
+  python run_answers.py                       # all questions (one LLM call per answerable question)
+  python run_answers.py --only q01,q17,q38    # just these
+  python run_answers.py --dry-run             # no LLM calls: only checks that retrieval feeds the prompt
 
-Writes eval/answers.md (read it!) and eval/answers.json. Automatic checks are rough:
+Writes embedding/answers.md (read it!) and embedding/answers.json. Automatic checks are rough:
   answerable   -> did the answer cite at least one chunk from relevant_chunk_ids?
   unanswerable -> did the system refuse (no sources)?"""
 import argparse
@@ -13,9 +13,9 @@ import sys
 import time
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
-sys.path.insert(0, str(ROOT / "indexing"))
+sys.path.insert(0, str(ROOT / "embedding"))
 
 from llm import GeminiClient, LLMError, generate_answer  # noqa: E402
 from llm.prompt import normalize_chunk  # noqa: E402
@@ -23,7 +23,7 @@ from llm.prompt import normalize_chunk  # noqa: E402
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--eval", default=str(ROOT / "eval" / "eval_set.json"))
+    ap.add_argument("--eval", default=str(ROOT / "embedding" / "eval_set.json"))
     ap.add_argument("--only", help="comma-separated question ids")
     ap.add_argument("--top-k", type=int, default=6)
     ap.add_argument("--mode", choices=["hybrid", "dense", "bm25"], default="hybrid")
@@ -77,15 +77,15 @@ def main() -> None:
         md.append("")
         print(f"{q['id']} {flag}")
 
-    (ROOT / "eval" / "answers.md").write_text("\n".join(md), encoding="utf-8")
-    json.dump(rows, open(ROOT / "eval" / "answers.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    (ROOT / "embedding" / "answers.md").write_text("\n".join(md), encoding="utf-8")
+    json.dump(rows, open(ROOT / "embedding" / "answers.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     if a.dry_run:
         print("\ndry run: no LLM was called, so the statistics are not meaningful. Retrieval and prompts work.")
         return
     print(f"\nanswerable: cited a relevant chunk {stats['ans_cited_relevant']}/{stats['ans_n']} "
           f"(answers with no citation: {stats['ans_no_cite']})")
     print(f"unanswerable: refused {stats['una_refused']}/{stats['una_n']}   LLM errors: {stats['errors']}")
-    print("Now read eval/answers.md: the automatic checks cannot tell whether an answer is actually correct.")
+    print("Now read embedding/answers.md: the automatic checks cannot tell whether an answer is actually correct.")
 
 
 if __name__ == "__main__":

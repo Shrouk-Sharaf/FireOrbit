@@ -1,5 +1,5 @@
 """Usage (from repo root):
-  python eval/run_eval.py --search-fn my_search:search --k 5 --threshold 0.1
+  python embedding/run_eval.py --search-fn my_search:search --k 5 --threshold 0.1
 `search(question, k)` must return a ranked list of dicts: {"chunk_id": str, "score": float}.
 For hybrid/rerank pipelines, return the final reranker score as "score" (used for the unanswerable test)."""
 import argparse, importlib, json, sys, collections

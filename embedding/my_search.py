@@ -1,7 +1,7 @@
-"""Adapter between eval/run_eval.py and indexing/retrieval.py.
+"""Adapter between embedding/run_eval.py and embedding/retrieval.py.
 
 Run from the repository root:
-    python eval/run_eval.py --search-fn my_search:search --k 5 --threshold 0.5 --verbose
+    python embedding/run_eval.py --search-fn my_search:search --k 5 --threshold 0.5 --verbose
 
 Env vars (optional): EVAL_MODE=hybrid|dense|bm25   EVAL_MODEL=<same model as build_index.py>
                      EVAL_ROUTE=1|0  (query routing on/off, default on)
@@ -12,7 +12,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(ROOT / "indexing"))  # retrieval.py does `from build_index import ...`
+sys.path.insert(0, str(ROOT / "embedding"))  # retrieval.py does `from build_index import ...`
 
 from retrieval import Retriever  # noqa: E402
 
